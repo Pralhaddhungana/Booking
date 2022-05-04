@@ -29,6 +29,7 @@ $(".slick-content").slick({
 });
 
 $(".slick-content-bottom").slick({
+    arrow: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
