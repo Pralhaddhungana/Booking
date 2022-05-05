@@ -28,8 +28,9 @@ $(".slick-content").slick({
     ]
 });
 
-$(".slick-content-bottom").slick({
+$(".testimonial-slider").slick({
     arrow: true,
+    dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,

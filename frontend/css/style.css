@@ -2,12 +2,15 @@
 body{
     overflow-x: hidden;
 }
-.top-header{
-    height:40px;
+.header-wrap{
+    justify-content: right;
+    align-items: center;
 }
 .header-list{
-    float: right;
+    
     list-style-type: none;
+    align-items: center;
+    justify-content: center;
 }
 .header-item{
     color: black;
@@ -16,21 +19,29 @@ body{
     text-decoration: none;
 }
 .navbar{
-    background-color: rgb(26, 160, 232);
+    background-color: rgb(89, 111, 123);
+}
+.second-nav{
+    border-radius: 5px;
+    background-color: #343a40;
 }
 .nav-item{
     float: right;
     list-style-type: none;
     display: inline;
     padding: 0px 5px;
-    color: rgb(72, 69, 69);
+    color: rgb(89, 111, 123);
 }
 .label-date{
     color: aliceblue;
     padding: 0px 3px;
+    margin: 0px 7px;
 }
 .nav-link{
     color: aliceblue;
+}
+.nav-link:hover{
+    color: orange;
 }
 .logo-image{
     height: 35px;
@@ -57,13 +68,13 @@ body{
     height: 300px;
 }
 .overlay-box-banner{
-    top: 50%;
+    top: 80%;
     transform: translate(25%, -150%);
     width: 65%;
 }
 .overlay-box{
     width: 100%;
-    transform: translate(0%, 150%);
+    transform: translate(0%, -150%);
 }
 .overlay-description{
     color: aliceblue;
@@ -78,17 +89,29 @@ body{
     float: right;
     color: black;
     background: transparent;
-    border-color:transparent;
+    border:none;
 }
-
+#btn-search{
+    color: aliceblue;
+}
+.nv-item{
+    border: none;
+    border-radius: 5px;
+    line-height: 30px;
+}
+.nv-item:focus{
+    outline: none;
+}
+.slick-header{
+    margin: 0;
+}
 .slick-image-name{
     color: black;
+    text-align: center;
     
 }
-
-.img-fluid{
-    
-    display: flex;
+.slick-image{
+    margin: 0px 15px;
 }
 .slick-wrap{
     padding-bottom: 30px;
@@ -99,27 +122,72 @@ body{
     height:300px;
     width: 100%;
 }
-.slick-content-bottom .slick-image .img-fluid{
-    width: 100%;
+.overlay-bottom-banner{
+    top: 50%;
+    transform: translate(25%, -150%);
 }
-
-
-.footer-item-wrap{
-    background-color: darkgrey;
+.banner-bottom-image{
+    object-fit: cover;
 }
-.reconts{
-    max-width: 780px;
-    margin: 0 auto;
+.testimonial-slider{
+    /* background-color: rgb(248, 248, 248); */
+    background: transparent;
+   
+}
+.testimonial-slider .slick-next{
+    opacity: 0;
+}
+.testimonial-slider .slick-prev{
+    opacity: 0;
+}
+.testimonial-wrap{
+    background-color: rgb(224, 229, 234);
+}
+.testimonial-wrap .row{
+    justify-content: center;
+}
+.testimonial-content{
+    margin: 30px 0px;
+}
+ .testimonial-image{
+    width: 90px !important;
+    border-radius: 50%;
+    vertical-align: middle;
+    height: 90px;
+    
+}
+.testimonial-list{
+    list-style-type: none;
     text-align: center;
+    justify-content: center;
+    color: black;
+    margin: 0px 30px;
 }
+.tl-1{
+    font-weight: bolder;
+}
+.tl-2{
+    font-style: italic;
+    font-weight: lighter;
+}
+
 .slick-arrow::before{
     color: black;
     background: transparent !important;
+    font-size: 30px;
+}
+.slick-next{
+    right: -30px;
+}
+.slick-prev{
+    left: -35px;
 }
 a:hover{
     text-decoration: none;
 }
-
+.footer-item-wrap{
+    background-color: #252634;
+}
 .footer-company-item{
     list-style-type: none;
     color: rgb(54, 109, 203);
@@ -129,7 +197,7 @@ a:hover{
 }
 .footer-company-item .logo-image{
     height: auto;
-    width: 50%;
+    width: 100px;
 }
 .company-address{
     color: aliceblue;
@@ -137,12 +205,12 @@ a:hover{
 
 
 /* media for large screen */
-@media only screen and ( max-width:1170px){
+/* @media only screen and ( min-width:998px){
 
-}
+} */
 
 /* media for medium screen */
-@media only screen and (max-width:970px){
+@media only screen and (max-width:768px){
     .overlay-box-banner{
         top: 50%;
         transform: translate(25%, -150%);
@@ -178,6 +246,11 @@ a:hover{
     }
     .header-item{
         font-size: 12px;
+        padding-bottom: 5px;
+    }
+    .button-wrap{
+        margin-top: 10px;
+        
     }
     .header-list{
         padding: 1px;
@@ -206,6 +279,13 @@ a:hover{
         left: 30px;
     }
     
-
+.nv-item1{
+    font-size: 15px !important;
+}
+.nv-item{
+    font-size: 20px;
+}
+::placeholder{
+    font-size: 15px;
 }
 }
