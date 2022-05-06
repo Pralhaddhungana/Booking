@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="frontend/bootstrap-4.6.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="frontend/slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="frontend/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="frontend/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="frontend/css/style.css">
 
 
@@ -18,61 +19,53 @@
 
 <body>
     <section class="index-wrapper">
-        <section id="top-header" class="header-wrap">
-            <div class="container">
-                <div class="row header-wrap">
-                    <ul class="header mb-0">
-                        <li class="header-list">
-                            <a href="#" class="header-item">09:58AM</a>
-                        </li>
-                    </ul>
-                    <div class="button-wrap">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#loginModal">
-                            Login
-                        </button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
-                            Register
-                        </button>
-                    </div>
 
+
+        <section id="top-header">
+            <div class="container">
+
+                <div class="button-wrap text-right">
+                    <a href="#" class="header-item ">09:58AM</a>
+                    <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
+                        Login
+                    </a>
+                    <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
+                        Register
+                    </a>
                 </div>
+
 
             </div>
         </section>
 
         <section id="nav-bar">
             <nav class="navbar navbar-dark bg-dark">
-                <div class="row w-100">
-                    <div class="col-12">
-                        <div class="nav-logo">
-                            <a href="#" class="logo-wrap">
-                                <img src="frontend/images/logo/1.png" alt="logo" class="logo-image">
-                            </a>
-                        </div>
-                        <ul class="nav-bar-nav p-0 mb-0">
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
-                                    data-toggle="dropdown">Book</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Hotel</a>
-                                    <a class="dropdown-item" href="#">Bus</a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
-
-                        </ul>
-                    </div>
+                <div class="logo">
+                    <a href="#" class="logo-wrap">
+                        <img src="frontend/images/logo/1.png" alt="logo" class="logo-image">
+                    </a>
                 </div>
+                <ul class="nav-bar-nav">
+                    <li class="nav-item">
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1" data-toggle="dropdown">Book</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Hotel</a>
+                            <a class="dropdown-item" href="#">Bus</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
             </nav>
         </section>
 
@@ -92,22 +85,23 @@
 
                         <div class="overlay-box-banner position-absolute">
                             <nav class="navbar second-nav">
-                                <ul class="nav-bar-nav mb-0 p-0">
-                                    <li class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" id="nav-bar-drop2"
-                                            data-toggle="dropdown">Hotel</a>
-                                        <div class="dropdown-menu">
-                                            <a href="#" class="dropdown-item">Bus</a>
-                                            <a href="#" class="dropdown-item">Cable Car</a>
-                                        </div>
-                                    </li>
-                                </ul>
+
                                 <form action="https:\\www.google.com" class="form-inline">
+                                    <ul class="nav-bar-nav mb-0 p-0">
+                                        <li class="nav-item dropdown">
+                                            <a href="#" class="nav-link dropdown-toggle" id="nav-bar-drop2"
+                                                data-toggle="dropdown">Hotel</a>
+                                            <div class="dropdown-menu">
+                                                <a href="#" class="dropdown-item">Bus</a>
+                                                <a href="#" class="dropdown-item">Cable Car</a>
+                                            </div>
+                                        </li>
+                                    </ul>
                                     <input type="text" class="nav-item nv-item nv-item1"
                                         placeholder="Search for Products">
-                                    <label class="label-date">Start</label>
+                                    <label class="label-date">Arrival</label>
                                     <input type="date" class="nav-item nv-item" name="start-date">
-                                    <label class="label-date">End</label>
+                                    <label class="label-date">Departure</label>
                                     <input type="date" class="nav-item nv-item" name="end-date">
 
                                     <button class="btn btn-success" type="submit" id="btn-search">Search</button>
@@ -123,9 +117,9 @@
         <section class="slick-wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 p-0">
+                    <div class="col-12">
                         <div class="slick-header p-3">
-                            <h5>Explore Nepal</h5>
+                            <h5 class="xyz">Explore Nepal</h5>
                         </div>
                         <div class="slick-content">
                             <div class="slick-image">
@@ -185,9 +179,9 @@
         <section class="slick-wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 p-0">
+                    <div class="col-12">
                         <div class="slick-header p-3">
-                            <h4>Search For</h4>
+                            <h5>Search For</h5>
                         </div>
                         <div class="slick-content">
                             <div class="slick-image">
@@ -247,7 +241,7 @@
         <section id="bottom-banner">
 
             <div class="container">
-                <div class="row p-0">
+                <div class="row ">
                     <div class="col-12">
                         <img src="frontend/images/banner/visit.jpg" alt="bottom-banner-image" class="banner-image">
                     </div>
@@ -257,16 +251,16 @@
         </section>
 
 
-        <section class="testimonial-wrap p-3 position-relative" id="testimonial-details">
+        <section class=" position-relative" id="testimonial-details">
             <div class="container">
 
                 <div class="row">
                     <div class="col-12">
                         <div class="slick-header">
-                            <h4>Testimonials</h4>
+                            <h5>Testimonials</h5>
                         </div>
                     </div>
-                    <div class="col-8">
+                    <div class="col-lg-8 col-sm-12">
                         <div class="testimonial-slider">
                             <div class="testimonial-content">
                                 <img src="frontend/images/DP/oscar.jpg" class="testimonial-image img-fluid mx-auto">
@@ -314,12 +308,15 @@
         </section>
 
 
-        <section id="footer-wrap" class="footer-item-wrap p-3">
+
+
+
+        <section id="footer-wrap">
 
             <div class="container">
-                <div class="row p-0">
+                <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <ul class="p-0">
+                        <ul>
                             <li class="footer-company-item">
                                 <h4>Company</h4>
                             </li>
@@ -390,6 +387,76 @@
 
             </div>
         </section>
+
+        <!-- Newsletter Starts -->
+        <section id="newsletter">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="newsletter-wrap">
+                            <form action="#" class="form-wrap">
+                                <div class="container">
+                                    <h4>Save time, save money!</h4>
+                                    <p>Sign up and we'll send the best deals to you</p>
+                                    <div class="container input-wrap">
+                                        <input type="text" class="input1" placeholder="Your email" name="mail" required>
+                                        <input type="submit" class="input2" value="Subscribe">
+                                        <div class="checkbox-wrap">
+                                            <label>
+                                                <input type="checkbox" name="subscribe"> Send me a link to get the FREE
+                                                Booking.com app!
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Newsletter Ends -->
+
+        <!-- Payment Footer starts -->
+
+        <section id="payment">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="payment-wrap">
+                            <div class="payment-content">
+                                <label for="payment">
+                                    <p>Payment Mode:</p>
+                                </label>
+                                <img src="frontend/images/payment/2.jpg" alt="" class="payment-modes">
+                                <img src="frontend/images/payment/3.jpg" alt="" class="payment-modes">
+                                <img src="frontend/images/payment/4.jpg" alt="" class="payment-modes">
+                                <img src="frontend/images/payment/5.jpg" alt="" class="payment-modes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <p class="payment-privacy text-white text-right">Copyright All Right Reserved 2022. Power by
+                            Next Nepal.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
 
         <!-- Modal for Login-->
         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
