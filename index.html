@@ -22,20 +22,19 @@
 
 
         <section id="top-header">
-            <div class="container">
-
-                <div class="button-wrap text-right">
-                    <a href="#" class="header-item ">09:58AM</a>
-                    <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
-                        Login
-                    </a>
-                    <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
-                        Register
-                    </a>
-                </div>
 
 
+            <div class="button-wrap text-right">
+                <a href="#" class="header-item ">09:58AM</a>
+                <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
+                    Login
+                </a>
+                <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
+                    Register
+                </a>
             </div>
+
+
         </section>
 
         <section id="nav-bar">
@@ -47,11 +46,9 @@
                 </div>
                 <ul class="nav-bar-nav">
                     <li class="nav-item">
-
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1" data-toggle="dropdown">Book</a>
                         <div class="dropdown-menu">
@@ -76,35 +73,29 @@
                         <img src="frontend/images/banner/2.jpg" alt="banner-top-image" class="banner-top-image">
 
                         <div class="overlay-box-banner position-absolute">
-                            <div class="overlay-box p-0">
-                                <p class="overlay-description mb-0">Explore the World with us. We provide the best
-                                    Service on
-                                    Town. So, Enjoy our booking platform to the fullest.</p>
-                            </div>
-                        </div>
-
-                        <div class="overlay-box-banner position-absolute">
-                            <nav class="navbar second-nav">
+                            <p class="overlay-description p-2 mb-0">Explore the World with us. We provide the best
+                                Service on
+                                Town. So, Enjoy our booking platform to the fullest.</p>
+                            <nav class="navbar second-nav justify-content-center">
 
                                 <form action="https:\\www.google.com" class="form-inline">
-                                    <ul class="nav-bar-nav mb-0 p-0">
-                                        <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" id="nav-bar-drop2"
-                                                data-toggle="dropdown">Hotel</a>
-                                            <div class="dropdown-menu">
-                                                <a href="#" class="dropdown-item">Bus</a>
-                                                <a href="#" class="dropdown-item">Cable Car</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <input type="text" class="nav-item nv-item nv-item1"
-                                        placeholder="Search for Products">
-                                    <label class="label-date">Arrival</label>
-                                    <input type="date" class="nav-item nv-item" name="start-date">
-                                    <label class="label-date">Departure</label>
-                                    <input type="date" class="nav-item nv-item" name="end-date">
+                                    <a href="#" class="nav-bar-item dropdown-toggle" id="nav-bar-drop2"
+                                        data-toggle="dropdown">Hotel</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Bus</a>
+                                        <a href="#" class="dropdown-item">Cable Car</a>
+                                    </div>
 
-                                    <button class="btn btn-success" type="submit" id="btn-search">Search</button>
+                                    <input type="text" class="nav-bar-item" placeholder="Search for Products">
+                                    <div class="date-wrap">
+                                        <label class="label-date">Arrival</label>
+                                        <input type="date" class="nav-bar-item" name="start-date">
+                                    </div>
+                                    <div class="date-wrap">
+                                        <label class="label-date">Departure</label>
+                                        <input type="date" class="nav-bar-item" name="end-date">
+                                    </div>
+                                    <button class="btn nav-bar-item" type="submit" id="btn-search">Search</button>
                                 </form>
                             </nav>
                         </div>
@@ -251,6 +242,42 @@
         </section>
 
 
+        <!-- Newsletter Starts -->
+        <section id="newsletter">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="newsletter-wrap">
+                            <form action="#" class="form-wrap">
+                                <div class="container">
+                                    <h4>Save time, save money!</h4>
+                                    <p>Sign up and we'll send the best deals to you</p>
+                                    <div class="container input-wrap">
+                                        <input type="text" class="input1" placeholder="Your email address" name="mail"
+                                            required>
+                                        <input type="submit" class="input2" value="Subscribe">
+                                        <div class="checkbox-wrap">
+                                            <label>
+                                                <input type="checkbox" name="subscribe"> Send me a link to get the FREE
+                                                Booking.com app!
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Newsletter Ends -->
+
+
         <section class=" position-relative" id="testimonial-details">
             <div class="container">
 
@@ -307,77 +334,79 @@
             </div>
         </section>
 
-
-
-
+        <!-- Footer part starts -->
 
         <section id="footer-wrap">
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
                         <ul>
                             <li class="footer-company-item">
                                 <h4>Company</h4>
                             </li>
-                            <li class="footer-company-item"> <a href="#">About Booking.com</a></li>
-                            <li class="footer-company-item"> <a href="#">Customer Care Service</a></li>
-                            <li class="footer-company-item"><a href="#">Careers</a></li>
+                            <li class="footer-company-item"> <a href="#">
+                                    <span><i class="fa-solid fa-caret-right"></i></span>About
+                                    Booking.com</a></li>
+                            <li class="footer-company-item"> <a href="#"><span><i
+                                            class="fa-solid fa-caret-right"></i></span>Customer Care Service</a></li>
+                            <li class="footer-company-item"><a href="#"><span><i
+                                            class="fa-solid fa-caret-right"></i></span>Careers</a></li>
                             <li class="footer-company-item">
                                 <img src="frontend/images/logo/1.png" alt="" class="logo-image mt-3">
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
                         <ul class="p-0">
                             <li class="footer-company-item">
                                 <h4>Training & Support</h4>
                             </li>
                             <li class="footer-company-item">
-                                <a href="#">Free Webinars</a>
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Webinars</a>
                             </li>
                             <li class="footer-company-item">
-                                <a href="#">Free Resources</a>
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Resources</a>
                             </li>
                             <li class="footer-company-item">
-                                <a href="#">Blog</a>
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Blog</a>
                             </li>
                             <li class="footer-company-item">
-                                <a href="#">Training for teams</a>
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Training for teams</a>
                             </li>
                             <li class="footer-company-item">
-                                <a href="#">Help Center</a>
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Help Center</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
                         <ul class="p-0">
                             <li class="footer-company-item">
                                 <h4>Legal Stuff</h4>
                             </li>
                             <li class="footer-company-item">
-                                <a href="#">Terms & Condition</a>
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Terms & Condition</a>
                             </li>
                             <li class="footer-company-item">
-                                <a href="#">Privacy</a>
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Privacy</a>
                             </li>
 
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
                         <ul class="p-0">
                             <li class="footer-company-item">
                                 <h4>Connect</h4>
                             </li>
                             <li class="footer-company-item">
-                                <a href="#">Contact Us</a>
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Contact Us</a>
                             </li>
                             <li class="footer-company-item">
-                                <a href="#">Customer Support</a>
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Customer Support</a>
                             </li>
                             <li class="footer-company-item company-address">Booking.com, Kathmandu, Nepal</li>
                             <li class="footer-company-item">
-                                <a href="#">+977 9830090938</a>
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>+977 9830090938</a>
                             </li>
                         </ul>
                     </div>
@@ -388,39 +417,6 @@
             </div>
         </section>
 
-        <!-- Newsletter Starts -->
-        <section id="newsletter">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-
-                        <div class="newsletter-wrap">
-                            <form action="#" class="form-wrap">
-                                <div class="container">
-                                    <h4>Save time, save money!</h4>
-                                    <p>Sign up and we'll send the best deals to you</p>
-                                    <div class="container input-wrap">
-                                        <input type="text" class="input1" placeholder="Your email" name="mail" required>
-                                        <input type="submit" class="input2" value="Subscribe">
-                                        <div class="checkbox-wrap">
-                                            <label>
-                                                <input type="checkbox" name="subscribe"> Send me a link to get the FREE
-                                                Booking.com app!
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Newsletter Ends -->
 
         <!-- Payment Footer starts -->
 
