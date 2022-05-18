@@ -1,4 +1,7 @@
 
+
+/* Index.html page  */
+
 body{
     overflow-x: hidden;
     margin: 0;
@@ -11,6 +14,10 @@ p, ul, label, h1, h2, h3, h4, h5{
 
 /* Header part */
 
+#top-header{
+    background-color: #ece5e5;
+}
+
 .header-list{
     
     list-style-type: none;
@@ -21,6 +28,7 @@ p, ul, label, h1, h2, h3, h4, h5{
 }
 .header-item:hover{
     text-decoration: none;
+    color: orange;
 }
 .button-wrap{
     padding: 0 25px;
@@ -30,12 +38,10 @@ p, ul, label, h1, h2, h3, h4, h5{
 
 #navbar{
     background-color: rgb(89, 111, 123);
+    
 }
-.second-nav{
-    border-radius: 5px;
-    background-color: #343a40;
-    width: 100%;
-}
+
+
 .nav-item{
     
     list-style-type: none;
@@ -46,32 +52,86 @@ p, ul, label, h1, h2, h3, h4, h5{
 }
 
 .label-date{
-    color: aliceblue;
+    color: white;
     padding: 0px 3px;
     margin: 0px 7px;
 }
 .nav-link{
-    color: aliceblue;
+    color: black;
 }
 .nav-link:hover{
     color: orange;
 }
 .logo-image{
-    height: 35px;
-    width: 35px;
+   width: 80%;
 }
+.logo{
+    width: 20%;
+}
+
+
+/* Navigation Bar  */
+/* 
+#topNavigationBar{
+    font-size: 15px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    background-color: #252634
+}
+
+.navbar-fixed-top .navbar-nav{
+    list-style-type: none;
+    display: inline;
+    padding: 0px 15px;
+}
+.navbar-fixed-top .navbar-nav a{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+.navbar-fixed-top .navbar-nav i{
+    font-family: FontAwesome;
+    margin: 5px;
+}
+.navbar-fixed-top .nav-item{
+    margin: 10px 0;
+}
+#navbar-drop1{
+    color: aliceblue;
+} */
+
+/* Logo wrapper */
+
+/* .logo-image-wrap{
+    align-items: center;
+    display: inline-flex;
+}
+.logo-image{
+    width: 90%;
+    padding: 30px;
+    border-right: 1px solid rgb(220, 220, 220);
+}
+.logo-description{
+   padding: 30px;
+}
+
+.logo{
+    width: 20%;
+} */
+
 /* Top banner */
-
+#top-banner{
+    background-color: rgb(22, 21, 21);
+    height: 383px;
+}
 .banner-top-image{
-    width: 100%;
     object-fit: cover;
+    width: 100%;
+    height: 40%;
+    opacity: 0.5;
 }
 
-.banner-overlay-wrap .banner-top-image{
-    height: 300px;
-}
 .overlay-box-banner{
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 67%;
@@ -80,20 +140,33 @@ p, ul, label, h1, h2, h3, h4, h5{
     width: 100%;
     transform: translate(0%, -150%);
 }
+
 .overlay-description{
-    color: aliceblue;
+    
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+    /* margin-top: 50px; */
+    color: white;
 }
 #top-banner .nav-bar-item{
 margin: 5px;
 text-align: center;
 
 }
+
+/* .second-nav{
+margin-bottom: 50px;
+} */
+
+.form-inline{
+    background-color: #202353;
+    border-radius: 5px;
+}
 #btn-search{
-    background-color: #252634;
+    background-color: #2cb327;
     padding: 8px 12px;
+    color: aliceblue;
 }
 .btn{
     float: right;
@@ -101,9 +174,7 @@ text-align: center;
     background: transparent;
     border:none;
 }
-#btn-search{
-    color: aliceblue;
-}
+
 .nav-bar-item{
     border: none;
     border-radius: 5px;
@@ -116,7 +187,7 @@ text-align: center;
     outline: none;
 }
 #nav-bar-drop2{
-    background-color: #252634;
+    /* background-color: #117db0; */
     border-radius: 5px;
     font-size: 16px;
     padding: 8px 12px;
@@ -127,6 +198,22 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: center;
 }
+.overlay-background{
+    background-color: grey;
+    opacity: 0.5;
+}
+
+
+/* Toggle Tab Wrap */
+.toggle-tab{
+    margin: 15px;
+}
+.tab-title{
+    margin: 5px 10px;
+}
+.active{
+    background-color: red !important;
+}
 
 /* Top slick */
 
@@ -135,13 +222,13 @@ text-align: center;
 
 }
 .slick-header h5{
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #ece8e8;
 }
 .slick-header h5::after{
     content:'';
     height: 3px;
     width: 130px;
-    background-color: rgb(43, 93, 243);
+    background-color: #47a1de;
     display: block;
     margin-top: 5px;
 }
@@ -153,6 +240,10 @@ text-align: center;
 }
 .slick-image{
     margin: 0px 15px;
+}
+.slick-image:hover .slick-image-name  {
+    color: orange;
+    
 }
 
 /* Bottom banner */
@@ -179,6 +270,9 @@ text-align: center;
 .testimonial-slider{
     background: transparent;
    
+}
+#testimonial-details .slick-header h5{
+    border-bottom: 1px solid #c8c8c8;
 }
 .testimonial-slider .slick-next{
     opacity: 0;
@@ -241,14 +335,24 @@ a:hover{
 }
 .footer-company-item{
     list-style-type: none;
-    color: rgb(54, 109, 203);
+    color: #4fa4df;
+    transition: 1s;
+
 }
 .footer-company-item a{
     color: aliceblue;
 }
+.footer-company-item:hover a{
+    color: orange;
+}
+.footer-company-item:hover{
+    transform: translateX(20px);
+    transition: 1s;
+}
+
 .footer-company-item .logo-image{
     height: auto;
-    width: 100px;
+    width: 150px;
 }
 .company-address{
     color: aliceblue;
@@ -271,12 +375,15 @@ a:hover{
     align-items: center;
     text-align: center;
 }
+.newsletter-wrap .form-wrap h1{
+    color: white;
+}
 .form-wrap p{
     margin-bottom: 1.5rem;
-    color: whitesmoke;
+    color: white;
 }
 .form-wrap h4{
-    color: whitesmoke;
+    color: white;
 }
 .input-wrap .input1{
     line-height: 30px;
@@ -295,7 +402,10 @@ a:hover{
     border-radius: 5px;
     border: none;
     background-color: #f69a4b;
-    color: #252634;
+    color: white;
+}
+.input1:focus{
+    outline: none;
 }
 
 .checkbox-wrap{
@@ -311,8 +421,8 @@ a:hover{
     color: whitesmoke;
 }
 .payment-modes{
-    width: 50px;
-    height: auto;
+    width: 10%;
+    
 }
 #payment{
     background-color: #252634;
@@ -337,14 +447,16 @@ a:hover{
     .nav-item{
         margin: 3px;
     }
-
-    .banner-overlay-wrap .banner-top-image{
-        height: 85vh;
+    
+    #top-banner{
+        height: 180vh !important;
     }
-   
-    .overlay-box{
+    .banner-overlay-wrap .banner-top-image{
+        height: 180vh !important;
+    }
+    .overlay-box-banner{
         width: 100%;
-        transform: translate(0%, 150%);
+        transform: translate(-50%, -10%) !important;
     }
     .header-item{
         font-size: 12px;
@@ -361,7 +473,7 @@ a:hover{
         padding: 0px;
     }
     .logo-image{
-        width: 25px;
+        width: 75px;
         height: 25px;
     }
     .button-wrap .btn{
@@ -421,7 +533,9 @@ a:hover{
     margin-bottom: 15px;
 }
 
-
+.payment-privacy{
+    font-size: 14px;
+}
 
 
 
@@ -448,7 +562,16 @@ a:hover{
     font-size: 12px;
     
 }
-
+#top-banner{
+    height: 130vh;
+}
+.banner-overlay-wrap .banner-top-image{
+    height: 130vh;
+}
+.overlay-box-banner{
+    width: 100%;
+    transform: translate(-50%, 0%);
+}
 .label-date{
     font-size: 12px;
 }
@@ -506,3 +629,95 @@ a:hover{
 
 
 }
+
+
+/* End of index.html page */
+
+
+/* Starting of hotels.html page */
+.search-bar-wrap{
+    text-align: center;
+}
+.search-bar{
+    border-radius: 5px;
+    border: 1px solid black;
+    line-height: 40px;
+    margin: 20px 0;
+    width: 70%;
+}
+
+.search-bar::placeholder{
+    color: gray;
+    text-align: center;
+}
+.search-bar-btn{
+    margin: 20px 0;
+    line-height: 43px;
+    border-radius: 5px;
+    margin: 0 10px;
+    width: 20%;
+    border: none;
+    background-color: steelblue;
+    color: whitesmoke;
+}
+.last-minute-hotel-heading{
+    margin: 20px 0;
+}
+.hotel-card{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding: 20px 0;
+}
+.hotel-card::after{
+    content: '';
+    display: block;
+    margin-top: 10px;
+}
+.hotel-card-title{
+    color: #000;
+    font-size: 18px;
+}
+.hotel-card-subtitle{
+    color: gray;
+}
+.hotel-card-content{
+    width: 100%;
+    margin: 0 20px;
+}
+.hotel-card-image{
+    height: auto;
+    width: 120px;
+}
+.hotel-deals{
+    margin: 10px;
+}
+.hotel-price-display-label{
+    color: gray;
+}
+.hotel-price-display-label-price{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.hotel-deals-more{
+    text-align: center;
+}
+.hotel-card-button{
+    border-radius: 5px;
+    line-height: 50px;
+    margin: 10px;
+    background-color: #00487a;
+    color: whitesmoke;
+    border-style: none;
+}
+.hotel-card-button span{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* End of hotels.html page */  

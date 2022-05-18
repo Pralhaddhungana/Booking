@@ -23,54 +23,66 @@
 
         <section id="top-header">
 
-
-            <div class="button-wrap text-right">
-                <a href="#" class="header-item ">09:58AM</a>
-                <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
-                    Login
-                </a>
-                <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
-                    Register
-                </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="button-wrap text-right">
+                            <a href="#" class="header-item ">09:58AM</a>
+                            <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
+                                Login
+                            </a>
+                            <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
+                                Register
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
 
         </section>
 
         <section id="nav-bar">
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="logo">
-                    <a href="#" class="logo-wrap">
-                        <img src="frontend/images/logo/1.png" alt="logo" class="logo-image">
-                    </a>
-                </div>
-                <ul class="nav-bar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-dark ">
+                            <div class="logo">
+                                <a href="index.html" class="logo-wrap">
+                                    <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
+                                </a>
+                            </div>
+                            <ul class="nav-bar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1" data-toggle="dropdown">Book</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Hotel</a>
-                            <a class="dropdown-item" href="#">Bus</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                </ul>
-            </nav>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
+                                        data-toggle="dropdown">Book</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="hotels.html">Hotel</a>
+                                        <a class="dropdown-item" href="#">Bus</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="top-banner" class="banner-overlay-wrap position-relative">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 p-0">
-                        <img src="frontend/images/banner/2.jpg" alt="banner-top-image" class="banner-top-image">
+                        <img src="frontend/images/banner/2.jpg " alt="banner-top-image" class="banner-top-image ">
 
                         <div class="overlay-box-banner position-absolute">
                             <p class="overlay-description p-2 mb-0">Explore the World with us. We provide the best
@@ -99,11 +111,65 @@
                                 </form>
                             </nav>
                         </div>
+
+                        <!-- <div class="overlay-background position-absolute">
+
+                        </div> -->
                     </div>
                 </div>
 
             </div>
         </section>
+
+
+        <!-- <section id="toggleTabWrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="toggle-tab">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="AllStays" type="button" role="tab"
+                                        data-toggle="tab" href="#">All
+                                        Stays</button>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Hotels" type="button" role="tab" data-toggle="tab"
+                                        href="#">Hotels</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="movieTickets" type="button" role="tab" data-toggle="tab"
+                                        href="#">Movie Tickets</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="AllStays" class="tab-pane fade in active">
+                                    <h3>All Stays</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est eaque, libero nihil
+                                        nisi fuga, amet repellendus deleniti id, illo quae distinctio modi aspernatur
+                                        error mollitia numquam tempore harum atque quod!</p>
+                                </div>
+                                <div id="Hotels" class="tab-pane fade">
+                                    <h3>Hotels</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officia quaerat
+                                        ipsum, temporibus mollitia facere perspiciatis voluptatem tempore nemo natus
+                                        maxime esse doloribus accusantium aliquid soluta optio facilis officiis. Dolore.
+                                    </p>
+                                </div>
+                                <div id="MovieTickets" class="tab-pane fade">
+                                    <h3>Movie Tickets</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo perferendis quam
+                                        non perspiciatis pariatur dolorem rerum porro id tempora voluptate nulla
+                                        eligendi tenetur, assumenda quos, aliquid sed iste? Deserunt, earum!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
 
         <section class="slick-wrap">
             <div class="container">
@@ -251,18 +317,18 @@
                         <div class="newsletter-wrap">
                             <form action="#" class="form-wrap">
                                 <div class="container">
-                                    <h4>Save time, save money!</h4>
+                                    <h1>Save time, save money!</h1>
                                     <p>Sign up and we'll send the best deals to you</p>
                                     <div class="container input-wrap">
                                         <input type="text" class="input1" placeholder="Your email address" name="mail"
                                             required>
                                         <input type="submit" class="input2" value="Subscribe">
-                                        <div class="checkbox-wrap">
+                                        <!-- <div class="checkbox-wrap">
                                             <label>
                                                 <input type="checkbox" name="subscribe"> Send me a link to get the FREE
                                                 Booking.com app!
                                             </label>
-                                        </div>
+                                        </div> -->
                                     </div>
 
                                 </div>
@@ -353,7 +419,7 @@
                             <li class="footer-company-item"><a href="#"><span><i
                                             class="fa-solid fa-caret-right"></i></span>Careers</a></li>
                             <li class="footer-company-item">
-                                <img src="frontend/images/logo/1.png" alt="" class="logo-image mt-3">
+                                <img src="frontend/images/logo/booking.png" alt="" class="logo-image mt-3">
                             </li>
                         </ul>
                     </div>
@@ -424,7 +490,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="payment-wrap">
                             <div class="payment-content">
                                 <label for="payment">
@@ -437,7 +503,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <p class="payment-privacy text-white text-right">Copyright All Right Reserved 2022. Power by
                             Next Nepal.
                         </p>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+
+    <link rel="stylesheet" href="frontend/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="frontend/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="frontend/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="frontend/css/style.css">
+
+    <script>
+        $(document).ready(function () {
+
+            $("#myInput").on("keyup", function () {
+
+                var value = $(this).val().toLowerCase();
+
+                $(".hotel-deals ").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().index(value) > -1)
+
+                });
+
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <section id="top-header">
+
+
+        <div class="button-wrap text-right">
+            <a href="#" class="header-item ">09:58AM</a>
+            <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
+                Login
+            </a>
+            <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
+                Register
+            </a>
+        </div>
+
+
+    </section>
+
+    <section id="nav-bar">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="logo">
+                <a href="index.html" class="logo-wrap">
+                    <img src="frontend/images/logo/1.png" alt="logo" class="logo-image">
+                </a>
+            </div>
+            <ul class="nav-bar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1" data-toggle="dropdown">Book</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="hotels.html">Hotel</a>
+                        <a class="dropdown-item" href="#">Bus</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="last-minute-hotel">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="search-bar-wrap">
+                        <input type="text" class="search-bar" placeholder="Enter your location">
+                        <button class="search-bar-btn" onclick="filterSelection()" id="#myInput">Search</button>
+                    </div>
+                    <div class="last-minute-hotel-heading">
+                        <h3>Last Minute Hotels near you</h3>
+                        <p>Find a great deal on a hotel for tonight or an upcoming trip</p>
+                    </div>
+
+                    <div class="hotel-deals">
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="hotel-card">
+                                    <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
+                                        alt="OYO hotel">
+                                    <div class="hotel-card-content">
+                                        <header class="hotel-card-header">
+                                            <div class="hotel-deals-card-header">
+                                                <a href="#">
+                                                    <h3 class="hotel-card-title">OYO 175 Felicity</h3>
+                                                    <span class="hotel-card-subtitle" id="location">Thapathali</span>
+                                                </a>
+                                            </div>
+                                        </header>
+                                        <div class="hotel-deals-price">
+                                            <div class="hotel-price-display text-right w-100">
+                                                <div class="hotel-price-display-label">From</div>
+                                                <div class="hotel-price-display-label-price">NPR 1357</div>
+                                                <div class="hotel-price-display-label">For tonight</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="hotel-card">
+                                    <img src="frontend/images/hotels/hotel2.jpg" class="hotel-card-image"
+                                        alt="OYO hotel">
+                                    <div class="hotel-card-content ">
+                                        <header class="hotel-card-header">
+                                            <div class="hotel-deals-card-header">
+                                                <a href="#">
+                                                    <h3 class="hotel-card-title">Hotel Dhaka Express</h3>
+                                                    <span class="hotel-card-subtitle" id="location">Thamel</span>
+                                                </a>
+                                            </div>
+                                        </header>
+                                        <div class="hotel-deals-price">
+                                            <div class="hotel-price-display text-right">
+                                                <div class="hotel-price-display-label">From</div>
+                                                <div class="hotel-price-display-label-price">NPR 1859</div>
+                                                <div class="hotel-price-display-label">For tonight</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="hotel-card">
+                                    <img src="frontend/images/hotels/hotel3.jpg" class="hotel-card-image"
+                                        alt="OYO hotel">
+                                    <div class="hotel-card-content ">
+                                        <header class="hotel-card-header">
+                                            <div class="hotel-deals-card-header">
+                                                <a href="#">
+                                                    <h3 class="hotel-card-title">Hotel Royal Mantra</h3>
+                                                    <span class="hotel-card-subtitle" id="location">Thapathali</span>
+                                                </a>
+                                            </div>
+                                        </header>
+                                        <div class="hotel-deals-price">
+                                            <div class="hotel-price-display text-right">
+                                                <div class="hotel-price-display-label">From</div>
+                                                <div class="hotel-price-display-label-price">NPR 3815</div>
+                                                <div class="hotel-price-display-label">For tonight</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="hotel-card">
+                                    <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
+                                        alt="OYO hotel">
+                                    <div class="hotel-card-content ">
+                                        <header class="hotel-card-header">
+                                            <div class="hotel-deals-card-header">
+                                                <a href="#">
+                                                    <h3 class="hotel-card-title">Kantipur Village</h3>
+                                                    <span class="hotel-card-subtitle" id="location">Thapathali</span>
+                                                </a>
+                                            </div>
+                                        </header>
+                                        <div class="hotel-deals-price">
+                                            <div class="hotel-price-display text-right">
+                                                <div class="hotel-price-display-label">From</div>
+                                                <div class="hotel-price-display-label-price">NPR 8218</div>
+                                                <div class="hotel-price-display-label">For tonight</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="hotel-card">
+                                    <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
+                                        alt="OYO hotel">
+                                    <div class="hotel-card-content ">
+                                        <header class="hotel-card-header">
+                                            <div class="hotel-deals-card-header">
+                                                <a href="#">
+                                                    <h3 class="hotel-card-title">Hotel Peace Mountain
+                                                    </h3>
+                                                    <span class="hotel-card-subtitle" id="location">Thapathali</span>
+                                                </a>
+                                            </div>
+                                        </header>
+                                        <div class="hotel-deals-price">
+                                            <div class="hotel-price-display text-right">
+                                                <div class="hotel-price-display-label">From</div>
+                                                <div class="hotel-price-display-label-price">NPR 1289
+                                                </div>
+                                                <div class="hotel-price-display-label">For tonight
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                <div class="hotel-card">
+                                    <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
+                                        alt="OYO hotel">
+                                    <div class="hotel-card-content ">
+                                        <header class="hotel-card-header">
+                                            <div class="hotel-deals-card-header">
+                                                <a href="#">
+                                                    <h3 class="hotel-card-title">OYO 175
+                                                        Felicity</h3>
+                                                    <span class="hotel-card-subtitle" id="location">Thapathali
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </header>
+                                        <div class="hotel-deals-price">
+                                            <div class="hotel-price-display text-right">
+                                                <div class="hotel-price-display-label">From
+                                                </div>
+                                                <div class="hotel-price-display-label">NPR 1357
+                                                </div>
+                                                <div class="hotel-price-display-label">For
+                                                    tonight</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotel-deals-more">
+                        <button class="hotel-card-button">
+                            <span class="hotel-card-button-text">See more last minute hotels</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer part starts -->
+
+    <section id="footer-wrap">
+
+        <div class="container">
+            <div class="row">
+                <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                    <ul>
+                        <li class="footer-company-item">
+                            <h4>Company</h4>
+                        </li>
+                        <li class="footer-company-item"> <a href="#">
+                                <span><i class="fa-solid fa-caret-right"></i></span>About
+                                Booking.com</a></li>
+                        <li class="footer-company-item"> <a href="#"><span><i
+                                        class="fa-solid fa-caret-right"></i></span>Customer Care Service</a></li>
+                        <li class="footer-company-item"><a href="#"><span><i
+                                        class="fa-solid fa-caret-right"></i></span>Careers</a></li>
+                        <li class="footer-company-item">
+                            <img src="frontend/images/logo/1.png" alt="" class="logo-image mt-3">
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                    <ul class="p-0">
+                        <li class="footer-company-item">
+                            <h4>Training & Support</h4>
+                        </li>
+                        <li class="footer-company-item">
+                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Webinars</a>
+                        </li>
+                        <li class="footer-company-item">
+                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Resources</a>
+                        </li>
+                        <li class="footer-company-item">
+                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Blog</a>
+                        </li>
+                        <li class="footer-company-item">
+                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Training for teams</a>
+                        </li>
+                        <li class="footer-company-item">
+                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Help Center</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                    <ul class="p-0">
+                        <li class="footer-company-item">
+                            <h4>Legal Stuff</h4>
+                        </li>
+                        <li class="footer-company-item">
+                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Terms & Condition</a>
+                        </li>
+                        <li class="footer-company-item">
+                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Privacy</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                    <ul class="p-0">
+                        <li class="footer-company-item">
+                            <h4>Connect</h4>
+                        </li>
+                        <li class="footer-company-item">
+                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Contact Us</a>
+                        </li>
+                        <li class="footer-company-item">
+                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Customer Support</a>
+                        </li>
+                        <li class="footer-company-item company-address">Booking.com, Kathmandu, Nepal</li>
+                        <li class="footer-company-item">
+                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>+977 9830090938</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Payment Footer starts -->
+
+    <section id="payment">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="payment-wrap">
+                        <div class="payment-content">
+                            <label for="payment">
+                                <p>Payment Mode:</p>
+                            </label>
+                            <img src="frontend/images/payment/2.jpg" alt="" class="payment-modes">
+                            <img src="frontend/images/payment/3.jpg" alt="" class="payment-modes">
+                            <img src="frontend/images/payment/4.jpg" alt="" class="payment-modes">
+                            <img src="frontend/images/payment/5.jpg" alt="" class="payment-modes">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <p class="payment-privacy text-white text-right">Copyright All Right Reserved 2022. Power by
+                        Next Nepal.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <!-- Modal for Login-->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Username:
+                    <input type="email" class="login-email" placeholder="Enter your email address">
+                    <br>
+                    <br>
+                    Password:
+                    <input type="password" class="login-password" placeholder="Enter your password">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Register-->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Name:
+                    <input type="text" class="register-name" placeholder="Enter your full name here">
+                    <br><br>
+                    Email:
+                    <input type="email" class="register-email" placeholder="Enter your email address">
+                    <br><br>
+                    Contact:
+                    <input type="number" class="register-contact" placeholder="Enter your phone number">
+                    <br><br>
+                    Password:
+                    <input type="password" class="register-password" placeholder="Enter your password">
+                    <br><br>
+                    <input type="password" class="register-password" placeholder="Re-enter your password">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="frontend/jquery-3.5.1/jquery.js"></script>
+    <script src="frontend/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script src="frontend/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="frontend/js/query.js"></script>
+</body>
+
+</html>
