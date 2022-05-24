@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Details</title>
+
+
+    <link rel="stylesheet" href="frontend/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="frontend/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="frontend/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="frontend/css/style.css">
+</head>
+
+<body>
+    <section id="hotelDetailPage">
+        <section id="top-header">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="button-wrap text-right" id="header-button">
+                            <a href="#" class="header-item ">09:58AM</a>
+                            <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
+                                Login
+                            </a>
+                            <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
+                                Register
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-dark " id="top-navbar">
+                            <div class="logo">
+                                <a href="index.html" class="logo-wrap">
+                                    <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
+                                </a>
+                            </div>
+                            <ul class="nav-bar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
+                                        data-toggle="dropdown">Book</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="hotels.html">Hotel</a>
+                                        <a class="dropdown-item" href="#">Bus</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="breadcrumb-wrapper" class="position-relative bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ol class="breadcrumb py-3">
+                            <li>
+                                <a class=" font-weight-bold" href="#">Home</a>
+                            </li>
+                            <li>
+                                <a class=" font-weight-bold" href="#">Hotels</a>
+                            </li>
+                            <li>
+                                <a class=" font-weight-bold" href="#">OYO 175 Felicity</a>
+
+                            </li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hotelDetail" id="detailOfHotel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-5 col-12">
+                        <div class="detailed-hotel">
+                            <div class="container">
+                                <a href="#">
+                                    <img src="frontend/images/hotels/hotel1.jpg" alt="OYO Hotel" class="hotel-image">
+                                </a>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-11 col-12">
+                                        <div class="hotel-details-images-content"><a href="#"><img
+                                                    src="frontend/images/hotels/hotel1.jpg"
+                                                    class="hotel-details-image p-1"></a>
+                                            <a href="#"><img src="frontend/images/hotels/hotel2.jpg"
+                                                    class="hotel-details-image p-1"></a>
+                                            <a href="#"> <img src="frontend/images/hotels/hotel3.jpg"
+                                                    class="hotel-details-image p-1"></a>
+                                            <a href="#"><img src="frontend/images/hotels/hotel4.jpg"
+                                                    class="hotel-details-image p-1"></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-4 col-xl-4 col-12 ">
+                        <div class="hotelDescription">
+                            <div class="hotel-detail-header">
+                                <h3>OYO 175 Felicity</h3>
+                                <p style="color: gray;">Thapathali, Kathmandu</p>
+                            </div>
+                            <div class="basic-description">
+                                <!-- <p>Located in Thapathali, OYO 175 Hotel Felicity provides a restaurant and free WiFi
+                                    throughout the property.
+
+                                    Guest rooms in the hotel are equipped with a TV.
+
+                                    American and Asian breakfast options are available daily at OYO 175 Hotel Felicity.
+
+                                </p> -->
+                                <ul>
+                                    <li>Located in Thapathali, OYO 175 Hotel Felicity provides free
+                                        WiFi.</li>
+                                    <li>Guest rooms in the hotel are equipped with a TV.</li>
+                                    <li> American and Asian breakfast options are available daily at OYO 175 Hotel
+                                        Felicity.</li>
+                                </ul>
+                            </div>
+
+                            <div class="review-stars">
+                                <div class="rating-wrapper mr-3">
+                                    <div class="p-ratings">
+                                        <i class="star-rating">
+                                            <i class="fa fa-star text-secondary" style="color: orange !important;"></i>
+                                            <i class="fa fa-star text-secondary" style="color: orange !important;"></i>
+                                            <i class="fa fa-star text-secondary" style="color: orange !important;"></i>
+                                            <i class="fa fa-star text-secondary" style="color: orange !important;"></i>
+                                            <i class="fa fa-star text-secondary"></i>
+                                        </i>
+                                        <span class="rating-count ml-1">
+                                            (0 reviews)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="deal-price">
+                                <p class="dealPrice"> Rs.1000</p>
+                            </div>
+                            <div class="book-now"><a href="#" class="bookNow">Book Now !!</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3 col-lg-4 col-xl-3 col-12">
+                        <div class="services">
+                            <h5 class="services-header">Facilities</h5>
+                            <ul>
+                                <li class="services-item"> <span><i class="fa fa-wifi"
+                                            aria-hidden="true"></i></span>Free Wifi</li>
+                                <li class="services-item"><span><i class="fa fa-cutlery" aria-hidden="true"></i></span>
+                                    Food & Drink</li>
+                                <li class="services-item"><span><i class="fa fa-television"
+                                            aria-hidden="true"></i></span> Media & Technology</li>
+                                <li class="services-item"><span><i class="fa fa-car" aria-hidden="true"></i></span>
+                                    Parking</li>
+                                <li class="services-item"><span><i class="fa fa-video-camera"
+                                            aria-hidden="true"></i></span> CCTV</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="hotel-description-review">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a href="#first" class="nav-item nav-link active" id="first-tab" data-toggle="tab"
+                                    role="tab" aria-controls="first" aria-selected="true">Additional
+                                    Description</a>
+                                <a href="#second" class="nav-item nav-link" id="second-tab" data-toggle="tab" role="tab"
+                                    aria-controls="second" aria-selected="false">Reviews <span>0</span></a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tab-content">
+                            <div class="tab-pane fade show active p-3" id="first" role="tabpanel"
+                                aria-labelledby="first-tab">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, recusandae quibusdam nam
+                                quidem sunt consequatur saepe totam sit quis laudantium quam accusamus nobis odio nemo
+                                natus molestias voluptatum aliquid odit.
+
+
+                            </div>
+                            <div class="tab-pane fade p-3" id="second" role="tabpanel" aria-labelledby="second-tab"
+                                style="text-align: Center;">
+                                No
+                                Reviews Yet......
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-hotels">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h4>Related Hotels</h4>
+                        <div class="related-hotels-items">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                            class="related-hotels-image"></a>
+                                    <a href="#">
+                                        <h6>Hotel Dhaka Express</h6>
+                                    </a>
+                                    <p>Thamel</p>
+                                    <p>Rs.900</p>
+                                </div>
+                                <div class="col">
+                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                            class="related-hotels-image"></a>
+                                    <a href="#">
+                                        <h6>Hotel Dhaka Express</h6>
+                                    </a>
+                                    <p>Thamel</p>
+                                    <p>Rs.900</p>
+                                </div>
+                                <div class="col">
+                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                            class="related-hotels-image"></a>
+                                    <a href="#">
+                                        <h6>Hotel Dhaka Express</h6>
+                                    </a>
+                                    <p>Thamel</p>
+                                    <p>Rs.900</p>
+                                </div>
+                                <div class="col">
+                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                            class="related-hotels-image"></a>
+                                    <a href="#">
+                                        <h6>Hotel Dhaka Express</h6>
+                                    </a>
+                                    <p>Thamel</p>
+                                    <p>Rs.900</p>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Footer part starts -->
+
+        <section id="footer-wrap">
+
+            <div class="container">
+                <div class="row">
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                        <ul>
+                            <li class="footer-company-item">
+                                <h4>Company</h4>
+                            </li>
+                            <li class="footer-company-item"> <a href="#">
+                                    <span><i class="fa-solid fa-caret-right"></i></span>About
+                                    Booking.com</a></li>
+                            <li class="footer-company-item"> <a href="#"><span><i
+                                            class="fa-solid fa-caret-right"></i></span>Customer Care Service</a></li>
+                            <li class="footer-company-item"><a href="#"><span><i
+                                            class="fa-solid fa-caret-right"></i></span>Careers</a></li>
+                            <li class="footer-company-item">
+                                <img src="frontend/images/logo/booking.png" alt="" class="logo-image mt-3">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                        <ul class="p-0">
+                            <li class="footer-company-item">
+                                <h4>Training & Support</h4>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Webinars</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Resources</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Blog</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Training for teams</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Help Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                        <ul class="p-0">
+                            <li class="footer-company-item">
+                                <h4>Legal Stuff</h4>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Terms & Condition</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Privacy</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                        <ul class="p-0">
+                            <li class="footer-company-item">
+                                <h4>Connect</h4>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Contact Us</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Customer Support</a>
+                            </li>
+                            <li class="footer-company-item company-address">Booking.com, Kathmandu, Nepal</li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>+977 9830090938</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Payment Footer starts -->
+
+        <section id="payment">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="payment-wrap">
+                            <div class="payment-content">
+                                <label for="payment">
+                                    <p>Payment Mode:</p>
+                                </label>
+                                <img src="frontend/images/payment/2.jpg" alt="" class="payment-modes">
+                                <img src="frontend/images/payment/3.jpg" alt="" class="payment-modes">
+                                <img src="frontend/images/payment/4.jpg" alt="" class="payment-modes">
+                                <img src="frontend/images/payment/5.jpg" alt="" class="payment-modes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <p class="payment-privacy text-white text-right">Copyright All Right Reserved 2022. Power by
+                            Next Nepal.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="frontend/jquery-3.5.1/jquery.js"></script>
+    <script src="frontend/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script src="frontend/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="frontend/js/query.js"></script>
+</body>
+
+</html>

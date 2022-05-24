@@ -3,7 +3,7 @@
 body {
     overflow-x: hidden;
     margin: 0;
-    transition: all 3s;
+    transition: all 1s linear;
     padding: 0;
 }
 
@@ -30,6 +30,8 @@ h5 {
     list-style-type: none;
 }
 
+
+
 .header-item {
     color: black;
     padding: 5px;
@@ -37,7 +39,7 @@ h5 {
 
 .header-item:hover {
     text-decoration: none;
-    color: orange;
+    color: #202353;
 }
 
 .button-wrap {
@@ -46,9 +48,8 @@ h5 {
 
 /* Home top navbar part */
 
-#navbar {
-    background-color: rgb(89, 111, 123);
-
+#nav-bar {
+    background-color: white;
 }
 
 
@@ -234,10 +235,6 @@ margin-bottom: 50px;
     margin: 5px 10px;
 }
 
-.active {
-    background-color: red !important;
-}
-
 /* Top slick */
 
 .slick-header {
@@ -274,6 +271,11 @@ margin-bottom: 50px;
 
 }
 
+/* .slick-image:hover {
+    transform: translateY(-10px);
+    transition: 1s;
+} */
+
 
 /* Bottom banner */
 
@@ -301,6 +303,8 @@ margin-bottom: 50px;
 
 .testimonial-slider {
     background: transparent;
+    width: 60%;
+    left: 20%;
 
 }
 
@@ -378,6 +382,7 @@ a:hover {
     background-color: #252634;
     padding: 30px 0;
 }
+
 
 .footer-company-item {
     list-style-type: none;
@@ -490,7 +495,96 @@ a:hover {
 }
 
 
+.headersticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
 
+.top-nav-style {
+    position: fixed;
+    top: 4%;
+    width: 100%;
+    z-index: 1;
+}
+
+.headingsWrapping {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: cornsilk;
+}
+
+.popup {
+    top: 50%;
+}
+
+/* .mySearch {
+    background-color: red !important;
+} */
+
+.sticky {
+    position: fixed;
+    top: 14%;
+    z-index: 1;
+    left: 18.3%;
+    /* transition: all 3s linear;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    animation: example 1s;
+    transform: scaleX(1);
+    width: 100%;
+    border-radius: 0 !important; */
+
+
+}
+
+/* @keyframes example {
+    0% {
+        width: 67%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+} */
+
+#form-inline-id {
+    background-color: #202353;
+    border-radius: 5px;
+    height: 60px;
+}
+
+
+.asd {
+    top: unset;
+    transform: unset;
+    left: 16.5%;
+    width: 100%;
+    /* transition: width 3s linear; */
+
+}
+
+.slick-image-only {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slick1 {
+    width: 100%;
+    height: 100%;
+    transition: transform ease 0.3s;
+}
+
+.slick1:hover {
+    transform: scale(1.2);
+}
 
 
 
@@ -510,11 +604,11 @@ a:hover {
     }
 
     #top-banner {
-        height: 180vh !important;
+        height: 95vh !important;
     }
 
     .banner-overlay-wrap .banner-top-image {
-        height: 180vh !important;
+        height: 95vh !important;
     }
 
     .overlay-box-banner {
@@ -540,8 +634,8 @@ a:hover {
     }
 
     .logo-image {
-        width: 75px;
-        height: 25px;
+        width: 60px;
+        height: 15px;
     }
 
     .button-wrap .btn {
@@ -576,8 +670,16 @@ a:hover {
         justify-content: center;
     }
 
+    #form-inline-id {
+        height: 235px;
+    }
+
     #nav-bar-drop2 {
         text-align: center;
+    }
+
+    .overlay-box-banner {
+        top: 28% !important;
     }
 
     .second-nav {
@@ -586,6 +688,11 @@ a:hover {
 
     .date-wrap {
         font-size: 12px;
+    }
+
+    .testimonial-slider {
+        width: 100%;
+        left: 0;
     }
 
     ::placeholder {
@@ -615,6 +722,54 @@ a:hover {
         font-size: 14px;
     }
 
+    .headersticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .top-nav-style {
+        top: 4.7%;
+        width: 100%;
+    }
+
+
+
+    /* @keyframes example {
+        0% {
+            width: 67%;
+        }
+    
+        100% {
+            width: 100%;
+        }
+    
+    } */
+
+    /* #form-inline-id {
+        background-color: #202353;
+        border-radius: 5px;
+        height: 60px;
+    } */
+
+
+
+    */ .slick-image-only {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .slick1 {
+        width: 100%;
+        height: 100%;
+        transition: transform ease 0.3s;
+    }
+
+    .slick1:hover {
+        transform: scale(1.2);
+    }
 
 
 }
@@ -628,7 +783,7 @@ a:hover {
 
 
 /* media for tablet screen */
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1020px) and (min-width:760px) {
     .overlay-box-banner {
         width: 92%;
     }
@@ -644,17 +799,19 @@ a:hover {
     }
 
     #top-banner {
-        height: 130vh;
+        height: 70vh;
     }
 
     .banner-overlay-wrap .banner-top-image {
-        height: 130vh;
+        height: 70vh;
     }
 
     .overlay-box-banner {
         width: 100%;
         transform: translate(-50%, 0%);
+        top: 40%;
     }
+
 
     .label-date {
         font-size: 12px;
@@ -668,7 +825,7 @@ a:hover {
 
 /* media for laptop screen */
 
-@media only screen and (max-width:1400px) {
+@media only screen and (max-width:1430px) and (min-width:1024px) {
 
     .nav-bar-item {
         font-size: 16px;
@@ -688,14 +845,36 @@ a:hover {
         padding: 8px 12px;
     }
 
+    #top-banner {
+        height: 70vh;
+    }
 
+    .banner-overlay-wrap .banner-top-image {
+        height: 70vh;
+    }
+
+
+    .overlay-box-banner {
+        top: 60%;
+        width: 100%;
+    }
+
+    .sticky {
+        top: 14.2%;
+        transform: unset;
+        left: unset;
+    }
+
+    .asd {
+        left: unset;
+    }
 
 
 }
 
 
 
-@media only screen and (min-width:1420px) {
+@media only screen and (min-width:1435px) {
 
     .nav-bar-item {
         font-size: 18px;
@@ -713,6 +892,11 @@ a:hover {
 
     #btn-search {
         padding: 8px 12px;
+    }
+
+    .asd {
+        transform: unset;
+        left: unset;
     }
 
 
@@ -825,68 +1009,139 @@ a:hover {
 
 
 /* End of hotels.html page */
-.mySearch {
-    background-color: red !important;
+
+
+/* Start of Hotel Details page */
+
+#hotelDetailPage #top-header {
+    background-color: darkgoldenrod;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    transition: all 3s linear;
-    left: 0;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
-    animation: example 1s;
-    transform: scaleX(1);
+.breadcrumb {
+    background-color: transparent;
+    padding: 5px 0;
+    margin: 0;
+}
+
+#breadcrumb-wrapper {
+    background-color: #252634 !important;
+}
+
+#breadcrumb-wrapper .breadcrumb li a {
+    color: white;
+}
+
+.breadcrumb li {
+    position: relative;
+    margin-right: 10px;
+}
+
+.breadcrumb li:not(:last-of-type):after {
+    position: absolute;
+    right: 0;
+    content: ">";
+    color: #777;
+    opacity: 1.5;
+    bottom: 0;
+    font-size: 12px;
+}
+
+.breadcrumb li a {
+    text-transform: capitalize !important;
+    color: #888;
+    padding-right: 12px;
+    font-size: 12px;
+}
+
+.hotelDetail {
+    margin: 30px 0;
+}
+
+.hotel-image {
+    width: 90%;
+    height: auto;
+}
+
+.hotelDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.hotelDetail li {
+    list-style-type: none;
+}
+
+.hotel-details-images-content {
+    display: flex;
+}
+
+.hotel-details-image {
     width: 100%;
-    border-radius: 0 !important;
-
-
 }
 
-@keyframes example {
-    0% {
-        width: 67%;
-    }
-
-    100% {
-        width: 100%;
-    }
-
+.hotelDescription .deal-price {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-#form-inline-id {
-    background-color: #202353;
+.hotelDescription .book-now {
+    font-size: 24px;
+}
+
+/* .hotelDescription .p-ratings,
+.dealPrice,
+.bookNow {
+    float: right;
+} */
+
+.bookNow:hover {
+    color: orange;
+}
+
+.services {
+    border: 1px solid gray;
     border-radius: 5px;
-    height: 60px;
+}
 
+.services-header {
+    margin: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+.services-item {
+    margin: 15px;
+    font-weight: bold;
+}
+
+.services-item span {
+    margin: 0px 5px;
+}
+
+.related-hotels-items {
+    display: flex;
+    margin: 30px 0;
+}
+
+.related-hotels-items h6 {
+    margin-top: 10px;
 }
 
 
-
-.asd {
-    top: unset;
-    transform: unset;
-    left: 16.5%;
-    width: 100%;
-    transition: width 3s linear;
-
+.related-hotels-items a {
+    color: black;
 }
 
-.slick-image-only {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.related-hotels-items a:hover {
+    color: orange;
 }
 
-.slick1 {
-    width: 100%;
-    height: 100%;
-    transition: transform ease 0.3s;
+#hotelDetailPage #footer-wrap {
+    background-color: darkgoldenrod;
 }
 
-.slick1:hover {
-    transform: scale(1.2);
+#hotelDetailPage #payment {
+    background-color: darkgoldenrod;
 }

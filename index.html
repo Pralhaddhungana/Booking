@@ -26,7 +26,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="button-wrap text-right">
+                        <div class="button-wrap text-right" id="header-button">
                             <a href="#" class="header-item ">09:58AM</a>
                             <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
                                 Login
@@ -45,7 +45,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <nav class="navbar navbar-dark ">
+                        <nav class="navbar navbar-dark " id="top-navbar">
                             <div class="logo">
                                 <a href="index.html" class="logo-wrap">
                                     <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
@@ -107,7 +107,11 @@
                                         <label class="label-date">Departure</label>
                                         <input type="date" class="nav-bar-item" name="end-date">
                                     </div>
-                                    <button class="btn nav-bar-item" type="submit" id="btn-search">Search</button>
+                                    <button class="btn nav-bar-item" type="submit" id="btn-search"
+                                        onclick="myFunctions()">Search</button>
+
+                                    <!-- For popup modal
+                                        data-toggle="modal" data-target="#loginModal" -->
                                 </form>
                             </nav>
                         </div>
@@ -259,49 +263,65 @@
                         <div class="slick-content">
                             <div class="slick-image">
                                 <a href="#">
-                                    <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    <div class="slick-image-only">
+                                        <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    </div>
                                     <div class="slick-image-name">Hotels</div>
                                 </a>
                             </div>
                             <div class="slick-image">
                                 <a href="#">
-                                    <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    <div class="slick-image-only">
+                                        <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    </div>
                                     <div class="slick-image-name">Restaurants</div>
                                 </a>
                             </div>
                             <div class="slick-image">
                                 <a href="#">
-                                    <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    <div class="slick-image-only">
+                                        <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    </div>
                                     <div class="slick-image-name">Bus</div>
                                 </a>
                             </div>
                             <div class="slick-image">
                                 <a href="#">
-                                    <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    <div class="slick-image-only">
+                                        <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    </div>
                                     <div class="slick-image-name">Cable Car</div>
                                 </a>
                             </div>
                             <div class="slick-image">
                                 <a href="#">
-                                    <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    <div class="slick-image-only">
+                                        <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    </div>
                                     <div class="slick-image-name">Bus</div>
                                 </a>
                             </div>
                             <div class="slick-image">
                                 <a href="#">
-                                    <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    <div class="slick-image-only">
+                                        <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    </div>
                                     <div class="slick-image-name">Cable Car</div>
                                 </a>
                             </div>
                             <div class="slick-image">
                                 <a href="#">
-                                    <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    <div class="slick-image-only">
+                                        <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    </div>
                                     <div class="slick-image-name">Hotels</div>
                                 </a>
                             </div>
                             <div class="slick-image">
                                 <a href="#">
-                                    <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    <div class="slick-image-only">
+                                        <img src="frontend/images/P.jpg" alt="" class="slick1 img-fluid thumbnail">
+                                    </div>
                                     <div class="slick-image-name">Restaurants</div>
                                 </a>
                             </div>
@@ -333,12 +353,13 @@
                         <div class="newsletter-wrap">
                             <form action="#" class="form-wrap">
                                 <div class="container">
-                                    <h1>Save time, save money!</h1>
-                                    <p>Sign up and we'll send the best deals to you</p>
+                                    <h1 id="news1" class="newss1">Save time, save money!</h1>
+                                    <p class="newss2" id="news2">Sign up and we'll send the best deals to you</p>
                                     <div class="container input-wrap">
                                         <input type="text" class="input1" placeholder="Your email address" name="mail"
                                             required>
-                                        <input type="submit" class="input2" value="Subscribe">
+                                        <input type="submit" id="subscribeBtn" class="input2" value="Subscribe"
+                                            onclick="toggleFunction()">
                                         <!-- <div class="checkbox-wrap">
                                             <label>
                                                 <input type="checkbox" name="subscribe"> Send me a link to get the FREE
