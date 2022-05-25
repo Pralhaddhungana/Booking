@@ -771,6 +771,14 @@ a:hover {
         transform: scale(1.2);
     }
 
+    .zoom .viewer {
+        display: none;
+    }
+
+    #detailOfHotel .hotel-image {
+        width: 290px !important;
+    }
+
 
 }
 
@@ -821,6 +829,9 @@ a:hover {
         padding: 8px 12px;
     }
 
+    #detailOfHotel .hotel-image {
+        width: 290px !important;
+    }
 }
 
 /* media for laptop screen */
@@ -869,6 +880,9 @@ a:hover {
         left: unset;
     }
 
+    /* #detailOfHotel .hotel-image {
+        width: 290px !important;
+    } */
 
 }
 
@@ -1058,7 +1072,7 @@ a:hover {
 }
 
 .hotel-image {
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -1079,6 +1093,7 @@ a:hover {
 
 .hotel-details-image {
     width: 100%;
+    height: 70px;
 }
 
 .hotelDescription .deal-price {
@@ -1144,4 +1159,103 @@ a:hover {
 
 #hotelDetailPage #payment {
     background-color: darkgoldenrod;
+}
+
+/* Zoom on hover plugin */
+.zoom,
+.original {
+    position: relative;
+}
+
+.zoom {
+    display: inline-block;
+}
+
+.original {
+    cursor: crosshair;
+}
+
+/* #target {
+    width: calc(var(--t) / 2);
+} */
+
+.zoom .viewer {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.zoom .viewer img {
+    position: absolute;
+}
+
+.original:hover~div {
+    display: block;
+}
+
+.original::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.magnifier {
+    position: absolute;
+    background: #000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+}
+
+
+.magnifier,
+.viewer {
+    display: none;
+}
+
+.related-hotels-items .slick-prev {
+    top: 30%;
+}
+
+.related-hotels-items .slick-next {
+    top: 30%;
+}
+
+.travellers-review {
+    color: #2cb327
+}
+
+.related-hotels-items .slick-slide img {
+    width: 100%;
+}
+
+.services-list .fa {
+    color: rgb(50, 104, 206);
+}
+
+.basic-description-list li {
+    display: inline;
+}
+
+.faq-lists {
+    list-style-type: none;
+}
+
+.faq-intro {
+    background-color: gray;
+    height: 100%;
+}
+
+.faq-content-row-inner {
+    border: 1px solid gray;
+    background-color: white;
+    height: 50px;
 }

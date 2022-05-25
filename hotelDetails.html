@@ -101,22 +101,34 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-5 col-12">
                         <div class="detailed-hotel">
-                            <div class="container">
-                                <a href="#">
-                                    <img src="frontend/images/hotels/hotel1.jpg" alt="OYO Hotel" class="hotel-image">
-                                </a>
+                            <div class="iimage">
+                                <div class="zoom">
+
+                                    <div class="original">
+                                        <img src="frontend/images/M.jpg" id="target" class="hotel-image"
+                                            style="width: 400px;">
+                                    </div>
+
+                                    <div class="viewer">
+                                        <img src="frontend/images/M.jpg">
+                                    </div>
+
+                                    <div class="magnifier"></div>
+                                </div>
+                                <!-- <img src="frontend/images/hotels/hotel1.jpg" class="hotel-image"> -->
+
+
                             </div>
-                            <div class="container">
+                            <div class="iimage">
                                 <div class="row">
-                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-11 col-12">
-                                        <div class="hotel-details-images-content"><a href="#"><img
-                                                    src="frontend/images/hotels/hotel1.jpg"
+                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-11 col-12">
+                                        <div class="hotel-details-images-content "><a href="#">
+                                                <img src="frontend/images/K.jpg" class="hotel-details-image p-1"></a>
+                                            <a href="#"><img src="frontend/images/C.jpg"
                                                     class="hotel-details-image p-1"></a>
-                                            <a href="#"><img src="frontend/images/hotels/hotel2.jpg"
+                                            <a href="#"> <img src="frontend/images/P.jpg"
                                                     class="hotel-details-image p-1"></a>
-                                            <a href="#"> <img src="frontend/images/hotels/hotel3.jpg"
-                                                    class="hotel-details-image p-1"></a>
-                                            <a href="#"><img src="frontend/images/hotels/hotel4.jpg"
+                                            <a href="#"><img src="frontend/images/C.jpg"
                                                     class="hotel-details-image p-1"></a>
 
                                         </div>
@@ -125,27 +137,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-3 col-lg-4 col-xl-4 col-12 ">
+                    <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 col-12 ">
                         <div class="hotelDescription">
                             <div class="hotel-detail-header">
                                 <h3>OYO 175 Felicity</h3>
-                                <p style="color: gray;">Thapathali, Kathmandu</p>
+
                             </div>
                             <div class="basic-description">
-                                <!-- <p>Located in Thapathali, OYO 175 Hotel Felicity provides a restaurant and free WiFi
-                                    throughout the property.
-
-                                    Guest rooms in the hotel are equipped with a TV.
-
-                                    American and Asian breakfast options are available daily at OYO 175 Hotel Felicity.
-
-                                </p> -->
-                                <ul>
-                                    <li>Located in Thapathali, OYO 175 Hotel Felicity provides free
-                                        WiFi.</li>
-                                    <li>Guest rooms in the hotel are equipped with a TV.</li>
-                                    <li> American and Asian breakfast options are available daily at OYO 175 Hotel
-                                        Felicity.</li>
+                                <p style="color: gray;">Thapathali, Kathmandu</p>
+                                <ul class="basic-description-list">
+                                    <li><input type="radio" checked>Single bed</li>
+                                    <li><input type="radio">Double bed</li>
                                 </ul>
                             </div>
 
@@ -153,10 +155,14 @@
                                 <div class="rating-wrapper mr-3">
                                     <div class="p-ratings">
                                         <i class="star-rating">
-                                            <i class="fa fa-star text-secondary" style="color: orange !important;"></i>
-                                            <i class="fa fa-star text-secondary" style="color: orange !important;"></i>
-                                            <i class="fa fa-star text-secondary" style="color: orange !important;"></i>
-                                            <i class="fa fa-star text-secondary" style="color: orange !important;"></i>
+                                            <i class="fa fa-star text-secondary"
+                                                style="color: rgb(50, 104, 206) !important;"></i>
+                                            <i class="fa fa-star text-secondary"
+                                                style="color: rgb(50, 104, 206) !important;"></i>
+                                            <i class="fa fa-star text-secondary"
+                                                style="color: rgb(50, 104, 206) !important;"></i>
+                                            <i class="fa fa-star text-secondary"
+                                                style="color: rgb(50, 104, 206) !important;"></i>
                                             <i class="fa fa-star text-secondary"></i>
                                         </i>
                                         <span class="rating-count ml-1">
@@ -172,10 +178,10 @@
                             <div class="book-now"><a href="#" class="bookNow">Book Now !!</a></div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-3 col-lg-4 col-xl-3 col-12">
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 col-12">
                         <div class="services">
                             <h5 class="services-header">Facilities</h5>
-                            <ul>
+                            <ul class="services-list">
                                 <li class="services-item"> <span><i class="fa fa-wifi"
                                             aria-hidden="true"></i></span>Free Wifi</li>
                                 <li class="services-item"><span><i class="fa fa-cutlery" aria-hidden="true"></i></span>
@@ -184,7 +190,7 @@
                                             aria-hidden="true"></i></span> Media & Technology</li>
                                 <li class="services-item"><span><i class="fa fa-car" aria-hidden="true"></i></span>
                                     Parking</li>
-                                <li class="services-item"><span><i class="fa fa-video-camera"
+                                <li class=" services-item"><span><i class="fa fa-video-camera"
                                             aria-hidden="true"></i></span> CCTV</li>
                             </ul>
                         </div>
@@ -214,6 +220,16 @@
                                 quidem sunt consequatur saepe totam sit quis laudantium quam accusamus nobis odio nemo
                                 natus molestias voluptatum aliquid odit.
 
+                                <ul>
+
+                                    <li>Located in Thapathali, OYO 175 Hotel Felicity provides free
+                                        WiFi.</li>
+                                    <a href="https:\\www.google.com"> Hello Click Me!!</a>
+                                    <li>Guest rooms in the hotel are equipped with a TV.</li>
+                                    <li> American and Asian breakfast options are available daily at OYO 175 Hotel
+                                        Felicity.</li>
+                                </ul>
+
 
                             </div>
                             <div class="tab-pane fade p-3" id="second" role="tabpanel" aria-labelledby="second-tab"
@@ -233,47 +249,72 @@
                     <div class="col">
                         <h4>Related Hotels</h4>
                         <div class="related-hotels-items">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
-                                            class="related-hotels-image"></a>
-                                    <a href="#">
-                                        <h6>Hotel Dhaka Express</h6>
-                                    </a>
-                                    <p>Thamel</p>
-                                    <p>Rs.900</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
-                                            class="related-hotels-image"></a>
-                                    <a href="#">
-                                        <h6>Hotel Dhaka Express</h6>
-                                    </a>
-                                    <p>Thamel</p>
-                                    <p>Rs.900</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
-                                            class="related-hotels-image"></a>
-                                    <a href="#">
-                                        <h6>Hotel Dhaka Express</h6>
-                                    </a>
-                                    <p>Thamel</p>
-                                    <p>Rs.900</p>
-                                </div>
-                                <div class="col">
-                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
-                                            class="related-hotels-image"></a>
-                                    <a href="#">
-                                        <h6>Hotel Dhaka Express</h6>
-                                    </a>
-                                    <p>Thamel</p>
-                                    <p>Rs.900</p>
-                                </div>
+
+                            <div class="col">
+                                <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                        class="related-hotels-image"></a>
+                                <a href="#">
+                                    <h6>Hotel Dhaka Express</h6>
+                                </a>
+                                <p style="color: gray;">Location:Thamel</p>
+                                <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
+                                    hotel: NPR 900</p>
+                                <p class="travellers-review"><span><i class="fa fa-street-view"
+                                            aria-hidden="true"></i></span> Popular with
+                                    travellers in Nepal</p>
                             </div>
-
-
-
+                            <div class="col">
+                                <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                        class="related-hotels-image"></a>
+                                <a href="#">
+                                    <h6>Hotel Dhaka Express</h6>
+                                </a>
+                                <p style="color: gray;">Location:Thamel</p>
+                                <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
+                                    hotel: NPR 900</p>
+                                <p class="travellers-review"><span><i class="fa fa-street-view"
+                                            aria-hidden="true"></i></span> Popular with
+                                    travellers in Nepal</p>
+                            </div>
+                            <div class="col">
+                                <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                        class="related-hotels-image"></a>
+                                <a href="#">
+                                    <h6>Hotel Dhaka Express</h6>
+                                </a>
+                                <p style="color: gray;">Location:Thamel</p>
+                                <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
+                                    hotel: NPR 900</p>
+                                <p class="travellers-review"><span><i class="fa fa-street-view"
+                                            aria-hidden="true"></i></span> Popular with
+                                    travellers in Nepal</p>
+                            </div>
+                            <div class="col">
+                                <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                        class="related-hotels-image"></a>
+                                <a href="#">
+                                    <h6>Hotel Dhaka Express</h6>
+                                </a>
+                                <p style="color: gray;">Location:Thamel</p>
+                                <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
+                                    hotel: NPR 900</p>
+                                <p class="travellers-review"><span><i class="fa fa-street-view"
+                                            aria-hidden="true"></i></span> Popular with
+                                    travellers in Nepal</p>
+                            </div>
+                            <div class="col">
+                                <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                        class="related-hotels-image"></a>
+                                <a href="#">
+                                    <h6>Hotel Dhaka Express</h6>
+                                </a>
+                                <p style="color: gray;">Location:Thamel</p>
+                                <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
+                                    hotel: NPR 900</p>
+                                <p class="travellers-review"><span><i class="fa fa-street-view"
+                                            aria-hidden="true"></i></span> Popular with
+                                    travellers in Nepal</p>
+                            </div>
 
                         </div>
                     </div>
@@ -281,7 +322,79 @@
             </div>
         </section>
 
-
+        <section id="faqWrap">
+            <div class="container">
+                <div class="faq-divs">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="faq-intro">
+                                <h3 class="faq-intro-header">FAQs about hotels on Booking.com</h3>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="faq-content">
+                                <ul class="faq-ul">
+                                    <li class="faq-lists">
+                                        <button class="faq-content-row-inner">
+                                            <div class="faq-content-row-header">
+                                                <h3 class="faq-content-title"> How do I find cheap hotels on
+                                                    Booking.com?
+                                                </h3>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="faq-lists">
+                                        <button class="faq-content-row-inner">
+                                            <div class="faq-content-row-header">
+                                                <h3 class="faq-content-title"> How do I find cheap hotels on
+                                                    Booking.com?
+                                                </h3>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="faq-lists">
+                                        <button class="faq-content-row-inner">
+                                            <div class="faq-content-row-header">
+                                                <h3 class="faq-content-title"> How do I find cheap hotels on
+                                                    Booking.com?
+                                                </h3>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="faq-lists">
+                                        <button class="faq-content-row-inner">
+                                            <div class="faq-content-row-header">
+                                                <h3 class="faq-content-title"> How do I find cheap hotels on
+                                                    Booking.com?
+                                                </h3>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="faq-lists">
+                                        <button class="faq-content-row-inner">
+                                            <div class="faq-content-row-header">
+                                                <h3 class="faq-content-title"> How do I find cheap hotels on
+                                                    Booking.com?
+                                                </h3>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <li class="faq-lists">
+                                        <button class="faq-content-row-inner">
+                                            <div class="faq-content-row-header">
+                                                <h3 class="faq-content-title"> How do I find cheap hotels on
+                                                    Booking.com?
+                                                </h3>
+                                            </div>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -414,6 +527,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="frontend/jquery-3.5.1/jquery.js"></script>
+    <script src="frontend/jquery-3.5.1/zoom.js"></script>
     <script src="frontend/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
     <script src="frontend/slick-1.8.1/slick/slick.min.js"></script>
     <script src="frontend/js/query.js"></script>
