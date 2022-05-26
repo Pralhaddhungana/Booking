@@ -1026,23 +1026,33 @@ a:hover {
 
 
 /* Start of Hotel Details page */
+#hotelDetailPage {
+    background-color: #edf6ff;
+}
 
-#hotelDetailPage #top-header {
-    background-color: darkgoldenrod;
+#hotelDetailPage .nav-bar {
+    border-bottom: 1px solid gray;
+    background-color: #808080;
+    padding: 0 20px;
+}
+
+#hotelDetailPage .nav-item a {
+    color: white;
 }
 
 .breadcrumb {
     background-color: transparent;
-    padding: 5px 0;
-    margin: 0;
+    margin: 0 30px;
+
 }
 
 #breadcrumb-wrapper {
-    background-color: #252634 !important;
+    margin: 10px 40px;
+    background-color: #f3f1f1;
 }
 
 #breadcrumb-wrapper .breadcrumb li a {
-    color: white;
+    color: black;
 }
 
 .breadcrumb li {
@@ -1054,7 +1064,7 @@ a:hover {
     position: absolute;
     right: 0;
     content: ">";
-    color: #777;
+    color: black;
     opacity: 1.5;
     bottom: 0;
     font-size: 12px;
@@ -1068,12 +1078,26 @@ a:hover {
 }
 
 .hotelDetail {
-    margin: 30px 0;
+    margin: 0 40px;
+    background-color: #f3f1f1;
+}
+
+.hotelDetail .hotel-detail-wrap {
+    padding: 10px 0;
+}
+
+.hotelDetail .hotel-detail-wrap .hotel-detail-header h3 {
+    color: dodgerblue;
 }
 
 .hotel-image {
     width: 100%;
     height: auto;
+}
+
+#hotel-description-review {
+    background-color: #f3f1f1;
+    margin: 10px 40px;
 }
 
 .hotelDescription {
@@ -1096,14 +1120,91 @@ a:hover {
     height: 70px;
 }
 
-.hotelDescription .deal-price {
-    font-size: 20px;
-    font-weight: bold;
+.hotelDescription .deal-price p {
+    font-size: 14px;
+    color: rgb(80, 138, 65);
+    display: inline;
 }
 
-.hotelDescription .book-now {
-    font-size: 24px;
+.hotelDescription .deal-price .pp {
+    float: right;
 }
+
+.hotelDescription .book-now p {
+    font-size: 15px;
+    color: green;
+    font-style: italic;
+    display: inline;
+}
+
+.basic-description-list .fa {
+    padding: 0 5px;
+}
+
+.basic-description-list {
+    padding-right: 20px;
+}
+
+.bookNow {
+    float: right;
+    margin: 10px 0;
+    border-radius: 5px;
+    height: 80%;
+    font-size: 16px;
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+}
+
+#hotelDetailPage .deal-price {
+    display: inline-flex;
+}
+
+
+
+#hotelDetailPage .room-options li {
+    display: inline;
+}
+
+.bed-info {
+    padding: 10px 0;
+}
+
+.bed-info h5 {
+    color: brown;
+}
+
+.bed-info nav {
+    margin: 10px 0;
+}
+
+#hotel-description-review li {
+    list-style-type: none;
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+#hotel-description-review .hotel-description-wrap {
+    padding: 10px 0;
+}
+
+#hotel-description-review .tab-content {
+    background-color: white;
+}
+
+#reason-to-choose {
+    margin: 10px 40px;
+}
+
+#reason-to-choose .reasonsToChoose {
+    list-style-type: none;
+}
+
+.reason-to-choose-wrap {
+    background-color: #f3f1f1;
+    padding: 10px 0;
+}
+
 
 /* .hotelDescription .p-ratings,
 .dealPrice,
@@ -1124,6 +1225,7 @@ a:hover {
     margin: 15px;
     font-weight: bold;
     border-bottom: 1px solid gray;
+    color: dodgerblue;
 }
 
 .services-item {
@@ -1131,8 +1233,18 @@ a:hover {
     font-weight: bold;
 }
 
+
 .services-item span {
     margin: 0px 5px;
+}
+
+.related-hotels {
+    background-color: #f3f1f1 !important;
+    margin: 10px 40px;
+}
+
+.related-hotels .related-hotels-wrap {
+    padding: 10px 0;
 }
 
 .related-hotels-items {
@@ -1154,11 +1266,15 @@ a:hover {
 }
 
 #hotelDetailPage #footer-wrap {
-    background-color: darkgoldenrod;
+    background-color: #808080;
 }
 
 #hotelDetailPage #payment {
-    background-color: darkgoldenrod;
+    background-color: #808080;
+}
+
+#hotelDetailPage .footer-company-item h4 {
+    color: #011357;
 }
 
 /* Zoom on hover plugin */
@@ -1243,6 +1359,10 @@ a:hover {
 
 .basic-description-list li {
     display: inline;
+}
+
+.basic-description-list li label {
+    padding: 0 5px;
 }
 
 .faq-lists {

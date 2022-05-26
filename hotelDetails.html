@@ -13,185 +13,316 @@
     <link rel="stylesheet" href="frontend/slick-1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="frontend/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="frontend/css/style.css">
+    <link rel="stylesheet" href="/path/to/cdn/leaflet.css" />
 </head>
 
 <body>
     <section id="hotelDetailPage">
-        <section id="top-header">
 
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="button-wrap text-right" id="header-button">
-                            <a href="#" class="header-item ">09:58AM</a>
-                            <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
-                                Login
-                            </a>
-                            <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
-                                Register
+        <section class="nav-bar">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-dark " id="top-navbar">
+                        <div class="logo">
+                            <a href="index.html" class="logo-wrap">
+                                <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
                             </a>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <ul class="nav-bar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
 
-        </section>
-
-        <section id="nav-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <nav class="navbar navbar-dark " id="top-navbar">
-                            <div class="logo">
-                                <a href="index.html" class="logo-wrap">
-                                    <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
-                                </a>
-                            </div>
-                            <ul class="nav-bar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Home</a>
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
-                                        data-toggle="dropdown">Book</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="hotels.html">Hotel</a>
-                                        <a class="dropdown-item" href="#">Bus</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
+                                    data-toggle="dropdown">Book</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="hotels.html">Hotel</a>
+                                    <a class="dropdown-item" href="#">Bus</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign In</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
 
         </section>
 
         <section id="breadcrumb-wrapper" class="position-relative bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <ol class="breadcrumb py-3">
-                            <li>
-                                <a class=" font-weight-bold" href="#">Home</a>
-                            </li>
-                            <li>
-                                <a class=" font-weight-bold" href="#">Hotels</a>
-                            </li>
-                            <li>
-                                <a class=" font-weight-bold" href="#">OYO 175 Felicity</a>
 
-                            </li>
+            <div class="row">
+                <div class="col">
+                    <ol class="breadcrumb py-3">
+                        <li>
+                            <a class=" font-weight-bold" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class=" font-weight-bold" href="#">Hotels</a>
+                        </li>
+                        <li>
+                            <a class=" font-weight-bold" href="#">OYO 175 Felicity</a>
 
-                        </ol>
-                    </div>
+                        </li>
+
+                    </ol>
                 </div>
             </div>
         </section>
 
         <section class="hotelDetail" id="detailOfHotel">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-5 col-12">
-                        <div class="detailed-hotel">
-                            <div class="iimage">
-                                <div class="zoom">
+            <div class="hotel-detail-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-5 col-12">
+                            <div class="detailed-hotel">
+                                <div class="iimage">
+                                    <div class="zoom">
 
-                                    <div class="original">
-                                        <img src="frontend/images/M.jpg" id="target" class="hotel-image"
-                                            style="width: 400px;">
+                                        <div class="original">
+                                            <img src="frontend/images/M.jpg" id="target" class="hotel-image"
+                                                style="width: 400px;">
+                                        </div>
+
+                                        <div class="viewer">
+                                            <img src="frontend/images/M.jpg">
+                                        </div>
+
+                                        <div class="magnifier"></div>
                                     </div>
+                                    <!-- <img src="frontend/images/hotels/hotel1.jpg" class="hotel-image"> -->
 
-                                    <div class="viewer">
-                                        <img src="frontend/images/M.jpg">
-                                    </div>
 
-                                    <div class="magnifier"></div>
                                 </div>
-                                <!-- <img src="frontend/images/hotels/hotel1.jpg" class="hotel-image"> -->
+                                <div class="iimage">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-11 col-12">
+                                            <div class="hotel-details-images-content "><a href="#">
+                                                    <img src="frontend/images/K.jpg"
+                                                        class="hotel-details-image p-1"></a>
+                                                <a href="#"><img src="frontend/images/C.jpg"
+                                                        class="hotel-details-image p-1"></a>
+                                                <a href="#"> <img src="frontend/images/P.jpg"
+                                                        class="hotel-details-image p-1"></a>
+                                                <a href="#"><img src="frontend/images/C.jpg"
+                                                        class="hotel-details-image p-1"></a>
 
-
-                            </div>
-                            <div class="iimage">
-                                <div class="row">
-                                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-11 col-12">
-                                        <div class="hotel-details-images-content "><a href="#">
-                                                <img src="frontend/images/K.jpg" class="hotel-details-image p-1"></a>
-                                            <a href="#"><img src="frontend/images/C.jpg"
-                                                    class="hotel-details-image p-1"></a>
-                                            <a href="#"> <img src="frontend/images/P.jpg"
-                                                    class="hotel-details-image p-1"></a>
-                                            <a href="#"><img src="frontend/images/C.jpg"
-                                                    class="hotel-details-image p-1"></a>
-
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 col-12 ">
-                        <div class="hotelDescription">
-                            <div class="hotel-detail-header">
-                                <h3>OYO 175 Felicity</h3>
+                        <div class="col-sm-12 col-md-5 col-lg-4 col-xl-4 col-12 ">
+                            <div class="hotelDescription">
+                                <div class="hotel-detail-header">
+                                    <h3>OYO 175 Felicity</h3>
 
-                            </div>
-                            <div class="basic-description">
-                                <p style="color: gray;">Thapathali, Kathmandu</p>
-                                <ul class="basic-description-list">
-                                    <li><input type="radio" checked>Single bed</li>
-                                    <li><input type="radio">Double bed</li>
-                                </ul>
-                            </div>
+                                </div>
+                                <div class="basic-description">
+                                    <p style="color: gray;">Thapathali, Kathmandu</p>
 
-                            <div class="review-stars">
-                                <div class="rating-wrapper mr-3">
-                                    <div class="p-ratings">
-                                        <i class="star-rating">
-                                            <i class="fa fa-star text-secondary"
-                                                style="color: rgb(50, 104, 206) !important;"></i>
-                                            <i class="fa fa-star text-secondary"
-                                                style="color: rgb(50, 104, 206) !important;"></i>
-                                            <i class="fa fa-star text-secondary"
-                                                style="color: rgb(50, 104, 206) !important;"></i>
-                                            <i class="fa fa-star text-secondary"
-                                                style="color: rgb(50, 104, 206) !important;"></i>
-                                            <i class="fa fa-star text-secondary"></i>
-                                        </i>
-                                        <span class="rating-count ml-1">
-                                            (0 reviews)
-                                        </span>
+                                </div>
+
+                                <div class="review-stars">
+                                    <div class="rating-wrapper mr-3">
+                                        <div class="p-ratings">
+                                            <i class="star-rating">
+                                                <i class="fa fa-star text-secondary"
+                                                    style="color: rgb(50, 104, 206) !important;"></i>
+                                                <i class="fa fa-star text-secondary"
+                                                    style="color: rgb(50, 104, 206) !important;"></i>
+                                                <i class="fa fa-star text-secondary"
+                                                    style="color: rgb(50, 104, 206) !important;"></i>
+                                                <i class="fa fa-star text-secondary"
+                                                    style="color: rgb(50, 104, 206) !important;"></i>
+                                                <i class="fa fa-star text-secondary"></i>
+                                            </i>
+                                            <span class="rating-count ml-1">
+                                                (0 reviews)
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="deal-price">
-                                <p class="dealPrice"> Rs.1000</p>
+
+                                <div class="book-now">
+                                    <p>Limited time offer only..</p>
+                                    <button class="bookNow">Book Now</button>
+                                </div>
                             </div>
-                            <div class="book-now"><a href="#" class="bookNow">Book Now !!</a></div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 col-12">
+                            <div class="services">
+                                <h5 class="services-header">Facilities</h5>
+                                <ul class="services-list">
+                                    <li class="services-item"> <span><i class="fa fa-wifi"
+                                                aria-hidden="true"></i></span>Free Wifi</li>
+                                    <li class="services-item"><span><i class="fa fa-cutlery"
+                                                aria-hidden="true"></i></span>
+                                        Food & Drink</li>
+                                    <li class="services-item"><span><i class="fa fa-television"
+                                                aria-hidden="true"></i></span> Media & Technology</li>
+                                    <li class="services-item"><span><i class="fa fa-car" aria-hidden="true"></i></span>
+                                        Parking</li>
+                                    <li class=" services-item"><span><i class="fa fa-video-camera"
+                                                aria-hidden="true"></i></span> CCTV</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3 col-12">
-                        <div class="services">
-                            <h5 class="services-header">Facilities</h5>
-                            <ul class="services-list">
-                                <li class="services-item"> <span><i class="fa fa-wifi"
-                                            aria-hidden="true"></i></span>Free Wifi</li>
-                                <li class="services-item"><span><i class="fa fa-cutlery" aria-hidden="true"></i></span>
-                                    Food & Drink</li>
-                                <li class="services-item"><span><i class="fa fa-television"
-                                            aria-hidden="true"></i></span> Media & Technology</li>
-                                <li class="services-item"><span><i class="fa fa-car" aria-hidden="true"></i></span>
-                                    Parking</li>
-                                <li class=" services-item"><span><i class="fa fa-video-camera"
-                                            aria-hidden="true"></i></span> CCTV</li>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="bed-info">
+                                <h5>Room Details</h5>
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a href="#classic" class="nav-item nav-link active" id="classic-tab"
+                                            data-toggle="tab" role="tab" aria-controls="classic"
+                                            aria-selected="true">Classic Rooms</a>
+                                        <a href="#deluxe" class="nav-item nav-link" id="deluxe-tab" data-toggle="tab"
+                                            role="tab" aria-controls="deluxe" aria-selected="false">Deluxe Rooms
+                                        </a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tab-content">
+                                    <div class="tab-pane fade show active p-3" id="classic" role="tabpanel"
+                                        aria-labelledby="classic-tab">
+                                        <div class="room-options">
+                                            <p>Classic Triple Room</p>
+                                            <ul role="tablist">
+                                                <li class="basic-description-list"><input type="radio" id="classic1"
+                                                        name="Persons" checked><label for="classic1"><span><i
+                                                                class="fa fa-user" aria-hidden="true"></i></span>
+                                                    </label>
+
+                                                </li>
+                                                <li class="basic-description-list"><input type="radio" id="classic2"
+                                                        name="Persons"><label for="classic2"><span><i class="fa fa-user"
+                                                                aria-hidden="true"></i><i class="fa fa-user"
+                                                                aria-hidden="true"></i></span></label>
+
+                                                </li>
+                                                <li class="basic-description-list"><input type="radio" id="classic3"
+                                                        name="Persons"><label for="classic3"><span><i class="fa fa-user"
+                                                                aria-hidden="true"></i><i class="fa fa-user"
+                                                                aria-hidden="true"></i><i class="fa fa-user"
+                                                                aria-hidden="true"></i></span></label>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="tab-pane fade p-3" id="deluxe" role="tabpanel"
+                                        aria-labelledby="deluxe-tab">
+
+                                        <div class="room-options">
+                                            <p>Deluxe Triple Room</p>
+                                            <ul>
+                                                <li class="basic-description-list"><input type="radio" id="deluxe1"
+                                                        name="Person" checked><label for="deluxe1"><span><i
+                                                                class="fa fa-user" aria-hidden="true"></i></span>
+                                                    </label>
+
+                                                </li>
+                                                <li class="basic-description-list"><input type="radio" id="deluxe2"
+                                                        name="Person"><label for="deluxe2"><span><i class="fa fa-user"
+                                                                aria-hidden="true"></i><i class="fa fa-user"
+                                                                aria-hidden="true"></i></span></label>
+
+                                                </li>
+                                                <li class="basic-description-list"><input type="radio" id="deluxe3"
+                                                        name="Person"><label for="deluxe3"><span><i class="fa fa-user"
+                                                                aria-hidden="true"></i><i class="fa fa-user"
+                                                                aria-hidden="true"></i><i class="fa fa-user"
+                                                                aria-hidden="true"></i></span></label>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            Next Detail
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hotel-description-review">
+            <div class="hotel-description-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a href="#first" class="nav-item nav-link active" id="first-tab" data-toggle="tab"
+                                        role="tab" aria-controls="first" aria-selected="true">Additional
+                                        Description</a>
+                                    <a href="#second" class="nav-item nav-link" id="second-tab" data-toggle="tab"
+                                        role="tab" aria-controls="second" aria-selected="false">Reviews
+                                        <span>0</span></a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tab-content">
+                                <div class="tab-pane fade show active p-3" id="first" role="tabpanel"
+                                    aria-labelledby="first-tab">
+                                    <ul>
+
+                                        <li>Located in Thapathali, OYO 175 Hotel Felicity provides free
+                                            WiFi.</li>
+                                        <li>Guest rooms in the hotel are equipped with a TV.</li>
+                                        <li> American and Asian breakfast options are available daily at OYO 175 Hotel
+                                            Felicity.</li>
+                                        <li style="font-weight: bold;">OYO 175 Hotel Felicity has been welcoming
+                                            Booking.com
+                                            guests since 1 Sept 2018.
+                                        </li>
+                                        <li>Hotel chain/brand: OYO Rooms</li>
+                                    </ul>
+
+
+                                </div>
+                                <div class="tab-pane fade p-3" id="second" role="tabpanel" aria-labelledby="second-tab"
+                                    style="text-align: Center;">
+                                    No
+                                    Reviews Yet......
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reason-to-choose">
+            <div class="reason-to-choose-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h4>Reasons to choose OYO 175 Hotel Felicity</h4>
+                            <ul class="reasonsToChoose">
+                                <li class="reasons">Prices you can't beat</li>
+                                <li class="reasons">Booking is safe</li>
+                                <li class="reasons">Manage your bookings online</li>
+                                <li class="reasons">The staff speak English</li>
+                                <li class="reasons">Great location and facilities for couples</li>
                             </ul>
                         </div>
                     </div>
@@ -200,129 +331,88 @@
 
         </section>
 
-        <section id="hotel-description-review">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a href="#first" class="nav-item nav-link active" id="first-tab" data-toggle="tab"
-                                    role="tab" aria-controls="first" aria-selected="true">Additional
-                                    Description</a>
-                                <a href="#second" class="nav-item nav-link" id="second-tab" data-toggle="tab" role="tab"
-                                    aria-controls="second" aria-selected="false">Reviews <span>0</span></a>
-                            </div>
-                        </nav>
-                        <div class="tab-content" id="nav-tab-content">
-                            <div class="tab-pane fade show active p-3" id="first" role="tabpanel"
-                                aria-labelledby="first-tab">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, recusandae quibusdam nam
-                                quidem sunt consequatur saepe totam sit quis laudantium quam accusamus nobis odio nemo
-                                natus molestias voluptatum aliquid odit.
-
-                                <ul>
-
-                                    <li>Located in Thapathali, OYO 175 Hotel Felicity provides free
-                                        WiFi.</li>
-                                    <a href="https:\\www.google.com"> Hello Click Me!!</a>
-                                    <li>Guest rooms in the hotel are equipped with a TV.</li>
-                                    <li> American and Asian breakfast options are available daily at OYO 175 Hotel
-                                        Felicity.</li>
-                                </ul>
-
-
-                            </div>
-                            <div class="tab-pane fade p-3" id="second" role="tabpanel" aria-labelledby="second-tab"
-                                style="text-align: Center;">
-                                No
-                                Reviews Yet......
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="related-hotels">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h4>Related Hotels</h4>
-                        <div class="related-hotels-items">
+                        <div class="related-hotels-wrap">
+                            <h4>Related Hotels</h4>
+                            <div class="related-hotels-items">
 
-                            <div class="col">
-                                <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
-                                        class="related-hotels-image"></a>
-                                <a href="#">
-                                    <h6>Hotel Dhaka Express</h6>
-                                </a>
-                                <p style="color: gray;">Location:Thamel</p>
-                                <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
-                                    hotel: NPR 900</p>
-                                <p class="travellers-review"><span><i class="fa fa-street-view"
-                                            aria-hidden="true"></i></span> Popular with
-                                    travellers in Nepal</p>
-                            </div>
-                            <div class="col">
-                                <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
-                                        class="related-hotels-image"></a>
-                                <a href="#">
-                                    <h6>Hotel Dhaka Express</h6>
-                                </a>
-                                <p style="color: gray;">Location:Thamel</p>
-                                <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
-                                    hotel: NPR 900</p>
-                                <p class="travellers-review"><span><i class="fa fa-street-view"
-                                            aria-hidden="true"></i></span> Popular with
-                                    travellers in Nepal</p>
-                            </div>
-                            <div class="col">
-                                <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
-                                        class="related-hotels-image"></a>
-                                <a href="#">
-                                    <h6>Hotel Dhaka Express</h6>
-                                </a>
-                                <p style="color: gray;">Location:Thamel</p>
-                                <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
-                                    hotel: NPR 900</p>
-                                <p class="travellers-review"><span><i class="fa fa-street-view"
-                                            aria-hidden="true"></i></span> Popular with
-                                    travellers in Nepal</p>
-                            </div>
-                            <div class="col">
-                                <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
-                                        class="related-hotels-image"></a>
-                                <a href="#">
-                                    <h6>Hotel Dhaka Express</h6>
-                                </a>
-                                <p style="color: gray;">Location:Thamel</p>
-                                <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
-                                    hotel: NPR 900</p>
-                                <p class="travellers-review"><span><i class="fa fa-street-view"
-                                            aria-hidden="true"></i></span> Popular with
-                                    travellers in Nepal</p>
-                            </div>
-                            <div class="col">
-                                <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
-                                        class="related-hotels-image"></a>
-                                <a href="#">
-                                    <h6>Hotel Dhaka Express</h6>
-                                </a>
-                                <p style="color: gray;">Location:Thamel</p>
-                                <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
-                                    hotel: NPR 900</p>
-                                <p class="travellers-review"><span><i class="fa fa-street-view"
-                                            aria-hidden="true"></i></span> Popular with
-                                    travellers in Nepal</p>
-                            </div>
+                                <div class="col">
+                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                            class="related-hotels-image"></a>
+                                    <a href="#">
+                                        <h6>Hotel Dhaka Express</h6>
+                                    </a>
+                                    <p style="color: gray;">Location:Thamel</p>
+                                    <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
+                                        hotel: NPR 900</p>
+                                    <p class="travellers-review"><span><i class="fa fa-street-view"
+                                                aria-hidden="true"></i></span> Popular with
+                                        travellers in Nepal</p>
+                                </div>
+                                <div class="col">
+                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                            class="related-hotels-image"></a>
+                                    <a href="#">
+                                        <h6>Hotel Dhaka Express</h6>
+                                    </a>
+                                    <p style="color: gray;">Location:Thamel</p>
+                                    <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
+                                        hotel: NPR 900</p>
+                                    <p class="travellers-review"><span><i class="fa fa-street-view"
+                                                aria-hidden="true"></i></span> Popular with
+                                        travellers in Nepal</p>
+                                </div>
+                                <div class="col">
+                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                            class="related-hotels-image"></a>
+                                    <a href="#">
+                                        <h6>Hotel Dhaka Express</h6>
+                                    </a>
+                                    <p style="color: gray;">Location:Thamel</p>
+                                    <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
+                                        hotel: NPR 900</p>
+                                    <p class="travellers-review"><span><i class="fa fa-street-view"
+                                                aria-hidden="true"></i></span> Popular with
+                                        travellers in Nepal</p>
+                                </div>
+                                <div class="col">
+                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                            class="related-hotels-image"></a>
+                                    <a href="#">
+                                        <h6>Hotel Dhaka Express</h6>
+                                    </a>
+                                    <p style="color: gray;">Location:Thamel</p>
+                                    <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
+                                        hotel: NPR 900</p>
+                                    <p class="travellers-review"><span><i class="fa fa-street-view"
+                                                aria-hidden="true"></i></span> Popular with
+                                        travellers in Nepal</p>
+                                </div>
+                                <div class="col">
+                                    <a href="#"> <img src="frontend/images/hotels/hotel2.jpg"
+                                            class="related-hotels-image"></a>
+                                    <a href="#">
+                                        <h6>Hotel Dhaka Express</h6>
+                                    </a>
+                                    <p style="color: gray;">Location:Thamel</p>
+                                    <p style="color: gray; font-size:12px;"> Average price per night for a 3-star
+                                        hotel: NPR 900</p>
+                                    <p class="travellers-review"><span><i class="fa fa-street-view"
+                                                aria-hidden="true"></i></span> Popular with
+                                        travellers in Nepal</p>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="faqWrap">
+        <!-- <section id="faqWrap">
             <div class="container">
                 <div class="faq-divs">
                     <div class="row">
@@ -394,7 +484,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
 
@@ -528,6 +618,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="frontend/jquery-3.5.1/jquery.js"></script>
     <script src="frontend/jquery-3.5.1/zoom.js"></script>
+    <script src="frontend/jquery-3.5.1/am_map.js"></script>
     <script src="frontend/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
     <script src="frontend/slick-1.8.1/slick/slick.min.js"></script>
     <script src="frontend/js/query.js"></script>
