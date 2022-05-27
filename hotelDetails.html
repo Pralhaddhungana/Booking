@@ -16,12 +16,30 @@
     <link rel="stylesheet" href="/path/to/cdn/leaflet.css" />
 </head>
 
-<body>
+<body onscroll="myFunction()">
     <section id="hotelDetailPage">
+        <section id="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="button-wrap text-right" id="header-button">
+                            <a href="#" class="header-item ">09:58AM</a>
+                            <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
+                                Login
+                            </a>
+                            <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
+                                Register
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section class="nav-bar">
+
+        <section class="navigation-bar" id="nav-bar">
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <nav class="navbar navbar-dark " id="top-navbar">
                         <div class="logo">
                             <a href="index.html" class="logo-wrap">
@@ -106,14 +124,17 @@
                                     <div class="row">
                                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-11 col-12">
                                             <div class="hotel-details-images-content "><a href="#">
-                                                    <img src="frontend/images/K.jpg"
-                                                        class="hotel-details-image p-1"></a>
+                                                    <img src="frontend/images/K.jpg" class="hotel-details-image p-1"
+                                                        data-toggle="modal" data-target="#HotelImageModal1"></a>
                                                 <a href="#"><img src="frontend/images/C.jpg"
-                                                        class="hotel-details-image p-1"></a>
+                                                        class="hotel-details-image p-1" data-toggle="modal"
+                                                        data-target="#HotelImageModal2"></a>
                                                 <a href="#"> <img src="frontend/images/P.jpg"
-                                                        class="hotel-details-image p-1"></a>
+                                                        class="hotel-details-image p-1" data-toggle="modal"
+                                                        data-target="#HotelImageModal3"></a>
                                                 <a href="#"><img src="frontend/images/C.jpg"
-                                                        class="hotel-details-image p-1"></a>
+                                                        class="hotel-details-image p-1" data-toggle="modal"
+                                                        data-target="#HotelImageModal4"></a>
 
                                             </div>
                                         </div>
@@ -131,7 +152,21 @@
                                     <p style="color: gray;">Thapathali, Kathmandu</p>
 
                                 </div>
+                                <div class="basic-facilities">
+                                    <p>Smoking area <span><i class="fa fa-check" aria-hidden="true"></i></span></p>
+                                    <p>Front desk [24 hour] <span><i class="fa fa-check" aria-hidden="true"></i></span>
+                                    </p>
+                                    <p>Laundry service <span><i class="fa fa-check" aria-hidden="true"></i></span></p>
+                                    <p>Free Breakfast <span><i class="fa fa-check" aria-hidden="true"></i></span></p>
+                                </div>
 
+
+                                <div class="payment-options">
+                                    <h6>Payments Info:</h6>
+                                    <p>POS available <span><i class="fa fa-check" aria-hidden="true"></i></span></p>
+                                    <p>On cash <span><i class="fa fa-check" aria-hidden="true"></i></span></p>
+                                    <p>Mobile banking <span><i class="fa fa-check" aria-hidden="true"></i></span></p>
+                                </div>
                                 <div class="review-stars">
                                     <div class="rating-wrapper mr-3">
                                         <div class="p-ratings">
@@ -147,15 +182,18 @@
                                                 <i class="fa fa-star text-secondary"></i>
                                             </i>
                                             <span class="rating-count ml-1">
-                                                (0 reviews)
+                                                (7 reviews)
                                             </span>
                                         </div>
                                     </div>
                                 </div>
-
+                                <div class="normal-rate">
+                                    <p class="nr-text">Price for single bed room</p>
+                                    <p class="nr-p">NPR 900</p>
+                                </div>
 
                                 <div class="book-now">
-                                    <p>Limited time offer only..</p>
+                                    <!-- <p>Limited time offer only..</p> -->
                                     <button class="bookNow">Book Now</button>
                                 </div>
                             </div>
@@ -182,7 +220,7 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-4">
                             <div class="bed-info">
                                 <h5>Room Details</h5>
                                 <nav>
@@ -190,79 +228,148 @@
                                         <a href="#classic" class="nav-item nav-link active" id="classic-tab"
                                             data-toggle="tab" role="tab" aria-controls="classic"
                                             aria-selected="true">Classic Rooms</a>
-                                        <a href="#deluxe" class="nav-item nav-link" id="deluxe-tab" data-toggle="tab"
+                                        <a href="#deluxe" class="nav-item nav-link " id="deluxe-tab" data-toggle="tab"
                                             role="tab" aria-controls="deluxe" aria-selected="false">Deluxe Rooms
                                         </a>
                                     </div>
                                 </nav>
+
+
                                 <div class="tab-content" id="nav-tab-content">
                                     <div class="tab-pane fade show active p-3" id="classic" role="tabpanel"
                                         aria-labelledby="classic-tab">
                                         <div class="room-options">
                                             <p>Classic Triple Room</p>
-                                            <ul role="tablist">
-                                                <li class="basic-description-list"><input type="radio" id="classic1"
-                                                        name="Persons" checked><label for="classic1"><span><i
-                                                                class="fa fa-user" aria-hidden="true"></i></span>
-                                                    </label>
 
-                                                </li>
-                                                <li class="basic-description-list"><input type="radio" id="classic2"
-                                                        name="Persons"><label for="classic2"><span><i class="fa fa-user"
-                                                                aria-hidden="true"></i><i class="fa fa-user"
-                                                                aria-hidden="true"></i></span></label>
+                                            <nav>
+                                                <div class="nav nav-tabs" role="tablist">
+                                                    <ul>
+                                                        <li class="basic-description-list"><a href="#classic1price"
+                                                                id="classic1tab" data-toggle="tab" role="tab"
+                                                                aria-controls="classic1price"
+                                                                aria-selected="true"><input type="radio" id="classic1"
+                                                                    name="Persons" checked><label
+                                                                    for="classic1"><span><i class="fa fa-user"
+                                                                            aria-hidden="true"></i></span>
+                                                                </label>
+                                                            </a>
+                                                        </li>
 
-                                                </li>
-                                                <li class="basic-description-list"><input type="radio" id="classic3"
-                                                        name="Persons"><label for="classic3"><span><i class="fa fa-user"
-                                                                aria-hidden="true"></i><i class="fa fa-user"
-                                                                aria-hidden="true"></i><i class="fa fa-user"
-                                                                aria-hidden="true"></i></span></label>
 
-                                                </li>
-                                            </ul>
+                                                        <li class="basic-description-list"><a href="#classic2price"
+                                                                id="classic2tab" data-toggle="tab" role="tab"
+                                                                aria-controls="classic2price"
+                                                                aria-selected="false"><input type="radio" id="classic2"
+                                                                    name="Persons"><label for="classic2"><span><i
+                                                                            class="fa fa-user" aria-hidden="true"></i><i
+                                                                            class="fa fa-user"
+                                                                            aria-hidden="true"></i></span></label>
+                                                            </a>
+                                                        </li>
+
+
+                                                        <li class="basic-description-list"><a href="#classic3price"
+                                                                id="classic3tab" data-toggle="tab" role="tab"
+                                                                aria-controls="classic3price"
+                                                                aria-selected="false"><input type="radio" id="classic3"
+                                                                    name="Persons"><label for="classic3"><span><i
+                                                                            class="fa fa-user" aria-hidden="true"></i><i
+                                                                            class="fa fa-user" aria-hidden="true"></i><i
+                                                                            class="fa fa-user"
+                                                                            aria-hidden="true"></i></span></label>
+
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </nav>
+
                                         </div>
 
 
                                     </div>
                                     <div class="tab-pane fade p-3" id="deluxe" role="tabpanel"
                                         aria-labelledby="deluxe-tab">
-
                                         <div class="room-options">
                                             <p>Deluxe Triple Room</p>
-                                            <ul>
-                                                <li class="basic-description-list"><input type="radio" id="deluxe1"
-                                                        name="Person" checked><label for="deluxe1"><span><i
-                                                                class="fa fa-user" aria-hidden="true"></i></span>
-                                                    </label>
 
-                                                </li>
-                                                <li class="basic-description-list"><input type="radio" id="deluxe2"
-                                                        name="Person"><label for="deluxe2"><span><i class="fa fa-user"
-                                                                aria-hidden="true"></i><i class="fa fa-user"
-                                                                aria-hidden="true"></i></span></label>
+                                            <nav>
+                                                <div class="nav nav-tabs" role="tablist">
 
-                                                </li>
-                                                <li class="basic-description-list"><input type="radio" id="deluxe3"
-                                                        name="Person"><label for="deluxe3"><span><i class="fa fa-user"
-                                                                aria-hidden="true"></i><i class="fa fa-user"
-                                                                aria-hidden="true"></i><i class="fa fa-user"
-                                                                aria-hidden="true"></i></span></label>
+                                                    <li class="basic-description-list"><a href="#deluxe1price"
+                                                            id="deluxe1tab" data-toggle="tab" role="tab"
+                                                            aria-controls="deluxe1price" aria-selected="true"><input
+                                                                type="radio" id="deluxe1" name="Person" checked><label
+                                                                for="deluxe1"><span><i class="fa fa-user"
+                                                                        aria-hidden="true"></i></span>
+                                                            </label>
+                                                    </li>
+                                                    </a>
 
-                                                </li>
-                                            </ul>
+                                                    <li class="basic-description-list"><a href="#deluxe2price"
+                                                            id="deluxe2tab" data-toggle="tab" role="tab"
+                                                            aria-controls="deluxe2price" aria-selected="false"><input
+                                                                type="radio" id="deluxe2" name="Person"><label
+                                                                for="deluxe2"><span><i class="fa fa-user"
+                                                                        aria-hidden="true"></i><i class="fa fa-user"
+                                                                        aria-hidden="true"></i></span></label>
+                                                    </li>
+                                                    </a>
+
+                                                    <li class="basic-description-list"><a href="#deluxe3price"
+                                                            id="deluxe3tab" data-toggle="tab" role="tab"
+                                                            aria-controls="deluxe3price" aria-selected="false"><input
+                                                                type="radio" id="deluxe3" name="Person">
+
+                                                            <label for="deluxe3"><span><i class="fa fa-user"
+                                                                        aria-hidden="true"></i><i class="fa fa-user"
+                                                                        aria-hidden="true"></i><i class="fa fa-user"
+                                                                        aria-hidden="true"></i></span></label>
+                                                    </li>
+                                                    </a>
+                                                </div>
+                                            </nav>
+
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-                        <div class="col-6">
-                            Next Detail
+                        <div class="col-4">
+                            <div class="tab-content">
+                                <div class="tab-pane fade p-3" id="classic1price" role="tabpanel"
+                                    aria-labelledby="classic1tab">
+                                    NPR. 1100
+                                </div>
+                                <div class="tab-pane fade p-3" id="classic2price" role="tabpanel"
+                                    aria-labelledby="classic2tab">
+                                    NPR. 1500
+                                </div>
+                                <div class="tab-pane fade p-3" id="classic3price" role="tabpanel"
+                                    aria-labelledby="classic3tab">
+                                    NPR. 1900
+                                </div>
+
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade p-3" id="deluxe1price" role="tabpanel"
+                                    aria-labelledby="deluxe1tab">
+                                    NPR. 2500
+                                </div>
+                                <div class="tab-pane fade p-3" id="deluxe2price" role="tabpanel"
+                                    aria-labelledby="deluxe2tab">
+                                    NPR. 3500
+                                </div>
+                                <div class="tab-pane fade p-3" id="deluxe3price" role="tabpanel"
+                                    aria-labelledby="deluxe3tab">
+                                    NPR. 4500
+                                </div>
+
+                            </div>
+
                         </div>
+
                     </div>
-                </div>
-            </div>
         </section>
 
         <section id="hotel-description-review">
@@ -610,8 +717,35 @@
         </section>
     </section>
 
-
-
+    <!-- Modal for images -->
+    <div class="modal fade" id="HotelImageModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img src="frontend/images/K.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="HotelImageModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img src="frontend/images/C.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="HotelImageModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img src="frontend/images/P.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="HotelImageModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <img src="frontend/images/C.jpg" alt="">
+            </div>
+        </div>
+    </div>
 
 
 
