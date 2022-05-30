@@ -776,8 +776,74 @@ a:hover {
     }
 
     #detailOfHotel .hotel-image {
-        width: 290px !important;
+        width: 210px !important;
     }
+
+    .iimage .original {
+        width: unset;
+        height: unset;
+    }
+
+    #hotelDetailPage .services {
+        margin-top: 15px;
+    }
+
+    #about-booking-page .top-background-image .banner-content-header {
+        font-size: 25px !important;
+    }
+
+    #about-booking-page .overlay-banner-content {
+        padding: 20px !important;
+        text-align: center;
+    }
+
+    #about-booking-page .overlay-banner-content h4 {
+        font-size: 16px;
+    }
+
+    #about-booking-page .overlay-banner-content p {
+        font-size: 12px;
+    }
+
+    #about-booking-page .overlay-banner-wrap {
+        width: 80% !important;
+        left: 10% !important;
+    }
+
+    #about-booking-page .more-about-us {
+        top: 65vh !important;
+    }
+
+    #about-booking-page .a-bit-more-content {
+        font-size: 14px !important;
+    }
+
+    #about-booking-page .more-about-us .overlay-1-content-text,
+    .overlay-2-content-text {
+        font-size: 12px !important;
+    }
+
+    #about-booking-page .more-about-us .overlay-1 {
+        height: 40vh !important;
+    }
+
+    #about-booking-page .more-about-us .overlay-2 {
+        height: 40vh !important;
+    }
+
+    #about-booking-page #footer-wrap {
+        transform: translate(0, 65vh) !important;
+    }
+
+    #about-booking-page #payment {
+        transform: translate(0, 64vh) !important;
+    }
+
+    #about-booking-page .more-about-us .overlay-1-content .read-more,
+    .overlay-2-content .read-more {
+        font-size: 12px;
+    }
+
 
 
 }
@@ -1062,7 +1128,7 @@ a:hover {
 
 .breadcrumb {
     background-color: transparent;
-    margin: 80px 30px;
+
 
 }
 
@@ -1099,8 +1165,9 @@ a:hover {
 }
 
 .hotelDetail {
-    margin: 30px 40px;
+    margin: 10px 40px;
     background-color: #f3f1f1;
+    border-radius: 5px;
 }
 
 .hotelDetail .hotel-detail-wrap {
@@ -1119,6 +1186,7 @@ a:hover {
 #hotel-description-review {
     background-color: #f3f1f1;
     margin: 10px 40px;
+    border-radius: 5px;
 }
 
 .hotelDescription {
@@ -1190,6 +1258,10 @@ a:hover {
     display: inline;
 }
 
+.classic-room {
+    display: inline;
+}
+
 .normal-rate .nr-text {
     color: green;
 }
@@ -1247,11 +1319,12 @@ a:hover {
 }
 
 #hotel-description-review .hotel-description-wrap {
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 #hotel-description-review .tab-content {
     background-color: white;
+    border-radius: 5px;
 }
 
 #reason-to-choose {
@@ -1264,9 +1337,26 @@ a:hover {
 
 .reason-to-choose-wrap {
     background-color: #f3f1f1;
-    padding: 10px 0;
+    padding: 20px 0;
+    border-radius: 5px;
 }
 
+.reason-to-choose-wrap h4 {
+    color: sienna;
+}
+
+.reason-to-choose-wrap .reasonsToChoose {
+    margin: 5px 0;
+}
+
+#hotelDetailPage .room-options h6 {
+    color: #00487a;
+    font-size: 16px;
+}
+
+#hotelDetailPage .room-options p {
+    font-size: 14px;
+}
 
 /* .hotelDescription .p-ratings,
 .dealPrice,
@@ -1303,10 +1393,11 @@ a:hover {
 .related-hotels {
     background-color: #f3f1f1 !important;
     margin: 10px 40px;
+    border-radius: 5px;
 }
 
 .related-hotels .related-hotels-wrap {
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .related-hotels .related-hotels-wrap h4 {
@@ -1444,4 +1535,115 @@ a:hover {
     border: 1px solid gray;
     background-color: white;
     height: 50px;
+}
+
+/* About Booking Page */
+
+#about-booking-page .aboutNavBar {
+    background-color: aliceblue;
+}
+
+#about-booking-page .aboutNavBar .navbar .nav-item a {
+    color: dimgrey;
+}
+
+#about-booking-page .aboutNavBar .navbar .nav-item a:hover {
+    color: orange;
+}
+
+#about-booking-page .top-background-image .banner-content {
+    top: 40%;
+    left: 35%;
+}
+
+#about-booking-page .top-background-image .banner-content-header {
+    font-size: 60px;
+    color: white;
+}
+
+#about-booking-page .top-background-image .background-banner-image {
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+#about-booking-page .overlay-banner-wrap {
+    top: 60%;
+    left: 15%;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 70%;
+}
+
+#about-booking-page .overlay-banner-content {
+    padding: 50px;
+}
+
+#about-booking-page .more-about-us {
+    background-color: #f1f7f6;
+    top: 45vh;
+    width: 100%;
+}
+
+#about-booking-page .a-bit-more-content {
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    padding-top: 3.5%;
+}
+
+#about-booking-page .a-bit-more-content p {}
+
+#about-booking-page .more-about-us .overlay-1 {
+    background-color: blueviolet;
+    border-radius: 10px;
+    height: 50vh;
+    color: white;
+
+}
+
+#about-booking-page .more-about-us .overlay-1-header,
+.overlay-2-header {
+    padding: 7%;
+}
+
+#about-booking-page .more-about-us .overlay-1-content-text,
+.overlay-2-content-text {
+    font-size: 30px;
+    padding: 0 7%;
+}
+
+#about-booking-page .more-about-us .overlay-1-content .read-more,
+.overlay-2-content .read-more {
+    padding-left: 7%;
+    padding-top: 5%;
+}
+
+#about-booking-page .more-about-us .overlay-2 {
+    background-color: blueviolet;
+    border-radius: 10px;
+    height: 50vh;
+    color: white;
+}
+
+#about-booking-page #footer-wrap {
+    transform: translate(0, 55vh);
+}
+
+#about-booking-page #payment {
+    transform: translate(0, 54vh);
+}
+
+#about-booking-page .overlay-wrap {
+    padding: 10%;
+}
+
+#about-booking-page .more-about-us .overlay-1 a,
+.overlay-2 a {
+    color: white;
+}
+
+#about-booking-page .more-about-us .overlay-1 a:hover,
+.overlay-2 a:hover {
+    color: orange;
 }
