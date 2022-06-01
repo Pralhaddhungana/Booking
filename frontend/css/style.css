@@ -844,8 +844,19 @@ a:hover {
         font-size: 12px;
     }
 
+    #about-booking-page .top-background-image .banner-content {
+        top: 45% !important;
+        left: 27% !important;
+    }
 
+    #about-booking-page .nav-item {
+        font-size: 10px;
+    }
 
+    #about-booking-page .navbar .logo-img {
+        width: 50px;
+        height: 10px;
+    }
 }
 
 
@@ -1018,6 +1029,10 @@ a:hover {
 
 .last-minute-hotel-heading {
     margin: 20px 0;
+}
+
+#hotels-list-page #nav-bar {
+    background-color: aliceblue;
 }
 
 .hotel-card {
@@ -1537,6 +1552,9 @@ a:hover {
     height: 50px;
 }
 
+
+
+
 /* About Booking Page */
 
 #about-booking-page .aboutNavBar {
@@ -1561,6 +1579,10 @@ a:hover {
     color: white;
 }
 
+#about-booking-page .top-background-image {
+    margin-bottom: 25%;
+}
+
 #about-booking-page .top-background-image .background-banner-image {
     object-fit: cover;
     width: 100%;
@@ -1568,7 +1590,7 @@ a:hover {
 }
 
 #about-booking-page .overlay-banner-wrap {
-    top: 60%;
+    top: 65%;
     left: 15%;
     background-color: aliceblue;
     border-radius: 10px;
@@ -1581,18 +1603,23 @@ a:hover {
 
 #about-booking-page .more-about-us {
     background-color: #f1f7f6;
-    top: 45vh;
+    /* top: 45vh; */
     width: 100%;
+    height: auto;
 }
 
-#about-booking-page .a-bit-more-content {
+#about-booking-page .a-bit-more-header {
     font-size: 35px;
     width: 100%;
     text-align: center;
     padding-top: 3.5%;
 }
 
-#about-booking-page .a-bit-more-content p {}
+#about-booking-page .more-about-us .overlay-wrap {
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
 
 #about-booking-page .more-about-us .overlay-1 {
     background-color: blueviolet;
@@ -1626,18 +1653,6 @@ a:hover {
     color: white;
 }
 
-#about-booking-page #footer-wrap {
-    transform: translate(0, 55vh);
-}
-
-#about-booking-page #payment {
-    transform: translate(0, 54vh);
-}
-
-#about-booking-page .overlay-wrap {
-    padding: 10%;
-}
-
 #about-booking-page .more-about-us .overlay-1 a,
 .overlay-2 a {
     color: white;
@@ -1646,4 +1661,267 @@ a:hover {
 #about-booking-page .more-about-us .overlay-1 a:hover,
 .overlay-2 a:hover {
     color: orange;
+}
+
+#about-booking-page .fade-navigation-bar .navbar {
+    width: 40%;
+    transform: translateX(80%);
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#about-booking-page .fade-navigation-bar .nav-item {
+    padding: 0 20px;
+}
+
+#about-booking-page .fade-navigation-bar .nav-bar-nav a:hover {
+    color: orange !important;
+}
+
+.hidden-nav-bar {
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.followUs p {
+    font-size: 16px;
+    padding-top: 5px;
+    color: #00487a;
+}
+
+.follow-through {
+    list-style-type: none;
+    padding: 3%;
+    text-align: center;
+
+}
+
+.follow-through .follow-item {
+    display: inline;
+    padding: 0 20px;
+}
+
+.follow-through .follow-item a {
+    color: #000 !important;
+}
+
+.follow-through .follow-item .fab {
+    color: cornflowerblue;
+    font-size: 30px;
+}
+
+
+/* Login Page */
+
+.log-in-page {
+    background-color: aliceblue;
+}
+
+#login-page-wrap {
+    margin: 5% 35%;
+}
+
+.logo-login .img-fluid {
+    width: 70%;
+    transform: translateX(22%);
+    margin-bottom: 7%;
+}
+
+#login-page-wrap .login-wrap {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#login-page-wrap .login-wrap .login-info {
+    margin: 25px 10px;
+}
+
+#login-page-wrap .login-wrap .login-email {
+    line-height: 40px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+#login-page-wrap .login-wrap .login-password {
+    line-height: 40px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+#login-page-wrap .login-wrap .login-btn {
+    line-height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #47a1de;
+    color: white;
+}
+
+#login-page-wrap .login-wrap .forget-password {
+    margin: 10px 0;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#login-page-wrap .login-wrap .forget-password a:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+#login-page-wrap .login-wrap .signup-btn {
+    border: none;
+    margin-bottom: 30px;
+    background-color: #2cb327;
+    color: white;
+    border-radius: 5px;
+    line-height: 40px;
+    width: 60%;
+}
+
+
+/* Sign Up page */
+
+.sign-up-page {
+    background-color: aliceblue;
+}
+
+#signup-page-wrap {
+    margin: 5% 30%;
+}
+
+.logo-signup .img-fluid {
+    width: 50%;
+    transform: translateX(45%);
+    margin-bottom: 5%;
+}
+
+#signup-page-wrap .signup-wrap {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#signup-page-wrap .signup-wrap .signup-info {
+    margin: 25px 10px;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .input-fn {
+    line-height: 40px;
+    width: 49.5%;
+    padding: 0 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .input-ln {
+    line-height: 40px;
+    width: 49.5%;
+    padding: 0 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .input-en {
+    line-height: 40px;
+    padding: 0 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .input-p {
+    line-height: 40px;
+    padding: 0 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .input-rp {
+    line-height: 40px;
+    padding: 0 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .signup-birthdate {
+    line-height: 40px;
+    width: 100%;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .signup-birthdate #month {
+    width: 32.5%;
+    height: 40px;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .signup-birthdate #day {
+    width: 32.5%;
+    height: 40px;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .signup-birthdate #year {
+    width: 32.5%;
+    height: 40px;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .gender-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .male-wrap {
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 32.5%;
+    padding: 0 5px !important;
+    margin-right: 5px;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .female-wrap {
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 32.5%;
+    padding: 0 5px !important;
+    margin-right: 5px;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .custom-wrap {
+    border: 1px solid gray;
+    height: 40px;
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 32.5%;
+    padding: 0 5px !important;
+}
+
+#signup-page-wrap .signup-wrap .signup-info .gender-custom {
+    line-height: 35px;
+    width: 100%;
+    display: none;
+}
+
+#signup-page-wrap .signup-wrap .signup-btn {
+    line-height: 40px;
+    width: 50%;
+    border: none;
+    background-color: #2cb327;
+    color: white;
+    border-radius: 5px;
+}
+
+#signup-page-wrap .signup-wrap .signup-btn-wrap {
+    text-align: center;
 }

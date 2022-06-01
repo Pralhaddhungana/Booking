@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="frontend/css/style.css">
 </head>
 
-<body>
+<body onscroll="hideFunction()">
     <section id="hotelDetailPage">
         <section id="top-header">
             <div class="container">
@@ -24,10 +24,10 @@
                     <div class="col-12">
                         <div class="button-wrap text-right" id="header-button">
                             <a href="#" class="header-item ">09:58AM</a>
-                            <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
+                            <a href="Login.html" class="header-item " data-toggle="modal" data-target="#loginModal">
                                 Login
                             </a>
-                            <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
+                            <a href="Signup.html" class="header-item " data-toggle="modal" data-target="#registerModal">
                                 Register
                             </a>
                         </div>
@@ -66,7 +66,7 @@
                                 <a class="nav-link" href="AboutBooking.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Sign In</a>
+                                <a class="nav-link" href="Login.html">Sign In</a>
                             </li>
                         </ul>
                     </nav>
@@ -74,6 +74,7 @@
             </div>
 
         </section>
+
 
         <section id="breadcrumb-wrapper" class="position-relative bg-light">
 
@@ -512,7 +513,43 @@
 
 
 
+        <section class="fade-navigation-bar bg-dark" id="hide-nav-bar">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-dark " id="top-navbar">
+                        <div class="logo">
+                            <a href="index.html" class="logo-wrap">
+                                <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
+                            </a>
+                        </div>
+                        <ul class="nav-bar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
 
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
+                                    data-toggle="dropdown">Book</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="hotels.html">Hotel</a>
+                                    <a class="dropdown-item" href="#">Bus</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="AboutBooking.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign In</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </section>
 
 
 
@@ -527,7 +564,7 @@
                             <li class="footer-company-item">
                                 <h4>Company</h4>
                             </li>
-                            <li class="footer-company-item"> <a href="#">
+                            <li class="footer-company-item"> <a href="AboutBooking.html">
                                     <span><i class="fa-solid fa-caret-right"></i></span>About
                                     Booking.com</a></li>
                             <li class="footer-company-item"> <a href="#"><span><i

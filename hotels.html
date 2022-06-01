@@ -32,365 +32,407 @@
 
 </head>
 
-<body onscroll="myFunction()">
+<body onscroll="hideFunction()">
+    <section id="hotels-list-page">
 
-    <section id="top-header">
+        <section id="top-header">
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="button-wrap text-right" id="header-button">
-                        <a href="#" class="header-item ">09:58AM</a>
-                        <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
-                            Login
-                        </a>
-                        <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
-                            Register
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="nav-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <nav class="navbar navbar-dark " id="top-navbar">
-                        <div class="logo">
-                            <a href="index.html" class="logo-wrap">
-                                <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="button-wrap text-right" id="header-button">
+                            <a href="#" class="header-item ">09:58AM</a>
+                            <a href="#" class="header-item " data-toggle="modal" data-target="#loginModal">
+                                Login
+                            </a>
+                            <a href="#" class="header-item " data-toggle="modal" data-target="#registerModal">
+                                Register
                             </a>
                         </div>
-                        <ul class="nav-bar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
-                            </li>
+                    </div>
+                </div>
+            </div>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
-                                    data-toggle="dropdown">Book</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="hotels.html">Hotel</a>
-                                    <a class="dropdown-item" href="#">Bus</a>
+        </section>
+
+        <section id="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-dark " id="top-navbar">
+                            <div class="logo">
+                                <a href="index.html" class="logo-wrap">
+                                    <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
+                                </a>
+                            </div>
+                            <ul class="nav-bar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
+                                        data-toggle="dropdown">Book</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="hotels.html">Hotel</a>
+                                        <a class="dropdown-item" href="#">Bus</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="AboutBooking.html">About</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+        <section id="last-minute-hotel" class="hotelsAvailable position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="search-bar-wrap">
+                            <input type="text" class="search-bar" placeholder="Enter your location">
+                            <button class="search-bar-btn" onclick="filterSelection()" id="#myInput">Search</button>
+                        </div>
+                        <div class="last-minute-hotel-heading">
+                            <h3>Last Minute Hotels near you</h3>
+                            <p>Find a great deal on a hotel for tonight or an upcoming trip</p>
+                        </div>
+
+                        <div class="hotel-deals">
+
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="hotel-card">
+                                        <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
+                                            alt="OYO hotel">
+                                        <div class="hotel-card-content">
+                                            <header class="hotel-card-header">
+                                                <div class="hotel-deals-card-header">
+                                                    <a href="hotelDetails.html">
+                                                        <h3 class="hotel-card-title">OYO 175 Felicity</h3>
+                                                        <span class="hotel-card-subtitle"
+                                                            id="location">Thapathali</span>
+                                                    </a>
+                                                </div>
+                                            </header>
+                                            <div class="hotel-deals-price">
+                                                <div class="hotel-price-display text-right w-100">
+                                                    <div class="hotel-price-display-label">From</div>
+                                                    <div class="hotel-price-display-label-price">NPR 1357</div>
+                                                    <div class="hotel-price-display-label">For tonight</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="hotel-card">
+                                        <img src="frontend/images/hotels/hotel2.jpg" class="hotel-card-image"
+                                            alt="OYO hotel">
+                                        <div class="hotel-card-content ">
+                                            <header class="hotel-card-header">
+                                                <div class="hotel-deals-card-header">
+                                                    <a href="#">
+                                                        <h3 class="hotel-card-title">Hotel Dhaka Express</h3>
+                                                        <span class="hotel-card-subtitle" id="location">Thamel</span>
+                                                    </a>
+                                                </div>
+                                            </header>
+                                            <div class="hotel-deals-price">
+                                                <div class="hotel-price-display text-right">
+                                                    <div class="hotel-price-display-label">From</div>
+                                                    <div class="hotel-price-display-label-price">NPR 1859</div>
+                                                    <div class="hotel-price-display-label">For tonight</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="hotel-card">
+                                        <img src="frontend/images/hotels/hotel3.jpg" class="hotel-card-image"
+                                            alt="OYO hotel">
+                                        <div class="hotel-card-content ">
+                                            <header class="hotel-card-header">
+                                                <div class="hotel-deals-card-header">
+                                                    <a href="#">
+                                                        <h3 class="hotel-card-title">Hotel Royal Mantra</h3>
+                                                        <span class="hotel-card-subtitle"
+                                                            id="location">Thapathali</span>
+                                                    </a>
+                                                </div>
+                                            </header>
+                                            <div class="hotel-deals-price">
+                                                <div class="hotel-price-display text-right">
+                                                    <div class="hotel-price-display-label">From</div>
+                                                    <div class="hotel-price-display-label-price">NPR 3815</div>
+                                                    <div class="hotel-price-display-label">For tonight</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="hotel-card">
+                                        <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
+                                            alt="OYO hotel">
+                                        <div class="hotel-card-content ">
+                                            <header class="hotel-card-header">
+                                                <div class="hotel-deals-card-header">
+                                                    <a href="#">
+                                                        <h3 class="hotel-card-title">Kantipur Village</h3>
+                                                        <span class="hotel-card-subtitle"
+                                                            id="location">Thapathali</span>
+                                                    </a>
+                                                </div>
+                                            </header>
+                                            <div class="hotel-deals-price">
+                                                <div class="hotel-price-display text-right">
+                                                    <div class="hotel-price-display-label">From</div>
+                                                    <div class="hotel-price-display-label-price">NPR 8218</div>
+                                                    <div class="hotel-price-display-label">For tonight</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="hotel-card">
+                                        <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
+                                            alt="OYO hotel">
+                                        <div class="hotel-card-content ">
+                                            <header class="hotel-card-header">
+                                                <div class="hotel-deals-card-header">
+                                                    <a href="#">
+                                                        <h3 class="hotel-card-title">Hotel Peace Mountain
+                                                        </h3>
+                                                        <span class="hotel-card-subtitle"
+                                                            id="location">Thapathali</span>
+                                                    </a>
+                                                </div>
+                                            </header>
+                                            <div class="hotel-deals-price">
+                                                <div class="hotel-price-display text-right">
+                                                    <div class="hotel-price-display-label">From</div>
+                                                    <div class="hotel-price-display-label-price">NPR 1289
+                                                    </div>
+                                                    <div class="hotel-price-display-label">For tonight
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="hotel-card">
+                                        <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
+                                            alt="OYO hotel">
+                                        <div class="hotel-card-content ">
+                                            <header class="hotel-card-header">
+                                                <div class="hotel-deals-card-header">
+                                                    <a href="#">
+                                                        <h3 class="hotel-card-title">OYO 175
+                                                            Felicity</h3>
+                                                        <span class="hotel-card-subtitle" id="location">Thapathali
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </header>
+                                            <div class="hotel-deals-price">
+                                                <div class="hotel-price-display text-right">
+                                                    <div class="hotel-price-display-label">From
+                                                    </div>
+                                                    <div class="hotel-price-display-label">NPR 1357
+                                                    </div>
+                                                    <div class="hotel-price-display-label">For
+                                                        tonight</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel-deals-more">
+                            <button class="hotel-card-button">
+                                <span class="hotel-card-button-text">See more last minute hotels</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="fade-navigation-bar" id="hide-nav-bar" style="background-color:aliceblue;">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-dark " id="top-navbar">
+                            <div class="logo">
+                                <a href="index.html" class="logo-wrap">
+                                    <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
+                                </a>
+                            </div>
+                            <ul class="nav-bar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
+                                        data-toggle="dropdown">Book</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="hotels.html">Hotel</a>
+                                        <a class="dropdown-item" href="#">Bus</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="AboutBooking.html">About</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Footer part starts -->
+
+        <section id="footer-wrap">
+
+            <div class="container">
+                <div class="row">
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                        <ul>
+                            <li class="footer-company-item">
+                                <h4>Company</h4>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="AboutBooking.html">About</a>
+                            <li class="footer-company-item"> <a href="AboutBooking.html">
+                                    <span><i class="fa-solid fa-caret-right"></i></span>About
+                                    Booking.com</a></li>
+                            <li class="footer-company-item"> <a href="#"><span><i
+                                            class="fa-solid fa-caret-right"></i></span>Customer Care Service</a></li>
+                            <li class="footer-company-item"><a href="#"><span><i
+                                            class="fa-solid fa-caret-right"></i></span>Careers</a></li>
+                            <li class="footer-company-item">
+                                <img src="frontend/images/logo/booking.png" alt="" class="logo-image mt-3">
                             </li>
                         </ul>
-                    </nav>
+                    </div>
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                        <ul class="p-0">
+                            <li class="footer-company-item">
+                                <h4>Training & Support</h4>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Webinars</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Resources</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Blog</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Training for teams</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Help Center</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                        <ul class="p-0">
+                            <li class="footer-company-item">
+                                <h4>Legal Stuff</h4>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Terms & Condition</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Privacy</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                        <ul class="p-0">
+                            <li class="footer-company-item">
+                                <h4>Connect</h4>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Contact Us</a>
+                            </li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Customer Support</a>
+                            </li>
+                            <li class="footer-company-item company-address">Booking.com, Kathmandu, Nepal</li>
+                            <li class="footer-company-item">
+                                <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>+977 9830090938</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
                 </div>
+
             </div>
-        </div>
-
-    </section>
+        </section>
 
 
+        <!-- Payment Footer starts -->
 
-    <section id="last-minute-hotel" class="hotelsAvailable position-relative">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="search-bar-wrap">
-                        <input type="text" class="search-bar" placeholder="Enter your location">
-                        <button class="search-bar-btn" onclick="filterSelection()" id="#myInput">Search</button>
-                    </div>
-                    <div class="last-minute-hotel-heading">
-                        <h3>Last Minute Hotels near you</h3>
-                        <p>Find a great deal on a hotel for tonight or an upcoming trip</p>
-                    </div>
+        <section id="payment">
 
-                    <div class="hotel-deals">
-
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="hotel-card">
-                                    <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
-                                        alt="OYO hotel">
-                                    <div class="hotel-card-content">
-                                        <header class="hotel-card-header">
-                                            <div class="hotel-deals-card-header">
-                                                <a href="hotelDetails.html">
-                                                    <h3 class="hotel-card-title">OYO 175 Felicity</h3>
-                                                    <span class="hotel-card-subtitle" id="location">Thapathali</span>
-                                                </a>
-                                            </div>
-                                        </header>
-                                        <div class="hotel-deals-price">
-                                            <div class="hotel-price-display text-right w-100">
-                                                <div class="hotel-price-display-label">From</div>
-                                                <div class="hotel-price-display-label-price">NPR 1357</div>
-                                                <div class="hotel-price-display-label">For tonight</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="hotel-card">
-                                    <img src="frontend/images/hotels/hotel2.jpg" class="hotel-card-image"
-                                        alt="OYO hotel">
-                                    <div class="hotel-card-content ">
-                                        <header class="hotel-card-header">
-                                            <div class="hotel-deals-card-header">
-                                                <a href="#">
-                                                    <h3 class="hotel-card-title">Hotel Dhaka Express</h3>
-                                                    <span class="hotel-card-subtitle" id="location">Thamel</span>
-                                                </a>
-                                            </div>
-                                        </header>
-                                        <div class="hotel-deals-price">
-                                            <div class="hotel-price-display text-right">
-                                                <div class="hotel-price-display-label">From</div>
-                                                <div class="hotel-price-display-label-price">NPR 1859</div>
-                                                <div class="hotel-price-display-label">For tonight</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="hotel-card">
-                                    <img src="frontend/images/hotels/hotel3.jpg" class="hotel-card-image"
-                                        alt="OYO hotel">
-                                    <div class="hotel-card-content ">
-                                        <header class="hotel-card-header">
-                                            <div class="hotel-deals-card-header">
-                                                <a href="#">
-                                                    <h3 class="hotel-card-title">Hotel Royal Mantra</h3>
-                                                    <span class="hotel-card-subtitle" id="location">Thapathali</span>
-                                                </a>
-                                            </div>
-                                        </header>
-                                        <div class="hotel-deals-price">
-                                            <div class="hotel-price-display text-right">
-                                                <div class="hotel-price-display-label">From</div>
-                                                <div class="hotel-price-display-label-price">NPR 3815</div>
-                                                <div class="hotel-price-display-label">For tonight</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="hotel-card">
-                                    <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
-                                        alt="OYO hotel">
-                                    <div class="hotel-card-content ">
-                                        <header class="hotel-card-header">
-                                            <div class="hotel-deals-card-header">
-                                                <a href="#">
-                                                    <h3 class="hotel-card-title">Kantipur Village</h3>
-                                                    <span class="hotel-card-subtitle" id="location">Thapathali</span>
-                                                </a>
-                                            </div>
-                                        </header>
-                                        <div class="hotel-deals-price">
-                                            <div class="hotel-price-display text-right">
-                                                <div class="hotel-price-display-label">From</div>
-                                                <div class="hotel-price-display-label-price">NPR 8218</div>
-                                                <div class="hotel-price-display-label">For tonight</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="hotel-card">
-                                    <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
-                                        alt="OYO hotel">
-                                    <div class="hotel-card-content ">
-                                        <header class="hotel-card-header">
-                                            <div class="hotel-deals-card-header">
-                                                <a href="#">
-                                                    <h3 class="hotel-card-title">Hotel Peace Mountain
-                                                    </h3>
-                                                    <span class="hotel-card-subtitle" id="location">Thapathali</span>
-                                                </a>
-                                            </div>
-                                        </header>
-                                        <div class="hotel-deals-price">
-                                            <div class="hotel-price-display text-right">
-                                                <div class="hotel-price-display-label">From</div>
-                                                <div class="hotel-price-display-label-price">NPR 1289
-                                                </div>
-                                                <div class="hotel-price-display-label">For tonight
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="hotel-card">
-                                    <img src="frontend/images/hotels/hotel1.jpg" class="hotel-card-image"
-                                        alt="OYO hotel">
-                                    <div class="hotel-card-content ">
-                                        <header class="hotel-card-header">
-                                            <div class="hotel-deals-card-header">
-                                                <a href="#">
-                                                    <h3 class="hotel-card-title">OYO 175
-                                                        Felicity</h3>
-                                                    <span class="hotel-card-subtitle" id="location">Thapathali
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </header>
-                                        <div class="hotel-deals-price">
-                                            <div class="hotel-price-display text-right">
-                                                <div class="hotel-price-display-label">From
-                                                </div>
-                                                <div class="hotel-price-display-label">NPR 1357
-                                                </div>
-                                                <div class="hotel-price-display-label">For
-                                                    tonight</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="payment-wrap">
+                            <div class="payment-content">
+                                <label for="payment">
+                                    <p>Payment Mode:</p>
+                                </label>
+                                <img src="frontend/images/payment/2.jpg" alt="" class="payment-modes">
+                                <img src="frontend/images/payment/3.jpg" alt="" class="payment-modes">
+                                <img src="frontend/images/payment/4.jpg" alt="" class="payment-modes">
+                                <img src="frontend/images/payment/5.jpg" alt="" class="payment-modes">
                             </div>
                         </div>
                     </div>
-                    <div class="hotel-deals-more">
-                        <button class="hotel-card-button">
-                            <span class="hotel-card-button-text">See more last minute hotels</span>
-                        </button>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <p class="payment-privacy text-white text-right">Copyright All Right Reserved 2022. Power by
+                            Next Nepal.
+                        </p>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer part starts -->
-
-    <section id="footer-wrap">
-
-        <div class="container">
-            <div class="row">
-                <div class="footer-item col-lg-3 col-md-3 col-sm-12">
-                    <ul>
-                        <li class="footer-company-item">
-                            <h4>Company</h4>
-                        </li>
-                        <li class="footer-company-item"> <a href="#">
-                                <span><i class="fa-solid fa-caret-right"></i></span>About
-                                Booking.com</a></li>
-                        <li class="footer-company-item"> <a href="#"><span><i
-                                        class="fa-solid fa-caret-right"></i></span>Customer Care Service</a></li>
-                        <li class="footer-company-item"><a href="#"><span><i
-                                        class="fa-solid fa-caret-right"></i></span>Careers</a></li>
-                        <li class="footer-company-item">
-                            <img src="frontend/images/logo/booking.png" alt="" class="logo-image mt-3">
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-item col-lg-3 col-md-3 col-sm-12">
-                    <ul class="p-0">
-                        <li class="footer-company-item">
-                            <h4>Training & Support</h4>
-                        </li>
-                        <li class="footer-company-item">
-                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Webinars</a>
-                        </li>
-                        <li class="footer-company-item">
-                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Resources</a>
-                        </li>
-                        <li class="footer-company-item">
-                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Blog</a>
-                        </li>
-                        <li class="footer-company-item">
-                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Training for teams</a>
-                        </li>
-                        <li class="footer-company-item">
-                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Help Center</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-item col-lg-3 col-md-3 col-sm-12">
-                    <ul class="p-0">
-                        <li class="footer-company-item">
-                            <h4>Legal Stuff</h4>
-                        </li>
-                        <li class="footer-company-item">
-                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Terms & Condition</a>
-                        </li>
-                        <li class="footer-company-item">
-                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Privacy</a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="footer-item col-lg-3 col-md-3 col-sm-12">
-                    <ul class="p-0">
-                        <li class="footer-company-item">
-                            <h4>Connect</h4>
-                        </li>
-                        <li class="footer-company-item">
-                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Contact Us</a>
-                        </li>
-                        <li class="footer-company-item">
-                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Customer Support</a>
-                        </li>
-                        <li class="footer-company-item company-address">Booking.com, Kathmandu, Nepal</li>
-                        <li class="footer-company-item">
-                            <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>+977 9830090938</a>
-                        </li>
-                    </ul>
-                </div>
-
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Payment Footer starts -->
-
-    <section id="payment">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="payment-wrap">
-                        <div class="payment-content">
-                            <label for="payment">
-                                <p>Payment Mode:</p>
-                            </label>
-                            <img src="frontend/images/payment/2.jpg" alt="" class="payment-modes">
-                            <img src="frontend/images/payment/3.jpg" alt="" class="payment-modes">
-                            <img src="frontend/images/payment/4.jpg" alt="" class="payment-modes">
-                            <img src="frontend/images/payment/5.jpg" alt="" class="payment-modes">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <p class="payment-privacy text-white text-right">Copyright All Right Reserved 2022. Power by
-                        Next Nepal.
-                    </p>
-
-                </div>
-            </div>
-        </div>
+        </section>
 
     </section>
-
-
 
 
 

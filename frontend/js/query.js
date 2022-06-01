@@ -4,7 +4,20 @@
 //     list.classList.add("mySearch");
 // }
 
+// Hidden navbar for about page
 
+const hideNavbar = document.getElementById("hide-nav-bar");
+
+function hideFunction() {
+    if (window.scrollY >= 65) {
+        // hideNavbar.style.display = block;
+        hideNavbar.classList.add("hidden-nav-bar");
+    } else {
+        // hideNavbar.style.display = none;
+        // hideNavbar.style.visibility = 'hidden';
+        hideNavbar.classList.remove("hidden-nav-bar");
+    }
+}
 
 const header = document.getElementById("top-header");
 const topNav = document.getElementById("nav-bar");
@@ -187,5 +200,16 @@ function randomCheck() {
             remainingCount--;
         }
         return 0;
+    }
+}
+
+// Signup page
+
+function customGender() {
+    if (document.getElementById("custom-radio").checked) {
+        // optionalGender.classList.add("showGender");
+        document.getElementById("third-gender").style.display = "block";
+    } else {
+        document.getElementById("third-gender").style.display = "none";
     }
 }
