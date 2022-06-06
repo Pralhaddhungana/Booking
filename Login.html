@@ -10,40 +10,50 @@
     <link rel="stylesheet" href="frontend/bootstrap-4.6.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="frontend/fontawesome-free-5.15.4-web/css/fontawesome.css">
     <link rel="stylesheet" href="frontend/css/style.css">
+    <link rel="stylesheet" href="frontend/css/responsive.css">
 </head>
 
 <body class="log-in-page">
-    <section id="login-page-wrap">
-        <div class="logo-login">
-            <img src="frontend/images/logo/booking.png" class="img-fluid">
-        </div>
-        <section class="login-wrap">
-            <form action="#" method="post">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="login-info">
-                                <div class="input-wrap">
-                                    <input type="email" placeholder="Email" class="login-email" required><br><br>
-                                    <input type="password" placeholder="Password" class="login-password" required>
-                                </div><br>
-                                <button class="login-btn" type="submit">Log In</button>
-                                <div class="forget-password">
-                                    <a href="#">Forget Password?</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-10" style="margin: auto;">
+                <section id="login-page-wrap">
+                    <div class="logo-login">
+                        <img src="frontend/images/logo/booking.png" class="img-fluid">
+                    </div>
+                    <section class="login-wrap">
+                        <form action="#" method="post">
+
+                            <div class="row">
+                                <div class="col">
+                                    <div class="login-info">
+                                        <div class="input-wrap">
+                                            <input type="email" placeholder="Email" class="login-email"
+                                                required><br><br>
+                                            <input type="password" placeholder="Password" class="login-password"
+                                                required>
+                                        </div><br>
+                                        <button class="login-btn" type="submit">Log In</button>
+                                        <div class="forget-password">
+                                            <a href="#">Forget Password?</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <div class="signup-btn-wrap text-center">
-                <a href="Signup.html">
-                    <button class="signup-btn">Create new account</button>
-                </a>
-            </div>
-        </section>
 
-    </section>
+                        </form>
+                        <div class="signup-btn-wrap text-center">
+                            <a href="Signup.html">
+                                <button class="signup-btn">Create new account</button>
+                            </a>
+                        </div>
+                    </section>
+
+                </section>
+
+            </div>
+        </div>
+    </div>
 
     <script src="frontend/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
     <script src="frontend/slick-1.8.1/slick/slick.min.js"></script>

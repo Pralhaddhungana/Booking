@@ -14,7 +14,9 @@
     <!-- <link rel="stylesheet" href="frontend/fontawesome-free-5.15.4-web/css/fontawesome.css"> -->
     <link rel="stylesheet" href="frontend/font-awesome-4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="frontend/css/style.css">
+    <link rel="stylesheet" href="frontend/css/responsive.css">
 </head>
+
 
 <body onscroll="hideFunction()">
     <section id="hotelDetailPage">
@@ -24,10 +26,10 @@
                     <div class="col-12">
                         <div class="button-wrap text-right" id="header-button">
                             <a href="#" class="header-item ">09:58AM</a>
-                            <a href="Login.html" class="header-item " data-toggle="modal" data-target="#loginModal">
+                            <a href="Login.html" class="header-item ">
                                 Login
                             </a>
-                            <a href="Signup.html" class="header-item " data-toggle="modal" data-target="#registerModal">
+                            <a href="Signup.html" class="header-item ">
                                 Register
                             </a>
                         </div>
@@ -37,10 +39,10 @@
         </section>
 
 
-        <section class="navigation-bar" id="nav-bar">
+        <!-- <section class="navigation-bar" id="navbar">
             <div class="row">
                 <div class="col-12">
-                    <nav class="navbar navbar-dark " id="top-navbar">
+                    <nav class="navbar" id="top-navbar">
                         <div class="logo">
                             <a href="index.html" class="logo-wrap">
                                 <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
@@ -73,14 +75,50 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
+        <section id="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-dark " id="top-navbar">
+                            <div class="logo">
+                                <a href="index.html" class="logo-wrap">
+                                    <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
+                                </a>
+                            </div>
+                            <ul class="nav-bar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
+                                        data-toggle="dropdown">Book</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="hotels.html">Hotel</a>
+                                        <a class="dropdown-item" href="#">Bus</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="AboutBooking.html">About</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
         <section id="breadcrumb-wrapper" class="position-relative bg-light">
 
             <div class="row">
                 <div class="col">
-                    <ol class="breadcrumb py-3" style="margin-bottom: 0;">
+                    <ol class="breadcrumb py-3" style="margin-bottom: 0; box-shadow: 1px 1px 1px 1px cadetblue;">
                         <li>
                             <a class=" font-weight-bold" href="#">Home</a>
                         </li>
