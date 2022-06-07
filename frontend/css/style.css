@@ -1513,3 +1513,120 @@ a:hover {
 #signup-page-wrap .signup-wrap .signup-btn-wrap {
     text-align: center;
 }
+
+/* BookInfo page starts */
+
+#book-now-page .hotel-info-wrap {
+    margin: 20px 0;
+}
+
+#book-now-page .hotel-info {
+    border: 0.5px solid lightgray;
+    border-radius: 2px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+#book-now-page .customer-date-plan {
+    border: 0.5px solid lightgray;
+    border-radius: 2px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+#book-now-page .check-in-date::after {
+    content: "";
+    border-right: 0.5px solid lightgray;
+    display: block;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#book-now-page .check-in-date {
+    position: relative;
+}
+
+#book-now-page .stay-in::after {
+    content: "";
+    border-bottom: 0.5px solid lightgray;
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 0;
+}
+
+#book-now-page .stay-in {
+    position: relative;
+    padding: 10px 0;
+}
+
+#book-now-page .change-option a {
+    color: #47a1de;
+}
+
+#book-now-page .customer-details-wrap .customer-details {
+    border: 0.3px solid lightgray;
+    border-radius: 2px;
+    padding: 20px 15px;
+    background-color: aliceblue;
+}
+
+#book-now-page .customer-details-wrap .customer-details .info-alert {
+    background-color: #bff2bf;
+    color: darkgreen;
+    margin: 5px 0;
+    padding: 0 5px;
+    width: 50%;
+    border-radius: 3px;
+}
+
+#book-now-page .customer-details-wrap .classic-tripple-room-details {
+    border: 0.3px solid lightgray;
+    border-radius: 2px;
+    padding: 20px 15px;
+    background-color: aliceblue;
+    margin: 20px 0;
+}
+
+#book-now-page .customer-details-wrap .arrival-time-wrap {
+    border: 0.3px solid lightgray;
+    border-radius: 2px;
+    padding: 20px 15px;
+    background-color: aliceblue;
+    margin: 20px 0;
+    font-size: 14px !important;
+}
+
+#book-now-page .customer-details-wrap .price-currency-wrap {
+    border: 0.3px solid lightgray;
+}
+
+#book-now-page .customer-details-wrap .price-currency-wrap .price-wrap {
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+#book-now-page .customer-details-wrap .price-currency-wrap .currency-wrap {
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+#book-now-page .customer-details-wrap .price-currency-wrap .currency-details {
+    padding: 10px;
+}
+
+#book-now-page .customer-details-wrap .payment-schedule {
+    border: 0.3px solid lightgray;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+#book-now-page .customer-details-wrap .refund-schedule {
+    border: 0.3px solid lightgray;
+    margin: 20px 0;
+    padding: 10px;
+}

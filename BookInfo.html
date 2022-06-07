@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Details</title>
+
+
+    <link rel="stylesheet" href="frontend/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="frontend/css/style.css">
+    <link rel="stylesheet" href="frontend/css/responsive.css">
+</head>
+
+
+<body>
+
+    <section id="book-now-page">
+
+        <section id="hotelDetailPage">
+            <section id="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="button-wrap text-right" id="header-button">
+                                <a href="#" class="header-item ">09:58AM</a>
+                                <a href="Login.html" class="header-item ">
+                                    Login
+                                </a>
+                                <a href="Signup.html" class="header-item ">
+                                    Register
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav class="navbar navbar-dark " id="top-navbar">
+                                <div class="logo">
+                                    <a href="index.html" class="logo-wrap">
+                                        <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
+                                    </a>
+                                </div>
+                                <ul class="nav-bar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Home</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
+                                            data-toggle="dropdown">Book</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="hotels.html">Hotel</a>
+                                            <a class="dropdown-item" href="#">Bus</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="AboutBooking.html">About</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- <section class="hotel-info-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            <div class="hotel-info">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                        <img src="frontend/images/hotels/hotel1.jpg" alt="hotel1" class="img-fluid">
+                                    </div>
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                                        <p class="hotel-rating">Hotel</p>
+                                        <h4 class="hotel-name">OYO 175 Hotel Felicity</h4>
+                                        <p class="hotel-location">Amrit Marg, Thamel, Kathmandu, 44600 Thapathali, Nepal
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="customer-date-plan">
+                                <h6>Your booking details</h6>
+                                <div class="check-in-out" style="font-size: 14px;">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col">
+                                            <p>Check-in</p>
+                                            <div class="check-in-date">
+                                                <p class="font-weight-bold">Tue 7 Jun 2022</p>
+                                                <p style="color: gray;">From 12:00</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <p>Check-out</p>
+                                            <div class="check-out-date">
+                                                <p class="font-weight-bold">Wed 8 Jun 2022</p>
+                                                <p style="color: gray;">Until 11:00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stay-in" style="font-size: 14px;">
+                                    <p>Total length of stay:</p>
+                                    <p class="font-weight-bold">1 night</p>
+                                </div>
+                                <div class="select-in" style="font-size: 14px; padding: 10px 0;">
+                                    <p class="font-weight-bold">You selected:</p>
+                                    <p>Classic Triple Room</p>
+                                </div>
+                                <div class="change-option">
+                                    <a href="#" style="font-size: 14px;">Change your selection</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <section class="customer-details-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                            <div class="hotel-info">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                        <img src="frontend/images/hotels/hotel1.jpg" alt="hotel1" class="img-fluid">
+                                    </div>
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
+                                        <p class="hotel-rating">Hotel</p>
+                                        <h4 class="hotel-name">OYO 175 Hotel Felicity</h4>
+                                        <p class="hotel-location">Amrit Marg, Thamel, Kathmandu, 44600 Thapathali, Nepal
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customer-details">
+                                <h5>Enter your details</h5>
+                                <div class="info-alert">Almost done! Just fill in the * required info</div>
+                                <p class="py-1">Are you travelling for work?</p>
+                                <div>
+                                    <div class="d-inline">
+                                        <input type="radio" name="choose" id="yes" checked> Yes
+                                    </div>
+                                    <div class="d-inline" style="padding-left: 10px;">
+                                        <input type="radio" name="choose" id="no"> No
+                                    </div>
+                                </div>
+                                <div class="name-wrap py-2">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                            <p>First Name *</p>
+                                            <input type="text" name="firstname" class="w-100">
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                            <p>Last Name *</p>
+                                            <input type="text" name="lastname" class="w-100">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="email-wrap py-2">
+                                    <p>Email address *</p>
+                                    <input type="email" name="email">
+                                    <div class="py-2">
+                                        <p>Confirm email address *</p>
+                                        <input type="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="book-for">
+                                    <p>Who are you booking for?</p>
+                                    <input type="radio" name="bookFor" checked> I am the main guest <br>
+                                    <input type="radio" name="bookFor"> Booking is for someone else
+                                </div>
+                            </div>
+                            <div class="classic-tripple-room-details">
+                                <h4>Classic Triple Room</h4>
+                                <p class="py-1"><span><i class="fa fa-ban" aria-hidden="true"></i></span> Non-refundable
+                                    <span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                                </p>
+                                <p class="py-1"><span><i class="fa fa-ban" aria-hidden="true"></i></span> No Smoking</p>
+                                <div class="guest-details py-1">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                            <h6 class="font-weight-bold">Full guest name</h6>
+                                            <input type="text" name="guestName" class="py-1"
+                                                placeholder="First name, Last name">
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                            <div class="d-flex">
+                                                <p class="font-weight-bold mb-1"> Guest email </p>
+                                            </div>
+                                            <input type="text" name="guestEmail" class="py-1"
+                                                placeholder="Email address">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrival-time-wrap">
+                                <h5 class="py-1">Your arrival time</h5>
+                                <p class="py-1"><span><i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+                                    Your room will
+                                    be ready for check-in at 12:00</p>
+                                <p class="py-1">Add your estimated arrival time</p>
+                                <select name="arrival-time-selection" class="py-1" id="select-arrival-time">
+                                    <option value disabled selected>Please Select</option>
+                                    <option value="1">I don't know</option>
+                                    <option value="2">10:00-11:00</option>
+                                    <option value="3">11:00-12:00</option>
+                                    <option value="4">12:00-13:00</option>
+                                    <option value="5">13:00-14:00</option>
+                                    <option value="6">14:00-15:00</option>
+                                    <option value="7">15:00-16:00</option>
+                                    <option value="8">16:00-17:00</option>
+                                    <option value="9">17:00-18:00</option>
+                                    <option value="10">18:00-19:00</option>
+                                    <option value="11">19:00-20:00</option>
+                                    <option value="12">20:00-21:00</option>
+                                    <option value="13">21:00-22:00</option>
+                                    <option value="14">22:00-23:00</option>
+                                    <option value="15">23:00-00:00</option>
+                                    <option value="16">00:00-01:00 (the next day)</option>
+                                    <option value="17">01:00-02:00 (the next day)</option>
+                                </select>
+                                <p class="py-1" style="color: gray; font-size: 12px;">Time is for Thapathali time zone
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="customer-date-plan">
+                                <h6>Your booking details</h6>
+                                <div class="check-in-out" style="font-size: 14px;">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col">
+                                            <p>Check-in</p>
+                                            <div class="check-in-date">
+                                                <p class="font-weight-bold">Tue 7 Jun 2022</p>
+                                                <p style="color: gray;">From 12:00</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <p>Check-out</p>
+                                            <div class="check-out-date">
+                                                <p class="font-weight-bold">Wed 8 Jun 2022</p>
+                                                <p style="color: gray;">Until 11:00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stay-in" style="font-size: 14px;">
+                                    <p>Total length of stay:</p>
+                                    <p class="font-weight-bold">1 night</p>
+                                </div>
+                                <div class="select-in" style="font-size: 14px; padding: 10px 0;">
+                                    <p class="font-weight-bold">You selected:</p>
+                                    <p>Classic Triple Room</p>
+                                </div>
+                                <div class="change-option">
+                                    <a href="#" style="font-size: 14px;">Change your selection</a>
+                                </div>
+                            </div>
+                            <div class="price-currency-wrap">
+                                <div class="price-wrap">
+                                    <p class="font-weight-bold d-inline">Price</p>
+                                    <p class="font-weight-bold d-inline" style="float: right;">NPR 1500 * </p>
+                                    <p style="font-size: 12px; color:gray;">(your currency)</p>
+                                </div>
+                                <div class="currency-wrap mb-3">
+                                    <p class="d-inline">Property currency</p>
+                                    <p class="d-inline" style="float: right;">US$12.5</p>
+                                    <p style="font-size:12px;color:gray ;">in US$</p>
+                                    <p style="font-size: 12px; color:gray;">(your currency)</p>
+                                </div>
+                                <div class="currency-details" style="font-size: 12px;">
+                                    <p>* This price is converted to show you the approximate cost in NPR. You'll pay in
+                                        US$
+                                        or NPR. The exchange rate may change before you pay.</p><br>
+                                    <p>Bear in mind that your card issuer may charge you a foreign transaction fee.</p>
+                                </div>
+                            </div>
+                            <div class="payment-schedule">
+                                <p class="font-weight-bold">Your payment schedule</p>
+                                <p class="d-inline">Before you stay you'll pay</p>
+                                <p class="d-inline" style="float: right;">NPR 1500</p>
+                            </div>
+                            <div class="refund-schedule">
+                                <p class="font-weight-bold">How much does it cost to cancel?</p>
+                                <p class="d-inline">If you cancel, you'll pay</p>
+                                <p class="d-inline mb-0" style="float: right;">NPR 1500</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <!-- Footer part starts -->
+
+            <section id="footer-wrap">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                            <ul>
+                                <li class="footer-company-item">
+                                    <h4>Company</h4>
+                                </li>
+                                <li class="footer-company-item"> <a href="AboutBooking.html">
+                                        <span><i class="fa-solid fa-caret-right"></i></span>About
+                                        Booking.com</a></li>
+                                <li class="footer-company-item"> <a href="#"><span><i
+                                                class="fa-solid fa-caret-right"></i></span>Customer Care Service</a>
+                                </li>
+                                <li class="footer-company-item"><a href="#"><span><i
+                                                class="fa-solid fa-caret-right"></i></span>Careers</a></li>
+                                <li class="footer-company-item">
+                                    <img src="frontend/images/logo/booking.png" alt="" class="logo-image mt-3">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                            <ul class="p-0">
+                                <li class="footer-company-item">
+                                    <h4>Training & Support</h4>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Webinars</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Resources</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Blog</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Training for
+                                        teams</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Help Center</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                            <ul class="p-0">
+                                <li class="footer-company-item">
+                                    <h4>Legal Stuff</h4>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Terms &
+                                        Condition</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Privacy</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                            <ul class="p-0">
+                                <li class="footer-company-item">
+                                    <h4>Connect</h4>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Contact Us</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Customer Support</a>
+                                </li>
+                                <li class="footer-company-item company-address">Booking.com, Kathmandu, Nepal</li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>+977 9830090938</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Payment Footer starts -->
+
+            <section id="payment">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="payment-wrap">
+                                <div class="payment-content">
+                                    <label for="payment">
+                                        <p>Payment Mode:</p>
+                                    </label>
+                                    <img src="frontend/images/payment/2.jpg" alt="" class="payment-modes">
+                                    <img src="frontend/images/payment/3.jpg" alt="" class="payment-modes">
+                                    <img src="frontend/images/payment/4.jpg" alt="" class="payment-modes">
+                                    <img src="frontend/images/payment/5.jpg" alt="" class="payment-modes">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <p class="payment-privacy text-white text-right">Copyright All Right Reserved 2022. Power by
+                                Next Nepal.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <script src="frontend/jquery-3.5.1/jquery.js"></script>
+        <script src="frontend/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+        <script src="frontend/js/query.js"></script>
+</body>
+
+</html>
