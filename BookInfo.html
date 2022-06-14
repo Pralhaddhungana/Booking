@@ -136,111 +136,133 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                            <div class="hotel-info">
-                                <div class="row">
-                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                                        <img src="frontend/images/hotels/hotel1.jpg" alt="hotel1" class="img-fluid">
-                                    </div>
-                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                                        <p class="hotel-rating">Hotel</p>
-                                        <h4 class="hotel-name">OYO 175 Hotel Felicity</h4>
-                                        <p class="hotel-location">Amrit Marg, Thamel, Kathmandu, 44600 Thapathali, Nepal
-                                        </p>
+                            <form action="#" method="post">
+                                <div class="hotel-info">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                            <img src="frontend/images/hotels/hotel1.jpg" alt="hotel1" class="img-fluid">
+                                        </div>
+                                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="customer-details">
-                                <h5>Enter your details</h5>
-                                <div class="info-alert">Almost done! Just fill in the * required info</div>
-                                <p class="py-1">Are you travelling for work?</p>
-                                <div>
-                                    <div class="d-inline">
-                                        <input type="radio" name="choose" id="yes" checked> Yes
-                                    </div>
-                                    <div class="d-inline" style="padding-left: 10px;">
-                                        <input type="radio" name="choose" id="no"> No
-                                    </div>
-                                </div>
-                                <div class="name-wrap py-2">
-                                    <div class="row">
-                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                            <p>First Name *</p>
-                                            <input type="text" name="firstname" class="w-100">
-                                        </div>
-                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                            <p>Last Name *</p>
-                                            <input type="text" name="lastname" class="w-100">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="email-wrap py-2">
-                                    <p>Email address *</p>
-                                    <input type="email" name="email">
-                                    <div class="py-2">
-                                        <p>Confirm email address *</p>
-                                        <input type="email" name="email">
-                                    </div>
-                                </div>
-                                <div class="book-for">
-                                    <p>Who are you booking for?</p>
-                                    <input type="radio" name="bookFor" checked> I am the main guest <br>
-                                    <input type="radio" name="bookFor"> Booking is for someone else
-                                </div>
-                            </div>
-                            <div class="classic-tripple-room-details">
-                                <h4>Classic Triple Room</h4>
-                                <p class="py-1"><span><i class="fa fa-ban" aria-hidden="true"></i></span> Non-refundable
-                                    <span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
-                                </p>
-                                <p class="py-1"><span><i class="fa fa-ban" aria-hidden="true"></i></span> No Smoking</p>
-                                <div class="guest-details py-1">
-                                    <div class="row">
-                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                            <h6 class="font-weight-bold">Full guest name</h6>
-                                            <input type="text" name="guestName" class="py-1"
-                                                placeholder="First name, Last name">
-                                        </div>
-                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                            <div class="d-flex">
-                                                <p class="font-weight-bold mb-1"> Guest email </p>
+                                            <h4 class="hotel-name">OYO 175 Hotel Felicity</h4>
+                                            <p class="hotel-location">Amrit Marg, Thamel, Kathmandu, 44600 Thapathali,
+                                                Nepal
+                                            </p>
+                                            <p class="hotel-rating">Hotel <span><i class="fa fa-star"
+                                                        aria-hidden="true"></i><i class="fa fa-star"
+                                                        aria-hidden="true"></i><i class="fa fa-star"
+                                                        aria-hidden="true"></i></span></p>
+                                            <p style="color: #47a1de; font-size: 12px;"><span><i class="fa fa-check"
+                                                        aria-hidden="true"></i></span> City view</p>
+                                            <p style="color: #47a1de; font-size: 12px;"><span><i class="fa fa-check"
+                                                        aria-hidden="true"></i></span> Air Conditioning</p>
+                                            <div class="reserve-btn-wrap py-2">
+                                                <button type="submit" class="btn reserve-btn text-white">Reserve
+                                                    Now</button>
                                             </div>
-                                            <input type="text" name="guestEmail" class="py-1"
-                                                placeholder="Email address">
+
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="arrival-time-wrap">
-                                <h5 class="py-1">Your arrival time</h5>
-                                <p class="py-1"><span><i class="fa fa-check-square-o" aria-hidden="true"></i></span>
-                                    Your room will
-                                    be ready for check-in at 12:00</p>
-                                <p class="py-1">Add your estimated arrival time</p>
-                                <select name="arrival-time-selection" class="py-1" id="select-arrival-time">
-                                    <option value disabled selected>Please Select</option>
-                                    <option value="1">I don't know</option>
-                                    <option value="2">10:00-11:00</option>
-                                    <option value="3">11:00-12:00</option>
-                                    <option value="4">12:00-13:00</option>
-                                    <option value="5">13:00-14:00</option>
-                                    <option value="6">14:00-15:00</option>
-                                    <option value="7">15:00-16:00</option>
-                                    <option value="8">16:00-17:00</option>
-                                    <option value="9">17:00-18:00</option>
-                                    <option value="10">18:00-19:00</option>
-                                    <option value="11">19:00-20:00</option>
-                                    <option value="12">20:00-21:00</option>
-                                    <option value="13">21:00-22:00</option>
-                                    <option value="14">22:00-23:00</option>
-                                    <option value="15">23:00-00:00</option>
-                                    <option value="16">00:00-01:00 (the next day)</option>
-                                    <option value="17">01:00-02:00 (the next day)</option>
-                                </select>
-                                <p class="py-1" style="color: gray; font-size: 12px;">Time is for Thapathali time zone
-                                </p>
-                            </div>
-
+                                <div class="customer-details">
+                                    <h5>Enter your details</h5>
+                                    <div class="info-alert">Almost done! Just fill in the * required info</div>
+                                    <p class="py-1">Are you travelling for work?</p>
+                                    <div>
+                                        <div class="d-inline">
+                                            <input type="radio" name="choose" id="yes" checked> Yes
+                                        </div>
+                                        <div class="d-inline" style="padding-left: 10px;">
+                                            <input type="radio" name="choose" id="no"> No
+                                        </div>
+                                    </div>
+                                    <div class="name-wrap py-2">
+                                        <div class="row">
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                                <p>First Name *</p>
+                                                <input type="text" name="firstname" class="w-100" required>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                                <p>Last Name *</p>
+                                                <input type="text" name="lastname" class="w-100" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="email-wrap py-2">
+                                        <p>Email address *</p>
+                                        <input type="email" name="email" required>
+                                        <div class="py-2">
+                                            <p>Confirm email address *</p>
+                                            <input type="email" name="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="book-for">
+                                        <p>Who are you booking for?</p>
+                                        <input type="radio" name="bookFor" onclick="GuestAccount()" checked> I am the
+                                        main
+                                        guest <br>
+                                        <input type="radio" name="bookFor" id="book-for-guest" onclick="GuestAccount()">
+                                        Booking is for someone else
+                                    </div>
+                                </div>
+                                <div class="classic-tripple-room-details">
+                                    <h4>Classic Triple Room</h4>
+                                    <p class="py-1"><span><i class="fa fa-ban" aria-hidden="true"></i></span>
+                                        Non-refundable
+                                        <span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                                    </p>
+                                    <p class="py-1"><span><i class="fa fa-ban" aria-hidden="true"></i></span> No Smoking
+                                    </p>
+                                    <div class="guest-details py-1">
+                                        <div class="row">
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                                <h6 class="font-weight-bold">Full guest name *</h6>
+                                                <input type="text" name="guestName" class="py-1"
+                                                    placeholder="First name, Last name" required>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                                <div id="guestDetail">
+                                                    <div class="d-flex">
+                                                        <p class="font-weight-bold mb-1"> Guest email </p>
+                                                    </div>
+                                                    <input type="text" name="guestEmail" class="py-1"
+                                                        placeholder="Email address">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="arrival-time-wrap">
+                                    <h5 class="py-1">Your arrival time</h5>
+                                    <p class="py-1"><span><i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+                                        Your room will
+                                        be ready for check-in at 12:00</p>
+                                    <p class="py-1">Add your estimated arrival time</p>
+                                    <select name="arrival-time-selection" class="py-1" id="select-arrival-time">
+                                        <option value disabled selected>Please Select</option>
+                                        <option value="1">I don't know</option>
+                                        <option value="2">10:00-11:00</option>
+                                        <option value="3">11:00-12:00</option>
+                                        <option value="4">12:00-13:00</option>
+                                        <option value="5">13:00-14:00</option>
+                                        <option value="6">14:00-15:00</option>
+                                        <option value="7">15:00-16:00</option>
+                                        <option value="8">16:00-17:00</option>
+                                        <option value="9">17:00-18:00</option>
+                                        <option value="10">18:00-19:00</option>
+                                        <option value="11">19:00-20:00</option>
+                                        <option value="12">20:00-21:00</option>
+                                        <option value="13">21:00-22:00</option>
+                                        <option value="14">22:00-23:00</option>
+                                        <option value="15">23:00-00:00</option>
+                                        <option value="16">00:00-01:00 (the next day)</option>
+                                        <option value="17">01:00-02:00 (the next day)</option>
+                                    </select>
+                                    <p class="py-1" style="color: gray; font-size: 12px;">Time is for Thapathali time
+                                        zone
+                                    </p>
+                                </div>
+                            </form>
                         </div>
                         <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-12">
                             <div class="customer-date-plan">

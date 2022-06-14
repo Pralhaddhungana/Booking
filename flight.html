@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking.com</title>
+
+    <link rel="stylesheet" href="frontend/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="frontend/css/style.css">
+    <link rel="stylesheet" href="frontend/css/responsive.css">
+</head>
+
+<body>
+
+    <section id="flight-booking-page">
+
+        <section id="hotelDetailPage">
+            <section id="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="button-wrap text-right" id="header-button">
+                                <a href="#" class="header-item ">09:58AM</a>
+                                <a href="Login.html" class="header-item ">
+                                    Login
+                                </a>
+                                <a href="Signup.html" class="header-item ">
+                                    Register
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nav-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <nav class="navbar navbar-dark " id="top-navbar">
+                                <div class="logo">
+                                    <a href="index.html" class="logo-wrap">
+                                        <img src="frontend/images/logo/booking.png" alt="logo" class="logo-image">
+                                    </a>
+                                </div>
+                                <ul class="nav-bar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Home</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="nav-bar-drop1"
+                                            data-toggle="dropdown">Book</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="hotels.html">Hotel</a>
+                                            <a class="dropdown-item" href="#">Bus</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="AboutBooking.html">About</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="search-flight-wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <form action="#" method="post">
+                                <div class="search-flight">
+                                    <p class="flight-search-bar-text">Welcome! Find a flexible flight for your next
+                                        trip.
+                                    </p>
+                                    <div class="before-search-bar">
+                                        <div class="return-wrap d-inline search-topic">
+                                            <a href="#" class="dropdown dropdown-toggle" id="return-dropdown"
+                                                data-toggle="dropdown" aria-expanded="false">Return </a>
+                                            <div class="dropdown-menu" aria-labelledby="return-dropdown">
+                                                <a href="#" class="dropdown-item">One-Way</a>
+                                                <a href="#" class="dropdown-item">Multi-City</a>
+                                            </div>
+                                        </div>
+                                        <div class="no-of-customer d-inline search-topic">
+                                            <a href="#" class="dropdown dropdown-toggle" id="customer-dropdown"
+                                                data-toggle="dropdown" aria-expanded="false">1 adult </a>
+                                            <div class="dropdown-menu" aria-labelledby="customer-dropdown">
+                                                <a href="#" class="dropdown-item">One-Way</a>
+                                                <a href="#" class="dropdown-item">Multi-City</a>
+                                            </div>
+                                        </div>
+                                        <div class="seat-class d-inline search-topic">
+                                            <a href="#" class="dropdown dropdown-toggle" id="seat-class-dropdown"
+                                                data-toggle="dropdown" aria-expanded="false">Economy </a>
+                                            <div class="dropdown-menu" aria-labelledby="customer-dropdown">
+                                                <a href="#" class="dropdown-item">One-Way</a>
+                                                <a href="#" class="dropdown-item">Multi-City</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="flight-search-bar">
+                                        <div class="searchBar">
+                                            <div class="row" style="margin: auto;">
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 p-0">
+                                                    <div class="flight-from sb-head">
+                                                        <input type="text" class="FromLocation sb-item"
+                                                            placeholder="Kathmandu" required>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 p-0">
+                                                    <div class="flight-to sb-head">
+                                                        <input type="text" class="ToLocation sb-item" placeholder="To?"
+                                                            required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 p-0">
+                                                    <div class="depart-date-wrap sb-head" id="depart-date-id">
+                                                        <input type="date" class="depart-date sb-item"
+                                                            onclick="dateFunction()">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 p-0">
+                                                    <div class="return-date-wrap sb-head" id="return-date-id">
+                                                        <input type="date" class="return-date sb-item"
+                                                            onclick="dateFunction()">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 p-0">
+                                                    <div class="submit-btn-wrap sb-head">
+                                                        <button class="flight-search-btn sb-item"
+                                                            type="submit">Search</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Footer part starts -->
+
+            <section id="footer-wrap">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                            <ul>
+                                <li class="footer-company-item">
+                                    <h4>Company</h4>
+                                </li>
+                                <li class="footer-company-item"> <a href="AboutBooking.html">
+                                        <span><i class="fa-solid fa-caret-right"></i></span>About
+                                        Booking.com</a></li>
+                                <li class="footer-company-item"> <a href="#"><span><i
+                                                class="fa-solid fa-caret-right"></i></span>Customer Care Service</a>
+                                </li>
+                                <li class="footer-company-item"><a href="#"><span><i
+                                                class="fa-solid fa-caret-right"></i></span>Careers</a></li>
+                                <li class="footer-company-item">
+                                    <img src="frontend/images/logo/booking.png" alt="" class="logo-image mt-3">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                            <ul class="p-0">
+                                <li class="footer-company-item">
+                                    <h4>Training & Support</h4>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Webinars</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Free Resources</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Blog</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Training for
+                                        teams</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Help Center</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                            <ul class="p-0">
+                                <li class="footer-company-item">
+                                    <h4>Legal Stuff</h4>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Terms &
+                                        Condition</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Privacy</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="footer-item col-lg-3 col-md-3 col-sm-12">
+                            <ul class="p-0">
+                                <li class="footer-company-item">
+                                    <h4>Connect</h4>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Contact Us</a>
+                                </li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>Customer Support</a>
+                                </li>
+                                <li class="footer-company-item company-address">Booking.com, Kathmandu, Nepal</li>
+                                <li class="footer-company-item">
+                                    <a href="#"><span><i class="fa-solid fa-caret-right"></i></span>+977 9830090938</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Payment Footer starts -->
+
+            <section id="payment">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="payment-wrap">
+                                <div class="payment-content">
+                                    <label for="payment">
+                                        <p>Payment Mode:</p>
+                                    </label>
+                                    <img src="frontend/images/payment/2.jpg" alt="" class="payment-modes">
+                                    <img src="frontend/images/payment/3.jpg" alt="" class="payment-modes">
+                                    <img src="frontend/images/payment/4.jpg" alt="" class="payment-modes">
+                                    <img src="frontend/images/payment/5.jpg" alt="" class="payment-modes">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                            <p class="payment-privacy text-white text-right">Copyright All Right Reserved 2022. Power by
+                                Next Nepal.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </section>
+
+
+
+        <script src="frontend/jquery-3.5.1/jquery.js"></script>
+        <script src="frontend/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+        <script src="frontend/js/query.js"></script>
+</body>
+
+</html>

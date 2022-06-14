@@ -1,9 +1,3 @@
-// function myFunction() {
-
-//     list = document.getElementById("form-inline-id");
-//     list.classList.add("mySearch");
-// }
-
 // Hidden navbar for about page
 
 const hideNavbar = document.getElementById("hide-nav-bar");
@@ -55,52 +49,99 @@ function myFunction() {
     } else return 0;
 
 }
-/**
- * Pop Up modal in search button
- * 
- * const searchModal = document.getElementById("btn-search");
+// Cinema page
 
-function myFunctions() {
-    searchModal.classList.add("popup");
-} 
- */
+$('.cinema-slick-content').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+});
+$(".btn-collection").slick({
+    speed: 200,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
 
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        }
 
-/**
- * Toggle Text in newsletter subscribe button
- * 
- * var toggleText = document.getElementById("news1");
-var toggleTexts = document.getElementById("news2");
+    ]
+});
 
-function toggleFunction() {
-    if (toggleText.innerHTML === "Save time, save money!" || toggleTexts.innerHTML === "Sign up and we'll send the best deals to you") {
-        toggleText.innerHTML = "Sign up and we'll send the best deals to you";
-        toggleTexts.innerHTML = "Save time, save money!";
+function clickLangFilter() {
+    if (document.getElementById("language-filter-id").style.display === "none") {
+        document.getElementById("language-filter-id").style.display = "block";
     } else {
-        toggleText.innerHTML = "Save time, save money!";
-        toggleTexts.innerHTML = "Sign up and we'll send the best deals to you!";
+        document.getElementById("language-filter-id").style.display = "none";
     }
 }
- */
 
+function clickGenreFilter() {
+    if (document.getElementById("genre-filter-id").style.display === "none") {
+        document.getElementById("genre-filter-id").style.display = "block";
+    } else {
+        document.getElementById("genre-filter-id").style.display = "none";
+    }
+}
 
-// var toggleText = document.getElementById("news1");
-// var a = toggleText.innerText;
-// var toggleTexts = document.getElementById("news2");
-// var b = toggleTexts.innerText;
+function clickFormatFilter() {
+    if (document.getElementById("format-filter-id").style.display === "none") {
+        document.getElementById("format-filter-id").style.display = "block";
+    } else {
+        document.getElementById("format-filter-id").style.display = "none";
+    }
+}
 
-// function toggleFunction() {
-//     if (toggleText.innerText == a || toggleTexts.innerText == b) {
-//         toggleText.innerText = b;
-//         toggleTexts.innerText = a;
-//     } else {
-//         toggleText.innerText = a;
-//         toggleTexts.innerText = b;
-//     }
-// }
+$(".Cinema-halls").slick({
+    speed: 200,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
 
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        }
 
+    ]
+});
 
+// index page
 
 $(".slick-content").slick({
     speed: 200,
@@ -173,36 +214,6 @@ $(".testimonial-slider").slick({
 $("#target").zoom();
 
 
-
-
-
-var randomNumberBetween1to5 = Math.floor(Math.random() * 5) + 1;
-var noOfGuesses = 3;
-var remainingCount = noOfGuesses--;
-var i = 0;
-
-function randomCheck() {
-    // alert(inputRandomNumber);
-
-    var inputRandomNumber = document.getElementById("inputNumber").value;
-
-    document.getElementById("demo").innerHTML = randomNumberBetween1to5;
-
-    for (i = 0; i <= 2; i++) {
-        if (randomNumberBetween1to5 == inputRandomNumber) {
-            alert("Your guess is Correct..");
-        } else if (remainingCount < 1) {
-            alert("Sorry no more tries....");
-            document.getElementById("inputNumber").disabled = "true";
-            document.getElementById("submit").disabled = "true";
-        } else {
-            alert("Sorry Incorrect ........Remaining Attempts:" + remainingCount);
-            remainingCount--;
-        }
-        return 0;
-    }
-}
-
 // Signup page
 
 function customGender() {
@@ -212,4 +223,56 @@ function customGender() {
     } else {
         document.getElementById("third-gender").style.display = "none";
     }
+}
+
+//Book Info page
+
+function GuestAccount() {
+    if (document.getElementById("book-for-guest").checked) {
+        document.getElementById("guestDetail").style.display = "block";
+    } else {
+        document.getElementById("guestDetail").style.display = "none";
+    }
+}
+// Index page gps location
+function Mylocation() {
+    if (document.getElementById("location-track-id").click) {
+        document.getElementById("detect-my-location").style.display = "block";
+    } else {
+        document.getElementById("detect-my-location").style.display = "none";
+    }
+    var ignoreClickOnMeElement = document.getElementById('location-track-id');
+
+    document.addEventListener('click', function (event) {
+        var isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
+        if (!isClickInsideElement) {
+            document.getElementById("detect-my-location").style.display = "none";
+        }
+    });
+}
+
+// Geo Location javascript
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(savePosition, positionError, {
+            timeout: 10000
+        });
+    } else {
+        //Geolocation is not supported by this browser
+    }
+}
+
+// handle the error here
+function positionError(error) {
+    var errorCode = error.code;
+    var message = error.message;
+
+    alert(message);
+}
+
+function savePosition(position) {
+    $.post("geocoordinates.php", {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+    });
 }

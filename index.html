@@ -63,6 +63,8 @@
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="hotels.html">Hotel</a>
                                         <a class="dropdown-item" href="#">Bus</a>
+                                        <a class="dropdown-item" href="flight.html">Flights</a>
+                                        <a class="dropdown-item" href="Cinema.html">Cinemas</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
@@ -90,37 +92,51 @@
                             <p class="overlay-description p-2 mb-0">Explore the World with us. We provide the best
                                 Service on
                                 Town. So, Enjoy our booking platform to the fullest.</p>
-                            <nav class="navbar second-nav justify-content-center" id="navbarid">
+                            <form action="#" method="post">
+                                <nav class="navbar second-nav justify-content-center" id="navbarid">
 
-                                <form action="#" class="form-inline" id="form-inline-id">
-                                    <a href="hotels.html" class="nav-bar-item dropdown-toggle" id="nav-bar-drop2"
-                                        data-toggle="dropdown">Hotel</a>
-                                    <div class="dropdown-menu">
-                                        <a href="#" class="dropdown-item">Bus</a>
-                                        <a href="#" class="dropdown-item">Cable Car</a>
-                                    </div>
 
-                                    <input type="text" class="nav-bar-item" placeholder="Search for Products">
-                                    <div class="date-wrap">
-                                        <label class="label-date">Arrival</label>
-                                        <input type="date" class="nav-bar-item" name="start-date">
-                                    </div>
-                                    <div class="date-wrap">
-                                        <label class="label-date">Departure</label>
-                                        <input type="date" class="nav-bar-item" name="end-date">
-                                    </div>
-                                    <button class="btn nav-bar-item" type="submit" id="btn-search"
-                                        onclick="myFunctions()">Search</button>
+                                    <div class="form-inline" id="form-inline-id">
+                                        <a href="hotels.html" class="nav-bar-item dropdown-toggle" id="nav-bar-drop2"
+                                            data-toggle="dropdown">Hotel</a>
+                                        <div class="dropdown-menu">
+                                            <a href="#" class="dropdown-item">Bus</a>
+                                            <a href="#" class="dropdown-item">Cable Car</a>
+                                        </div>
+                                        <div onclick="Mylocation()" class="location-track-wrap" id="location-track-id">
+                                            <span><i class=" fa fa-map-marker" aria-hidden="true"></i></span>
+                                            <input type="text" class="nav-bar-item" placeholder="Kathmandu">
+                                            <span><i class="fa fa-caret-down" aria-hidden="true"
+                                                    style="color: #000;"></i></span>
+                                        </div>
 
-                                    <!-- For popup modal
+
+                                        <input type="text" class="nav-bar-item" placeholder="Search for Products">
+                                        <div class="date-wrap">
+                                            <label class="label-date">Depart</label>
+                                            <input type="date" class="nav-bar-item" name="start-date">
+                                        </div>
+                                        <div class="date-wrap">
+                                            <label class="label-date">Return</label>
+                                            <input type="date" class="nav-bar-item" name="end-date">
+                                        </div>
+                                        <button class="btn nav-bar-item" type="submit" id="btn-search"
+                                            onclick="myFunctions()">Search</button>
+
+                                        <!-- For popup modal
                                         data-toggle="modal" data-target="#loginModal" -->
-                                </form>
-                            </nav>
+                                    </div>
+                                </nav>
+                            </form>
+                            <div class="detect-wrap" id="detect-my-location" style="background-color: white;">
+                                <a href="#" onclick="getLocation();">
+                                    <span style="color: red;"></span>
+                                    <p class="detect-me">Detect current location</p>
+                                    <p class="detect-me-gps">Using GPS</p>
+                                </a>
+                                <!-- <p class="detect-me">Detect current location</p> -->
+                            </div>
                         </div>
-
-                        <!-- <div class="overlay-background position-absolute">
-
-                        </div> -->
                     </div>
                 </div>
 
@@ -354,23 +370,23 @@
 
                         <div class="newsletter-wrap">
                             <form action="#" class="form-wrap">
-                                <div class="container">
-                                    <h1 id="news1" class="newss1">Save time, save money!</h1>
-                                    <p class="newss2" id="news2">Sign up and we'll send the best deals to you</p>
-                                    <div class="container input-wrap">
-                                        <input type="text" class="input1" placeholder="Your email address" name="mail"
-                                            required>
-                                        <input type="submit" id="subscribeBtn" class="input2" value="Subscribe"
-                                            onclick="toggleFunction()">
-                                        <!-- <div class="checkbox-wrap">
+
+                                <h1 id="news1" class="newss1">Save time, save money!</h1>
+                                <p class="newss2" id="news2">Sign up and we'll send the best deals to you</p>
+                                <div class="input-wrap">
+                                    <input type="text" class="input1" placeholder="Your email address" name="mail"
+                                        required>
+                                    <input type="submit" id="subscribeBtn" class="input2" value="Subscribe"
+                                        onclick="toggleFunction()">
+                                    <!-- <div class="checkbox-wrap">
                                             <label>
                                                 <input type="checkbox" name="subscribe"> Send me a link to get the FREE
                                                 Booking.com app!
                                             </label>
                                         </div> -->
-                                    </div>
-
                                 </div>
+
+
                             </form>
 
                         </div>
@@ -383,7 +399,7 @@
         <!-- Newsletter Ends -->
 
 
-        <section class=" position-relative" id="testimonial-details">
+        <section id="testimonial-details">
             <div class="container">
 
                 <div class="row">
@@ -392,11 +408,11 @@
                             <h5>Testimonials</h5>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-sm-12">
+                    <div class="col-12">
                         <div class="testimonial-slider">
                             <div class="testimonial-content">
                                 <img src="frontend/images/DP/oscar.jpg" class="testimonial-image img-fluid mx-auto">
-                                <ul class="p-0">
+                                <ul>
                                     <li class="testimonial-list tl-1">Oscar Issac</li>
                                     <li class="testimonial-list tl-2">American Actor</li>
                                     <li class="testimonial-list tl-3">"I recommend you to use Booking.com. I am
@@ -590,7 +606,7 @@
             </div>
 
         </section>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="frontend/jquery-3.5.1/jquery.js"></script>
         <script src="frontend/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
         <script src="frontend/slick-1.8.1/slick/slick.min.js"></script>
