@@ -221,6 +221,11 @@
         height: unset;
     }
 
+    .related-hotels-items .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+
     #hotelDetailPage .services {
         margin-top: 15px;
     }
@@ -390,14 +395,22 @@
 
     /* Cinema page */
 
-    #cinema-page-wrap .cinema-top-nav .search-movies {
+    .cinema-pages-wrap .cinema-top-nav .search-movies {
         width: 150px !important;
         line-height: 30px !important;
     }
 
-    #cinema-page-wrap .cinema-top-nav .search-movies .nav-bar-nav {
+    .cinema-pages-wrap .cinema-top-nav .search-movies .nav-bar-nav {
         width: 150px !important;
         line-height: 30px !important;
+    }
+
+    .cinema-pages-wrap .cinema-slick-content .slick-next {
+        display: none;
+    }
+
+    .cinema-pages-wrap .cinema-top-nav-wrap .nav-bar-nav .nav-item {
+        display: none;
     }
 
 
@@ -472,6 +485,11 @@
         margin-top: 5px;
     }
 
+    .related-hotels-items .slick-prev,
+    .slick-next {
+        display: none !important;
+    }
+
     #detailOfHotel .hotel-image {
         width: 290px !important;
     }
@@ -513,16 +531,30 @@
         width: 99% !important;
     }
 
+    .cinema-pages-wrap .cinema-top-nav .search-movies-wrap .search-movies {
+        width: 225px;
+    }
 
+    .cinema-pages-wrap .movie-selection-wrap .movie-filter-wrap {
+        font-size: 12px;
+    }
 
+    .cinema-pages-wrap .movie-selection-wrap .movie-filter-wrap .filter-wrap .filter-item {
+        height: 355px;
+    }
 
+    .cinema-pages-wrap .movie-selection-wrap .movie-filter-wrap .filter-wrap .genre-item {
+        height: 780px;
+    }
 
-
+    .cinema-pages-wrap .movie-selection-wrap .movie-filter-wrap .filter-wrap .format-item {
+        height: 325px !important;
+    }
 }
 
 /* media for laptop screen */
 
-@media only screen and (max-width:1430px) and (min-width:1024px) {
+@media only screen and (max-width:1430px) and (min-width:1022px) {
 
     .nav-bar-item {
         font-size: 16px;
@@ -560,9 +592,31 @@
         left: unset;
     }
 
+    .related-hotels-items .slick-prev,
+    .related-hotels-items .slick-next {
+        display: none !important;
+    }
+
+    .related-hotels-items .slick-prev::before {
+        content: "\f0d9";
+        font-family: FontAwesome;
+        color: #000;
+        font-size: 20px;
+    }
+
+    .related-hotels-items .slick-next::after {
+        content: "\f0da";
+        font-family: FontAwesome;
+        color: #000;
+        font-size: 20px;
+    }
+
     /* #detailOfHotel .hotel-image {
         width: 290px !important;
     } */
+    .cinema-pages-wrap .cinema-top-nav .search-movies-wrap .search-movies {
+        width: 430px;
+    }
 
 }
 
@@ -593,6 +647,23 @@
         left: unset;
     }
 
+    .related-hotels-items .slick-prev,
+    .related-hotels-items .slick-next {
+        display: none !important;
+    }
 
+    .related-hotels-items .slick-prev::before {
+        content: "\f0d9";
+        font-family: FontAwesome;
+        color: #000;
+        font-size: 20px;
+    }
+
+    .related-hotels-items .slick-next::after {
+        content: "\f0da";
+        font-family: FontAwesome;
+        color: #000;
+        font-size: 20px;
+    }
 
 }

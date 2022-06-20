@@ -50,12 +50,15 @@ function myFunction() {
 
 }
 // Cinema page
-
-$('.cinema-slick-content').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+$(document).ready(function () {
+    $('.cinema-slick-content').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+    }).slickAnimation();
 });
 $(".btn-collection").slick({
     speed: 200,

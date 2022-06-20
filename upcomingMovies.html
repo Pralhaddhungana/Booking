@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Cinema</title>
+
+    <link rel="stylesheet" href="frontend/bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="frontend/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="frontend/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="frontend/css/style.css">
+    <link rel="stylesheet" href="frontend/css/responsive.css">
+</head>
+
+<body>
+
+    <section id="upcoming-cinema-page-wrap" class="cinema-pages-wrap">
+
+        <section class="cinema-top-nav-wrap">
+            <div class="cinema-top-nav">
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="index.html" class="logo-wrap">
+                            <img src="frontend/images/logo/booking.png" alt="" class="logo-image">
+                        </a>
+                    </div>
+                    <div class="search-movies-wrap">
+                        <input type="text" class="search-movies" placeholder="Search for Movies">
+                    </div>
+                    <ul class="nav-bar-nav">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="cinema-top-nav-id"
+                                data-toggle="dropdown">Kathmandu</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Kathmandu</a>
+                                <a href="#" class="dropdown-item">Bhaktapur</a>
+                                <a href="#" class="dropdown-item">Chitwan</a>
+                                <a href="#" class="dropdown-item">Birgunj</a>
+                                <a href="#" class="dropdown-item">Pokhara</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" id="sign-in-btn-id">
+                            <a href="Login.html" class="sign-in-btn">Log in</a>
+                        </li>
+                        <li class="nav-item" id="sign-up-btn-id">
+                            <a href="Signup.html" class="sign-up-btn">Sign up</a>
+                        </li>
+
+                    </ul>
+                    <div class="option-bar-wrap" style="font-size: 20px;">
+                        <a href="#" style="color: #22397e;">
+                            <div class="option-bar"><span><i class="fa fa-bars" aria-hidden="true"></i></span></div>
+                        </a>
+                    </div>
+
+                </nav>
+            </div>
+        </section>
+
+        <section class="movie-selection-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                        <div class="movie-filter-wrap">
+                            <h3 class="py-3">Filters</h3>
+                            <div class="m-filters">
+                                <div class="filter-wrap language-wrap mb-3">
+                                    <div class="filter-header lang-header">
+                                        <p class="lang-head d-inline" id="lang-filter-id" onclick="clickLangFilter()">
+                                            <span><i class="fa fa-angle-down" aria-hidden="true"
+                                                    style="margin: 0 5px;"></i></span> Languages
+                                        </p>
+
+                                        <a href="#">
+                                            <p class="filter-clear d-inline float-right">
+                                                Clear
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="filter-item lang-item" id="language-filter-id">
+                                        <a href="#" class="lang-hindi filter-list">
+                                            <button class="btn filter-btn lang-btn">Hindi</button> </a>
+                                        <a href="#" class="lang-english filter-list">
+                                            <button class="btn filter-btn lang-btn">English</button> </a>
+                                        <a href="#" class="lang-marathi filter-list">
+                                            <button class="btn filter-btn lang-btn">Marathi</button></a>
+                                        <a href="#" class="lang-kannada filter-list">
+                                            <button class="btn filter-btn lang-btn">Kannada</button></a>
+                                        <a href="#" class="lang-malayalam filter-list">
+                                            <button class="btn filter-btn lang-btn">Malayalam</button></a>
+                                        <a href="#" class="lang-gujarathi filter-list">
+                                            <button class="btn filter-btn lang-btn">Gujarati</button></a>
+                                        <a href="#" class="lang-tamil filter-list">
+                                            <button class="btn filter-btn lang-btn">Tamil</button></a>
+                                        <a href="#" class="lang-telegu filter-list">
+                                            <button class="btn filter-btn lang-btn">Telegu</button></a>
+                                    </div>
+                                </div>
+                                <div class="filter-wrap genre-wrap mb-3">
+                                    <div class="filter-header genre-header">
+
+                                        <p class="genre-head d-inline" id="gen-filter-id" onclick="clickGenreFilter()">
+                                            <span><i class="fa fa-angle-down" aria-hidden="true"
+                                                    style="margin: 0 5px;"></i></span> Genre</p>
+
+                                        <a href="#">
+                                            <p class="filter-clear d-inline float-right" onclick="clickGenreFilter()">
+                                                Clear
+                                            </p>
+                                        </a>
+                                    </div>
+                                    <div class="filter-item genre-item" id="genre-filter-id">
+                                        <a href="#" class="genre-action filter-list">
+                                            <button class="btn filter-btn">Action</button></a>
+                                        <a href="#" class="genre-drama filter-list">
+                                            <button class="btn filter-btn">Drama</button> </a>
+                                        <a href="#" class="genre-comedy filter-list">
+                                            <button class="btn filter-btn">Comedy</button> </a>
+                                        <a href="#" class="btn genre-romantic filter-list">
+                                            <button class="btn filter-btn">Romantic</button></a>
+                                        <a href="#" class="genre-adventure filter-list">
+                                            <button class="btn filter-btn">Adventure</button></a>
+                                        <a href="#" class="genre-thriller filter-list">
+                                            <button class="btn filter-btn">Thriller</button></a>
+                                        <a href="#" class="genre-animation filter-list">
+                                            <button class="btn filter-btn">Animation</button></a>
+                                        <a href="#" class="genre-biography filter-list">
+                                            <button class="btn filter-btn">Biography</button></a>
+                                        <a href="#" class="genre-historical filter-list">
+                                            <button class="btn filter-btn">Historical</button></a>
+                                        <a href="#" class="genre-period filter-list">
+                                            <button class="btn filter-btn">Period</button></a>
+                                        <a href="#" class="genre-social filter-list">
+                                            <button class="btn filter-btn">Social</button></a>
+                                        <a href="#" class="genre-classic filter-list">
+                                            <button class="btn filter-btn">Classic</button></a>
+                                        <a href="#" class="genre-crime filter-list">
+                                            <button class="btn filter-btn">Crime</button></a>
+                                        <a href="#" class="genre-family filter-list">
+                                            <button class="btn filter-btn">Family</button></a>
+                                        <a href="#" class="genre-fantasy filter-list">
+                                            <button class="btn filter-btn">Fantasy</button></a>
+                                        <a href="#" class="genre-horror filter-list">
+                                            <button class="btn filter-btn">Horror</button></a>
+                                        <a href="#" class="genre-musical filter-list">
+                                            <button class="btn filter-btn">Musical</button></a>
+                                        <a href="#" class="genre-scifi filter-list">
+                                            <button class="btn filter-btn">Sci-Fi</button></a>
+                                    </div>
+                                </div>
+                                <div class="filter-wrap format-wrap mb-3">
+                                    <div class="filter-header format-header">
+
+                                        <p class="format-head d-inline" id="form-filter-id"
+                                            onclick="clickFormatFilter()">
+                                            <span><i class="fa fa-angle-down" aria-hidden="true"
+                                                    style="margin: 0 5px;"></i></span> Format</p>
+
+                                        <a href="#">
+                                            <p class="filter-clear d-inline float-right" onclick="clickFormatFilter()">
+                                                Clear
+                                            </p>
+                                        </a>
+                                        <div class="filter-item lang-item" id="format-filter-id">
+                                            <button class="btn filter-btn lang-btn">Kannada</button></a>
+                                            <a href="#" class="lang-malayalam filter-list">
+                                                <button class="btn filter-btn lang-btn">Malayalam</button></a>
+                                            <a href="#" class="lang-hindi filter-list">
+                                                <button class="btn filter-btn lang-btn">Hindi</button> </a>
+                                            <a href="#" class="lang-english filter-list">
+                                                <button class="btn filter-btn lang-btn">English</button> </a>
+                                            <a href="#" class="lang-marathi filter-list">
+                                                <button class="btn filter-btn lang-btn">Marathi</button></a>
+                                            <a href="#" class="lang-gujarathi filter-list">
+                                                <button class="btn filter-btn lang-btn">Gujarati</button></a>
+                                            <a href="#" class="lang-gujarathi filter-list">
+                                                <button class="btn filter-btn lang-btn">Gujarati</button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="browse-btn-wrap mb-2">
+                                    <button class="btn browse-btn">Browse by Cinemas</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 ">
+                        <div class="movie-type-wrap">
+                            <h3>Movies in Kathmandu</h3>
+                            <div class="btn-collection">
+                                <button class="btn btn-item">English</button>
+                                <button class="btn btn-item">Telegu</button>
+                                <button class="btn btn-item">Nepali</button>
+                                <button class="btn btn-item">Sanskrit</button>
+                                <button class="btn btn-item">Bhojpuri</button>
+                                <button class="btn btn-item">Korean</button>
+                                <button class="btn btn-item">Japanese</button>
+                                <button class="btn btn-item">Thai</button>
+                                <button class="btn btn-item">Kannada</button>
+                                <button class="btn btn-item">Marathi</button>
+                                <button class="btn btn-item">Gujarati</button>
+                                <button class="btn btn-item">Tamil</button>
+
+                            </div>
+                        </div>
+                        <div class="coming-soon-wrap">
+                            <div class="coming-soon-item">
+                                <h5 style="color: #22397e;">Now Showing</h5>
+                            </div>
+                            <div class="coming-soon-item">
+                                <a href="Cinema.html" style="color: #47a1de;"> In Cinemas near you <span><i
+                                            class="fa fa-caret-right" aria-hidden="true"
+                                            style="padding-left: 10px;"></i></span></a>
+                            </div>
+
+                        </div>
+                        <div class="cinema-hall-wrap">
+                            <h4 class="Cinemas-wrap">Cinemas</h4>
+                            <ul class="Cinema-halls">
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/logo.svg" class="img-fluid" alt="">
+
+                                        </div>
+                                        <p class="cinema-image-title">QFX Labim Mall</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/logo.svg" class="img-fluid" alt="">
+
+                                        </div>
+                                        <p class="cinema-image-title">QFX Civil Mall</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/kirtipur.png" class="img-fluid" alt=""
+                                                style="padding-top: 6px;">
+                                        </div>
+                                        <p class="cinema-image-title">Kirtipur Cineplex</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/fcube.svg" alt="" class="class-fluid">
+                                        </div>
+                                        <p class="cinema-image-title">FCube Cinemas</p>
+                                    </a>
+                                </li>
+
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/guna.png" alt="" class="img-fluid">
+                                        </div>
+                                        <p class="cinema-image-title">Guna Cinema</p>
+                                    </a>
+                                </li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/bigmovies.png" alt="" class="img-fluid"
+                                                style="padding-top: 12px;">
+                                        </div>
+                                        <p class="cinema-image-title">Big Movies</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/q's.png" alt="" class="img-fluid"
+                                                style="padding-top: 10px;">
+                                        </div>
+                                        <p class="cinema-image-title">Q'S Cinemas</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/logo.svg" class="img-fluid" alt="">
+
+                                        </div>
+                                        <p class="cinema-image-title">QFX Bhaktapur</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/logo.svg" class="img-fluid" alt="">
+
+                                        </div>
+                                        <p class="cinema-image-title">Durbar Cinemax</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/logo.svg" class="img-fluid" alt="">
+
+                                        </div>
+                                        <p class="cinema-image-title">QFX Chhaya Center</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/logo.svg" class="img-fluid" alt="">
+
+                                        </div>
+                                        <p class="cinema-image-title">QFX One Stop</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/logo.svg" class="img-fluid" alt="">
+
+                                        </div>
+                                        <p class="cinema-image-title">QFX Butwal</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/logo.svg" class="img-fluid" alt="">
+
+                                        </div>
+                                        <p class="cinema-image-title">QFX Bageshwori</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/logo.svg" class="img-fluid" alt="">
+
+                                        </div>
+                                        <p class="cinema-image-title">QFX Biratnagar</p>
+                                    </a></li>
+                                <li class="cinema-item">
+                                    <a href="#">
+                                        <div class="cinema-image-wrap">
+                                            <img src="frontend/images/logo/QFX/logo.svg" class="img-fluid" alt="">
+
+                                        </div>
+                                        <p class="cinema-image-title">QFX Damauli</p>
+                                    </a></li>
+
+                            </ul>
+
+                        </div>
+                        <div class="movieGrid-wrap">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                                    <div class="grid-wrap "><a href="#" class="movie-details-grid ">
+                                            <img src="frontend/images/movieGrid/chisomanche.jpeg" alt=""
+                                                class="img-fluid mb-2">
+                                            <h6 class="movie-grid-title">Chiso Maanchhe</h6>
+                                            <p class="movie-certified">U</p>
+                                            <p class="movie-date">17 June 2022</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                                    <div class="grid-wrap "> <a href="#" class="movie-details-grid">
+
+                                            <img src="frontend/images/movieGrid/elvis.jpeg" alt=""
+                                                class="img-fluid mb-2">
+                                            <h6 class="movie-grid-title">Elvis</h6>
+                                            <p class="movie-certified">PG</p>
+                                            <p class="movie-date">24 June 2022</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12">
+                                    <div class="grid-wrap "> <a href="#" class="movie-details-grid">
+                                            <img src="frontend/images/movieGrid/dokh.jpeg" alt=""
+                                                class="img-fluid mb-2">
+                                            <h6 class="movie-grid-title">Dokh</h6>
+                                            <p class="movie-certified">PG</p>
+                                            <p class="movie-date">8 July 2022</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <script src="frontend/jquery-3.5.1/jquery.js"></script>
+    <script src="frontend/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script src="frontend/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="frontend/js/query.js"></script>
+</body>
+
+</html>

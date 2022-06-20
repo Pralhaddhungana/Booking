@@ -10,11 +10,40 @@
 
     <link rel="stylesheet" href="frontend/bootstrap-4.6.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="frontend/slick-1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="frontend/slick-1.8.1/slick/slick-theme.css">
-    <!-- <link rel="stylesheet" href="frontend/fontawesome-free-5.15.4-web/css/fontawesome.css"> -->
     <link rel="stylesheet" href="frontend/font-awesome-4.7.0/css/font-awesome.css">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="frontend/magnificPopup/magnific-popup.css">
     <link rel="stylesheet" href="frontend/css/style.css">
     <link rel="stylesheet" href="frontend/css/responsive.css">
+    <style>
+        .image-source-link {
+            color: #98C3D1;
+        }
+
+        .mfp-with-zoom .mfp-container,
+        .mfp-with-zoom.mfp-bg {
+            opacity: 0;
+            -webkit-backface-visibility: hidden;
+            /* ideally, transition speed should match zoom duration */
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+        }
+
+        .mfp-with-zoom.mfp-ready .mfp-container {
+            opacity: 1;
+        }
+
+        .mfp-with-zoom.mfp-ready.mfp-bg {
+            opacity: 0.8;
+        }
+
+        .mfp-with-zoom.mfp-removing .mfp-container,
+        .mfp-with-zoom.mfp-removing.mfp-bg {
+            opacity: 0;
+        }
+    </style>
 </head>
 
 
@@ -162,18 +191,15 @@
                                 <div class="iimage">
                                     <div class="row">
                                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-11 col-12">
-                                            <div class="hotel-details-images-content "><a href="#">
-                                                    <img src="frontend/images/K.jpg" class="hotel-details-image p-1"
-                                                        data-toggle="modal" data-target="#HotelImageModal1"></a>
-                                                <a href="#"><img src="frontend/images/C.jpg"
-                                                        class="hotel-details-image p-1" data-toggle="modal"
-                                                        data-target="#HotelImageModal2"></a>
-                                                <a href="#"> <img src="frontend/images/P.jpg"
-                                                        class="hotel-details-image p-1" data-toggle="modal"
-                                                        data-target="#HotelImageModal3"></a>
-                                                <a href="#"><img src="frontend/images/C.jpg"
-                                                        class="hotel-details-image p-1" data-toggle="modal"
-                                                        data-target="#HotelImageModal4"></a>
+                                            <div class="zoom-gallery hotel-details-images-content ">
+                                                <a href="frontend/images/K.jpg"><img src="frontend/images/K.jpg"
+                                                        class="hotel-details-image p-1" width="75" height="75"></a>
+                                                <a href="frontend/images/C.jpg"><img src="frontend/images/C.jpg"
+                                                        class="hotel-details-image p-1" width="75" height="75"></a>
+                                                <a href="frontend/images/P.jpg"> <img src="frontend/images/P.jpg"
+                                                        class="hotel-details-image p-1" width="75" height="75"></a>
+                                                <a href="frontend/images/C.jpg"><img src="frontend/images/C.jpg"
+                                                        class="hotel-details-image p-1" width="75" height="75"></a>
 
                                             </div>
                                         </div>
@@ -708,7 +734,7 @@
         </section>
     </section>
 
-    <!-- Modal for images -->
+    <!-- Modal for images
     <div class="modal fade" id="HotelImageModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -736,17 +762,49 @@
                 <img src="frontend/images/C.jpg" alt="">
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <script src="frontend/jquery-3.5.1/jquery.js"></script>
-    <script src="frontend/jquery-3.5.1/zoom.js"></script>
-    <script src="frontend/jquery-3.5.1/am_map.js"></script>
+    <script src="frontend/magnificPopup/jquery.magnific-popup.js"></script>
     <script src="frontend/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
+    <script src="frontend/jquery-3.5.1/zoom.js"></script>
     <script src="frontend/slick-1.8.1/slick/slick.min.js"></script>
     <script src="frontend/js/query.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.zoom-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: true,
+                    titleSrc: function (item) {
+                        return item.el.attr('title') +
+                            ' &middot; <a class="image-source-link" href="' + item.el.attr(
+                                'data-source') + '" target="_blank">image source</a>';
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                zoom: {
+                    enabled: true,
+                    duration: 300, // don't foget to change the duration also in CSS
+                    opener: function (element) {
+                        return element.find('img');
+                    }
+                }
+
+            });
+        });
+    </script>
 </body>
 
 </html>
